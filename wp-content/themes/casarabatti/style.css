@@ -109,15 +109,6 @@ p {
     min-height: 100%;
 }
 
-
-aside {
-    padding: 50px 0;
-}
-
-.no-padding {
-    padding: 0;
-}
-
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -219,7 +210,7 @@ header {
     width: 100%;
     /*min-height: auto;*/
     text-align: center;
-    color: #fff;
+    color: #000;
     /*background-image: url(img/header.jpg);*/
     background-position: center;
     -webkit-background-size: cover;
@@ -231,7 +222,7 @@ header {
 header .header-content {
     position: relative;
     width: 100%;
-    padding: 100px 15px;
+    padding: 0;
     text-align: center;
 }
 
@@ -244,6 +235,7 @@ header .header-content .header-content-inner h1 {
 
 header .header-content .header-content-inner hr {
     margin: 30px auto;
+    position: relative;
 }
 
 header .header-content .header-content-inner p {
@@ -532,6 +524,11 @@ body {
 
 .navbar-right {
     margin-top: 50px;
+    margin-left: 50px;
+}
+
+.navbar-nav {
+    margin-left: 50px;
 }
 
 .reservation {
@@ -597,4 +594,24 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
     outline: none;
+}
+
+.welcome-title {
+    z-index:100;
+    position:absolute;    
+    color:gray;
+    font-weight:bold;
+    left:25%;
+    top:350px;
+}
+
+.ms-sontlide-bgc {
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.verifica-disonibilita {
+    color: white;
+    padding-left: 100px;
 }
