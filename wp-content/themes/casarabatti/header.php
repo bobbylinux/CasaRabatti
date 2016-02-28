@@ -53,6 +53,9 @@
                 <li>
                     <a class="page-scroll" href="#contatti">CONTATTI</a>
                 </li>
+                <li>
+                    <a class="page-scroll" href="#partners">I PARTNERS</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

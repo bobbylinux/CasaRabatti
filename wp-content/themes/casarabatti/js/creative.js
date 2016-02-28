@@ -4,11 +4,11 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-(function($) {
+(function ($) {
     "use strict"; // Start of use strict
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
+    $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: ($($anchor.attr('href')).offset().top - 50)
@@ -23,7 +23,7 @@
     })
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
+    $('.navbar-collapse ul li a').click(function () {
         $('.navbar-toggle:visible').click();
     });
 
@@ -45,7 +45,7 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
-    $(document).on("click",".page-scroll",function(e) {
+    $(document).on("click", ".page-scroll", function (e) {
         // prevent default anchor click behavior
         e.preventDefault();
 
@@ -55,13 +55,35 @@
         // animate
         $('html, body').animate({
             scrollTop: $(hash).offset().top
-        }, 1000, function(){
+        }, 1000, function () {
 
             // when done, add hash to url
             // (default click behaviour)
             window.location.hash = hash;
         });
     });
+
+    $(function () {
+
+
+        $('#arrivo').datetimepicker({
+            format: 'DD/MM/YYYY',
+            locale: 'it'
+        });
+        $('#partenza').datetimepicker({
+            format: 'DD/MM/YYYY',
+            locale: 'it',
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#arrivo").on("dp.change", function (e) {
+            $('#partenza').data("DateTimePicker").minDate(e.date);
+        });
+        $("#partenza").on("dp.change", function (e) {
+            $('#arrivo').data("DateTimePicker").maxDate(e.date);
+            console.log(e.date);
+        });
+    });
+
 
 
 
