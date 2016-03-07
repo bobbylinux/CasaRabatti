@@ -1,10 +1,13 @@
 <?php
 // datastore=auditqueue;
 // created_on=1456137597;
-// updated_on=1456680930;
+// updated_on=1457314805;
 exit(0);
 ?>
-bc125c714b7f32d21b6e853bef3beeac:{"created_at":1456676545,"message":"Notice: admin, 192.168.1.2; Media file added; identifier: 103; name: sergio appartamento 3 16-12-15 267-min; type: image\/jpeg"}
-e4c008fcfc4d27a9e57eea1383c27e39:{"created_at":1456676876,"message":"Warning: admin, 192.168.1.2; Plugin activated: NextGEN Gallery by Photocrati (v2.1.23; nextgen-gallery\/nggallery.php)"}
-c81c9bff200388ee65038889757d7d26:{"created_at":1456680359,"message":"Notice: admin, 192.168.1.2; Post (private to published); identifier: 224; name: Contattaci"}
-ead2a097a2e58c657ef3e6038764d76b:{"created_at":1456680925,"message":"Warning: admin, 192.168.1.2; Plugin activated: Huge IT Google Maps (v2.0.4; google-maps\/googlemap.php)"}
+2bbb64d8a0a5a5aa163ccb9bb45622e6:{"created_at":1457167259,"message":null}
+76c30594de376c78ca17b2cd18907481:{"created_at":1457189451,"message":"Notice: admin, 84.253.136.69; Page was created; identifier: 227; name: Cookie Policy"}
+2e5f286b9be66710160d677b3bc73342:{"created_at":1457227699,"message":null}
+764c0fd812afaa846ae545a128d45d58:{"created_at":1457286730,"message":null}
+ff6c00eda63c800ebe44afefb270e3f9:{"created_at":1457286756,"message":"Notice: 84.253.136.69; User authentication succeeded: admin"}
+c620fc3fae3c0a872d6ecb799b25ed64:{"created_at":1457306629,"message":"Warning: 195.110.146.217; Post deleted; identifier: 84"}
+d5bc8f0b02ba414dee8bd33071f67498:{"created_at":1457314800,"message":null}
