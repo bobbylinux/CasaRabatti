@@ -18,6 +18,9 @@
  * @package WordPress
  */
 
+define('FS_CHMOD_FILE',0755);
+define('FS_CHMOD_DIR',0755);
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'casarabatti');
@@ -26,7 +29,7 @@ define('DB_NAME', 'casarabatti');
 define('DB_USER', 'casarabatti');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'CaSaRaBaTTi.2016');
+define('DB_PASSWORD', 'casarabatti');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

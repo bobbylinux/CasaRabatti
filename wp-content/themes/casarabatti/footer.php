@@ -2,7 +2,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <span class="copyright"><a href="http://www.globeit.it" target="_blank">Copyright &copy; Globe-it 2016 <img src="http://www.casarabatti.it/wp-content/uploads/2016/03/logo_web_footer.png"></a></span>
+                        <span class="copyright"><a href="http://www.globeit.it" target="_blank">Copyright &copy; Globe-it 2016</a></span>
                     </div>
                     <div class="col-md-4">
                         <ul class="list-inline social-buttons">

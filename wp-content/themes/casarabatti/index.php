@@ -40,12 +40,12 @@
             </div>
         </div>
         <div class="row">           
-            <div class="col-lg-6 col-lg-offset-1">
+            <div class="col-lg-6 col-lg-offset-1 vcenter">
                 <p class="text-faded">
                    <?php echo $the_post->post_content;?>
                 </p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 vcenter">
                 <img src="<?php echo get_template_directory_uri() . '/img/slide_01_b.jpg'; ?>"
                      class="img-responsive" alt="">
             </div>
@@ -54,70 +54,52 @@
 </section>
 <section id="locali" class="rooms">
     <div class="container-fluid">
-        <div class="col-lg-8">
-            <div class="row no-gutter">
-                <div class="col-lg-6">
-                    <a href="#" class="portfolio-box">
-                        <?php echo do_shortcode('[nggallery id=20 template=limonaia]'); ?>
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                            </div>
-                        </div>
-                    </a>
+        <div class="row">
+            <div class="col-lg-5 vcenter">
+                <div class="row no-gutter">
+                    <div class="col-lg-6">
+                        <a href="#" class="portfolio-box">
+                            <?php echo do_shortcode('[nggallery id=20 template=limonaia]'); ?>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="portfolio-box">
+                            <?php echo do_shortcode('[nggallery id=21 template=limonaia]'); ?>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <a href="#" class="portfolio-box">
-                        <?php echo do_shortcode('[nggallery id=21 template=limonaia]'); ?>
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                               
-                            </div>
-                        </div>
-                    </a>
+                <div class="row no-gutter">
+                    <div class="col-lg-6">
+                        <a href="#" class="portfolio-box">
+                            <?php echo do_shortcode('[nggallery id=22 template=limonaia]'); ?>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="portfolio-box">
+                            <?php echo do_shortcode('[nggallery id=23 template=limonaia]'); ?>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="row no-gutter">
-                <div class="col-lg-6">
-                    <a href="#" class="portfolio-box">
-                        <?php echo do_shortcode('[nggallery id=22 template=limonaia]'); ?>
-
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                
-                            </div>
-                        </div>
-                    </a>
+            <div class="col-lg-6 vcenter">
+                <?php $the_post =  get_post(16); ?>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading"><?php echo $the_post->post_title;?></h2>
+                        <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
+                             class="img-responsive primary" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <a rel="lightbox" href="<?php echo get_template_directory_uri() . '/img/slide_05_b-1.jpg'; ?>" class="portfolio-box">
-                        <?php echo do_shortcode('[nggallery id=23 template=limonaia]'); ?>
-
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                
-                            </div>
-                        </div>
-                    </a>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="">
+                            <?php echo $the_post->post_content;?>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <?php $the_post =  get_post(16); ?>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading"><?php echo $the_post->post_title;?></h2>
-                    <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
-                         class="img-responsive primary" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p class="">
-                       <?php echo $the_post->post_content;?>
-                    </p>
-                </div>
-            </div>
-        </div>
+
     </div>
 </section>
 
@@ -132,12 +114,12 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-lg-offset-1">
+            <div class="col-lg-5 col-lg-offset-1 vcenter">
                 <p class="text-faded">
                     <?php echo $the_post->post_content;?>
                 </p>
             </div>
-            <div class="col-lg-5 col-lg-offset-1">
+            <div class="col-lg-5 vcenter">
                 <?php echo do_shortcode("[huge_it_maps id='1']"); ?>
             </div>
         </div>
@@ -174,7 +156,7 @@
 </section>
 <section class="bg-primary partners" id="partners">
     <div class="container-fluid">
-        <?php $the_post =  get_post(11); ?>
+        <?php $the_post =  get_post(227); ?>
         <div class="row">
             <div class="col-lg-12 text-center main-title">
                 <h2 class="section-heading"><?php echo  $the_post->post_title; ?></h2>
@@ -183,12 +165,12 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-lg-offset-1">
+            <div class="col-lg-6 col-lg-offset-1 vcenter">
                 <p class="text-faded">
                     <?php echo $the_post->post_content;?>
                 </p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 vcenter">
                 <img src="<?php echo get_template_directory_uri() . '/img/slide_01_b.jpg'; ?>"
                      class="img-responsive" alt="">
             </div>

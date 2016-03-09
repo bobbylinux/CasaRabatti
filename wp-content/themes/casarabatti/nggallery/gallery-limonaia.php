@@ -25,7 +25,7 @@ If you would like to show the timestamp of the image ,you can use <?php echo $ex
                     <img src="<?php echo $image->imageURL ?>" />
                 </div>
                 <a href="<?php echo $image->imageURL ?>" <?php echo $image->thumbcode ?> title="<?php echo $gallery->title ?>">
-                    <img src="<?php echo $image->thumbnailURL ?>" /></a>
+                    <img class="img-responsive" src="<?php echo $image->thumbnailURL ?>" /></a>
             <?php else : ?>
                 <a style="display:none" href="<?php echo $image->imageURL ?>" <?php echo $image->thumbcode ?>>link</a>
             <?php endif; $i++; ?>

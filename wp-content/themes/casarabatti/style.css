@@ -95,7 +95,7 @@ p {
 }
 
 .rooms {
-    padding: 150px 0 150px 0;
+    padding: 150px 10% 150px 10%;
     min-height: 100%;
 }
 
@@ -225,7 +225,6 @@ header {
 }
 
 header .header-content {
-    position: relative;
     width: 100%;
     padding: 0;
     text-align: center;
@@ -267,7 +266,6 @@ header .header-content .header-content-inner p {
     header .header-content .header-content-inner {
         margin-right: auto;
         margin-left: auto;
-        max-width: 1000px;
     }
 
     header .header-content .header-content-inner p {
@@ -303,7 +301,6 @@ header .header-content .header-content-inner p {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 650px;
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -627,4 +624,22 @@ ul.social-buttons li a:active {
 
 .main-title {
     margin-bottom: 100px;
+}
+
+.master-slider{
+    height: 100% !important;
+}
+
+
+.gallery-holder {
+    width: 100% !important;
+}
+
+.gallery-container {
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
