@@ -156,7 +156,7 @@
 </section>
 <section class="bg-primary partners" id="partners">
     <div class="container-fluid">
-        <?php $the_post =  get_post(227); ?>
+        <?php $the_post =  get_post(231); ?>
         <div class="row">
             <div class="col-lg-12 text-center main-title">
                 <h2 class="section-heading"><?php echo  $the_post->post_title; ?></h2>
