@@ -22,6 +22,18 @@
         <div class="form-group">
             <input type="text" class="form-control" id="partenza" placeholder="Partenza">
         </div>
+        <div class="form-group">
+            <label for="sel1">Persone</label>
+            <select class="form-control" id="persone" placeholder="Persone">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+            </select>
+        </div>
         <a href="#" class="btn btn-default btn-xl">Verifica</a>
     </div>
 </form>

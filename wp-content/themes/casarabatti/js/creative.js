@@ -65,7 +65,6 @@
 
     $(function () {
 
-
         $('#arrivo').datetimepicker({
             format: 'DD/MM/YYYY',
             locale: 'it'

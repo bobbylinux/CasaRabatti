@@ -23,7 +23,7 @@ function casarabatti_scripts()
     wp_enqueue_style( 'animate-css' );
     wp_enqueue_style( 'style-css' );
 
-    wp_enqueue_script('jquery-ui-datepicker');
+    //wp_enqueue_script('jquery-ui-datepicker');
     wp_enqueue_script( 'bootstrap-js' );
     wp_enqueue_script( 'moments-js' );
     wp_enqueue_script( 'bootstrap-datepicker-js' );
@@ -37,6 +37,38 @@ function casarabatti_scripts()
 add_action( 'wp_enqueue_scripts', 'casarabatti_scripts' );
 
 remove_filter('the_content', 'wpautop');
+
+function custom_register_admin_scripts() {
+    wp_register_style( 'fullcalendar-css', get_template_directory_uri() . '/js/fullcalendar-2.6.1/fullcalendar.min.css', array(), 'all' );
+    wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), 'all' );
+    wp_register_style( 'bootstrap-datepicker-css', get_template_directory_uri() . '/css/bootstrap.datepicker.min.css', array(), 'all' );
+    wp_register_style( 'font-css', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', array(), 'all' );
+
+    wp_register_script( 'moments-js', get_template_directory_uri() . '/js/fullcalendar-2.6.1/lib/moment.min.js',  true );
+    wp_register_script( 'fullcalendar', get_template_directory_uri() . '/js/fullcalendar-2.6.1/fullcalendar.min.js',array( 'jquery' ),true );
+    wp_register_script( 'fullcalendar-lang', get_template_directory_uri() . '/js/fullcalendar-2.6.1/lang/it.js',  true );
+    wp_register_script( 'custom-javascript', get_template_directory_uri() . '/js/rabatti.js' );
+    wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), true );
+    wp_register_script( 'bootstrap-datepicker-js', get_template_directory_uri() . '/js/bootstrap.datepicker.min.js',  true );
+    wp_register_script( 'bootstrap-datepicker-locale-it-js', get_template_directory_uri() . '/js/bootstrap.datepicker.locale.it.js',  true );
+
+    wp_enqueue_style( 'bootstrap-css' );
+    wp_enqueue_style( 'bootstrap-datepicker-css' );
+    wp_enqueue_style( 'font-css' );
+    wp_enqueue_style( 'fullcalendar-css' );
+
+
+    wp_enqueue_script( 'jquery-ui-autocomplete' );
+    wp_enqueue_script( 'bootstrap-js' );
+    wp_enqueue_script( 'moments-js' );
+    wp_enqueue_script( 'fullcalendar' );
+    wp_enqueue_script( 'fullcalendar-lang' );
+    wp_enqueue_script( 'bootstrap-datepicker-js' );
+    wp_enqueue_script( 'bootstrap-datepicker-locale-it-js' );
+    wp_enqueue_script( 'custom-javascript' );
+
+} // end custom_register_admin_scripts
+add_action( 'admin_enqueue_scripts', 'custom_register_admin_scripts' );
 
 function remove_menus()
 {
@@ -65,23 +97,15 @@ function remove_menus()
 }
 add_action('admin_menu', 'remove_menus');
 
-function add_dashboard_menu(){
-    $page_title = "La Struttura";
-    $menu_title = "La Struttura";
-    $capability = "manage_options";
-    $menu_slug = "struttura";
-    $function = "wpdocs_struttura_page_callback";
-    
-    add_submenu_page( 'index.php', $page_title, $menu_title, $capability, $menu_slug, $function); 
 
-    function wpdocs_struttura_page_callback() {
-        echo '<div class="wrap"><div id="icon-tools" class="icon32"></div>';
-            echo '<h2>La Struttura</h2>';
-        echo '</div>';
-    }
+function mt_add_pages() {
+    add_menu_page('admin-menu', 'Calendario', 5, __FILE__, 'mt_toplevel_page');
 }
+function mt_toplevel_page() {
+    include 'calendar.php';
 
-add_action('admin_menu', 'add_dashboard_menu');
+}
+add_action('admin_menu', 'mt_add_pages');
 
 ?>
 
