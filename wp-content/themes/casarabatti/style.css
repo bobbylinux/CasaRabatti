@@ -47,7 +47,7 @@ footer a {
 }
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #fff;
 }
 
 h1,
@@ -98,6 +98,11 @@ p {
     min-height: 100%;
 }
 
+.newsletter {
+    padding: 15% 0 15% 0;
+    min-height: 100%;
+}
+
 .partners {
     padding: 15% 0 15% 0;
     min-height: 100%;
@@ -134,7 +139,7 @@ p {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #222;
+    color: #9ea7af;
 }
 
 .navbar-default .nav > li.active>a,
@@ -377,9 +382,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #f05f40;
+    border-color: #00a0d2;
     color: #fff;
-    background-color: #f05f40;
+    background-color: #00a0d2;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -391,9 +396,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
+    border-color: #00b9eb;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #00b9eb;
 }
 
 .btn-primary:active,
@@ -486,11 +491,20 @@ body {
     margin-left: 50px;
 }
 
+.persone  {
+    padding-left:2%;
+}
+
 .reservation {
+    color: #f2f2f2;
+    padding-top: 15px;
     text-align: center;
     height: 100px;
-    padding-top: 30px;
     background-color: #191e23;
+}
+
+.btn-verifica {
+    margin-left: 5%;
 }
 
 .map {
@@ -588,11 +602,15 @@ ul.social-buttons li a:active {
     width: 100% !important;
 }
 
-.gallery-container {
-}
-
 .vcenter {
     display: inline-block;
     vertical-align: middle;
     float: none;
+}
+
+.contacts a {
+    color: #333333;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
 }

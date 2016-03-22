@@ -14,7 +14,7 @@
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <?php wp_head(); ?>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,10 +42,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#struttura">LA STRUTTURA</a>
+                    <a class="page-scroll" href="#struttura">STRUTTURA</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#locali">I LOCALI</a>
+                    <a class="page-scroll" href="#locali">LOCALI</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#dove-siamo">DOVE SIAMO</a>
@@ -54,7 +54,10 @@
                     <a class="page-scroll" href="#contatti">CONTATTI</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#partners">I PARTNERS</a>
+                    <a class="page-scroll" href="#newsletter">NEWSLETTER</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#partners">PARTNERS</a>
                 </li>
             </ul>
         </div>

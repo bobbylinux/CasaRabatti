@@ -75,7 +75,7 @@ function remove_menus()
     global $menu;
     global $current_user;
     get_currentuserinfo();
- 
+
     if($current_user->user_level < 10)
     {
         $restricted = array(__('Pages'),
@@ -85,27 +85,28 @@ function remove_menus()
                             __('Media'),
                             __('Links'),
                             __('Plugins'),
- 
+
         );
         end ($menu);
         while (prev($menu)){
             $value = explode(' ',$menu[key($menu)][0]);
             if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
         }// end while
- 
+
     }// end if
 }
 add_action('admin_menu', 'remove_menus');
 
-
-function mt_add_pages() {
-    add_menu_page('admin-menu', 'Calendario', 5, __FILE__, 'mt_toplevel_page');
+function mt_add_calendar_pages()
+{
+    add_menu_page( 'Calendario', 'Calendario', 1,__FILE__, 'mt_calendar_page', 'dashicons-welcome-write-blog', 6  );
 }
-function mt_toplevel_page() {
+
+
+function mt_calendar_page() {
     include 'calendar.php';
-
 }
-add_action('admin_menu', 'mt_add_pages');
 
+add_action('admin_menu', 'mt_add_calendar_pages');
 ?>
 

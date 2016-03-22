@@ -2,325 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d45683f-af4f-40d5-aee8-5ea03b183e37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-20-1958_Casa_Rabatti_9ff459833574-db.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-20-1958_Casa_Rabatti_9ff459833574-others.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-20-1958_Casa_Rabatti_9ff459833574-plugins.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-20-1958_Casa_Rabatti_9ff459833574-themes.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-20-1958_Casa_Rabatti_9ff459833574-uploads.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/animated-overlay.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-icons_2694e8_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-icons_2e83ff_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-icons_3d80b3_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-icons_72a7cf_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/images/ui-icons_ffffff_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.9ff459833574.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/web.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-admin/D:/BACKUP_WP/CASARABATTI/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-admin/D:/BACKUP_WP/CASARABATTI/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-admin/D:/BACKUP_WP/CASARABATTI/web.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/calendar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/clienti.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/CHANGELOG.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/CONTRIBUTING.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/agenda-views.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/background-events.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/basic-views.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/external-dragging.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/gcal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/json.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/json/events.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/languages.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/php/get-events.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/php/get-timezones.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/php/utils.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/selectable.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/theme.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/timezones.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/fullcalendar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/fullcalendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/fullcalendar.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/fullcalendar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/fullcalendar.print.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/gcal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang-all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/ar-ma.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/ar-sa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/ar-tn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/de-at.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/en-au.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/en-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/en-ie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/en-nz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/fr-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/fr-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/hi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/sr-cyrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lang/zh-tw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/cupertino/jquery-ui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/jquery-ui.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/lib/moment.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/process.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/gallery/limonaia-1/dynamic/sergio-appartamento-2-27-10-15-089-min.jpg-nggid0219-ngg0dyn-0x250-00f0w011c010r110f110r010t010.jpg" afterPath="$PROJECT_DIR$/wp-content/gallery/limonaia-1/dynamic/sergio-appartamento-2-27-10-15-089-min.jpg-nggid0219-ngg0dyn-0x250-00f0w011c010r110f110r010t010.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-32-32-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-32-32-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-32-32-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-32-32-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-32-32-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-32-32-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-32-32-3.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-32-32-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-32-32-4.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-32-32-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-36-36-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-36-36-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-36-80-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-36-80-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-48-48-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-48-48-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-48-48-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-48-48-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-48-48-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-48-48-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-48-48-3.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-48-48-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-48-48-4.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-48-48-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-72-72-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/arrows-72-72-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/background-0.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/background-0.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/background-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/background-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/background-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/background-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bottomshadow-110-100-5.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bottomshadow-110-100-5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bottomshadow-110-95-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bottomshadow-110-95-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bottomshadow-110-95-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bottomshadow-110-95-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bottomshadow-110-95-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bottomshadow-110-95-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bottomshadow-110-95-3.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bottomshadow-110-95-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bottomshadow-110-95-4.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bottomshadow-110-95-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-12-12-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-12-12-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-16-16-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-16-16-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-16-16-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-16-16-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-16-16-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-16-16-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-16-16-3.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-16-16-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-20-20-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-20-20-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-20-20-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-20-20-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-3.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-4.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-5.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-6.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/bullet-24-24-6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/carouselarrows-32-32-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/carouselarrows-32-32-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/carouselarrows-32-32-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/carouselarrows-32-32-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/carouselarrows-32-32-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/carouselarrows-32-32-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/carouselarrows-32-32-3.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/carouselarrows-32-32-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/carouselarrows-32-32-4.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/carouselarrows-32-32-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/carouselarrows-32-32-5.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/carouselarrows-32-32-5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/featuredarrow-16-8-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/featuredarrow-16-8-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/featuredarrow-16-8-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/featuredarrow-16-8-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/featuredarrow-16-8-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/featuredarrow-16-8-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/featuredarrow-8-16-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/featuredarrow-8-16-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/featuredarrow-8-16-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/featuredarrow-8-16-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/featuredarrow-8-16-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/featuredarrow-8-16-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/html5boxplayer.swf" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/html5boxplayer.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/html5boxplayer_fullscreen.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/html5boxplayer_fullscreen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/html5boxplayer_hd.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/html5boxplayer_hd.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/html5boxplayer_playpause.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/html5boxplayer_playpause.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/html5boxplayer_playvideo.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/html5boxplayer_playvideo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/html5boxplayer_volume.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/html5boxplayer_volume.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-close-fullscreen.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-close-fullscreen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-close.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-close.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-fullscreen-close.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-fullscreen-close.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-loading.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-navnext.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-navnext.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-navprev.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-navprev.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-next-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-next-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-next-fullscreen.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-next-fullscreen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-next.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-next.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-pause-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-pause-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-pause.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-pause.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-play-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-play-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-play.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-play.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-playvideo.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-playvideo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-prev-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-prev-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-prev-fullscreen.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-prev-fullscreen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-prev.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/lightbox-prev.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navarrows-20-20-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navarrows-20-20-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navarrows-20-20-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navarrows-20-20-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navarrows-28-28-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navarrows-28-28-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navarrows-28-28-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navarrows-28-28-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navarrows-48-48-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navarrows-48-48-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navbuttonbgimage-28-28-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navbuttonbgimage-28-28-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navbuttonbgimage-28-28-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navbuttonbgimage-28-28-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navbuttonbgimage-48-48-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navbuttonbgimage-48-48-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-120-78-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-120-78-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-20-20-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-20-20-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-20-20-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-20-20-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-28-28-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-28-28-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-28-28-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-28-28-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-32-32-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-32-32-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-48-48-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-48-48-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-48-48-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-48-48-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-64-64-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/navplaypause-64-64-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-32-32-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-32-32-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-32-32-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-32-32-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-32-32-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-32-32-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-32-32-3.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-32-32-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-32-32-4.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-32-32-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-32-32-5.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-32-32-5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-36-36-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/play-36-36-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-64-64-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-64-64-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-64-64-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-64-64-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-64-64-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-64-64-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-64-64-3.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-64-64-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-64-64-4.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-64-64-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-64-64-5.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-64-64-5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-72-72-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/playvideo-72-72-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/previewarrow-16-8-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/previewarrow-16-8-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/previewarrow-16-8-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/previewarrow-16-8-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/previewarrow-16-8-2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/previewarrow-16-8-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/previewarrow-16-8-3.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/previewarrow-16-8-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/previewarrow-8-16-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/previewarrow-8-16-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/previewarrow-8-16-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/previewarrow-8-16-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/ribbon_topleft-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/ribbon_topleft-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/ribbon_topleft-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/ribbon_topleft-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/ribbon_topright-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/ribbon_topright-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/ribbon_topright-1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/ribbon_topright-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/scrollbarbg-1-12-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/scrollbarbg-1-12-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/scrollbarbg-12-1-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/scrollbarbg-12-1-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/scrollbarslider-12-40-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/scrollbarslider-12-40-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/scrollbarslider-40-12-0.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/scrollbarslider-40-12-0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/1.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/2.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/3.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/4.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/5.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/classic.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/classic.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/content.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/content.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/contentbox.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/contentbox.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/cube.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/cube.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/elegant.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/elegant.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/events.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/events.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/featurelist.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/featurelist.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/frontpage.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/frontpage.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/gallery.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/gallery.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/header.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/header.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/light.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/light.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/lightbox.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/lightbox.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/loading.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/lock.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/lock.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/logo-16.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/logo-16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/logo-32.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/logo-32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/mediapage.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/mediapage.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/multirows.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/multirows.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/navigator.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/navigator.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/numbering.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/numbering.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/pink.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/pink.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/redandblack.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/redandblack.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/righttabs.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/righttabs.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/righttabsdark.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/righttabsdark.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/rightthumbs.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/rightthumbs.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/rotator.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/rotator.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/showcase.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/showcase.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/simplecontrols.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/simplecontrols.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/simplicity.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/simplicity.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/stylish.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/stylish.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/textnavigation.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/textnavigation.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/thumbnails.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/thumbnails.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/topcarousel.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/topcarousel.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/vertical.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/vertical.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/verticalnumber.jpg" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/verticalnumber.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/wordpressposts.png" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/images/wordpressposts.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-10-09-15-086-min-1024x683.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-10-09-15-086-min-1024x683.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-10-09-15-086-min-150x150.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-10-09-15-086-min-150x150.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-10-09-15-086-min-300x200.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-10-09-15-086-min-300x200.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-10-09-15-086-min-768x512.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-10-09-15-086-min-768x512.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-10-09-15-086-min.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-10-09-15-086-min.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-137-min-1024x683.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-137-min-1024x683.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-137-min-150x150.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-137-min-150x150.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-137-min-300x200.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-137-min-300x200.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-137-min-768x512.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-137-min-768x512.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-137-min.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-137-min.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-183-min-1024x683.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-183-min-1024x683.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-183-min-150x150.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-183-min-150x150.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-183-min-300x200.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-183-min-300x200.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-183-min-768x512.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-183-min-768x512.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-183-min.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-183-min.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-345-min-1024x683.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-345-min-1024x683.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-345-min-150x150.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-345-min-150x150.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-345-min-300x200.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-345-min-300x200.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-345-min-768x512.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-345-min-768x512.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-345-min.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-2-27-10-15-345-min.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-RRR-10-09-15-137-min-1024x683.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-RRR-10-09-15-137-min-1024x683.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-RRR-10-09-15-137-min-150x150.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-RRR-10-09-15-137-min-150x150.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-RRR-10-09-15-137-min-300x200.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-RRR-10-09-15-137-min-300x200.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-RRR-10-09-15-137-min-768x512.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-RRR-10-09-15-137-min-768x512.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-RRR-10-09-15-137-min.jpg" afterPath="$PROJECT_DIR$/wp-content/uploads/2016/03/sergio-appartamento-RRR-10-09-15-137-min.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-db.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-others.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-plugins.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-themes.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-uploads.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/img/genesi.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.0a10f531aecc.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/ngg_styles/nggallery.css" afterPath="$PROJECT_DIR$/wp-content/ngg_styles/nggallery.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-controller.php" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-creator.php" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-creator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-list-table.php" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-list-table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-model.php" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-update.php" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-view.php" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/wonderplugin-slider-creator.js" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/wonderplugin-slider-creator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/wonderplugin-slider-functions.php" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/wonderplugin-slider-functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/froogaloop2.min.js" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/froogaloop2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/jquery.js" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/wonderpluginslider.js" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/wonderpluginslider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/wonderpluginsliderengine.css" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/wonderpluginsliderengine.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/wonderpluginsliderskins.js" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/engine/wonderpluginsliderskins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/wonderpluginslider.css" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/wonderpluginslider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/wonderpluginslider.php" afterPath="$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/wonderpluginslider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/agenda-views.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/agenda-views.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/background-events.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/background-events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/default.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/external-dragging.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/external-dragging.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/languages.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/languages.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/selectable.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/selectable.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/timezones.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/timezones.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/sucuri/sucuri-failedlogins.php" afterPath="$PROJECT_DIR$/wp-content/uploads/sucuri/sucuri-failedlogins.php" />
     </list>
     <ignored path="casarabatti.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -345,38 +48,18 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.333333">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state vertical-scroll-proportion="-8.310345">
+              <caret line="34" column="105" selection-start-line="34" selection-start-column="105" selection-end-line="34" selection-end-column="105" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rabatti.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.586206">
-              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.37037">
-              <caret line="597" column="1" selection-start-line="597" selection-start-column="1" selection-end-line="597" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.0">
-              <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.209622">
+              <caret line="499" column="22" selection-start-line="499" selection-start-column="22" selection-end-line="499" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -386,40 +69,8 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+              <caret line="92" column="28" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="28" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calendar.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/calendar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2365416">
-              <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clienti.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/clienti.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6666667">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="process.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/process.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.666667">
-              <caret line="22" column="78" selection-start-line="12" selection-start-column="0" selection-end-line="22" selection-end-column="78" />
-              <folding>
-                <marker date="1458501678114" expanded="true" signature="308:1006" placeholder="select cal_c... cal_calendario" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -446,18 +97,20 @@
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/js/bootstrap.datepiker.min.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/js/bootstrap-datepiker-locale-it.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/nggallery/gallery-one.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/nggallery/gallery-limonaia.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/index.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/process.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/calendarConnect.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/calendar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/clienti.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletter.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/style.css" />
       </list>
     </option>
   </component>
@@ -472,9 +125,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="39" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1327" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -573,10 +226,62 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="casarabatti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="casarabatti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="casarabatti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="casarabatti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="casarabatti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="casarabatti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db-scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -586,22 +291,21 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="FullScreen" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/img" />
-      <recent name="$PROJECT_DIR$/wp-content/plugins" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/fonts" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/font-awesome" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/css" />
       <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/img" />
       <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/font-awesome/old" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/db-scripts" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/img" />
+      <recent name="$PROJECT_DIR$/wp-content/plugins" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/fonts" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/font-awesome" />
     </key>
   </component>
   <component name="RunManager">
@@ -667,14 +371,26 @@
       <option name="project" value="LOCAL" />
       <updated>1457550445855</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="iniziato sviluppo backend del calendario">
+      <created>1458505563543</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1458505563543</updated>
+    </task>
+    <task id="LOCAL-00005" summary="aggiunto backup db">
+      <created>1458588862449</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1458588862449</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="24" width="1327" height="744" extended-state="6" />
+    <frame x="39" y="-4" width="1327" height="772" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29314244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29314244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -710,45 +426,15 @@
     <MESSAGE value="Aggiunta gallery" />
     <MESSAGE value="commit provvisorio" />
     <MESSAGE value="aggiornata interfaccia grafica" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiornata interfaccia grafica" />
+    <MESSAGE value="iniziato sviluppo backend del calendario" />
+    <MESSAGE value="aggiunto backup db" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunto backup db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="174" column="49" selection-start-line="174" selection-start-column="49" selection-end-line="174" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -785,7 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,11 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/img/pontevecchio.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/font-awesome/old/scss/_core.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -938,11 +618,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/img/header.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/img/slide_01_b.jpg">
@@ -985,14 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/img/duomo.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1002,7 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,9 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.19375">
           <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,72 +690,121 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08972268">
           <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/clienti.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/db-scripts/20160321-backup.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/process.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.666667">
-          <caret line="22" column="78" selection-start-line="12" selection-start-column="0" selection-end-line="22" selection-end-column="78" />
-          <folding>
-            <marker date="1458501678114" expanded="true" signature="308:1006" placeholder="select cal_c... cal_calendario" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.37037">
-          <caret line="597" column="1" selection-start-line="597" selection-start-column="1" selection-end-line="597" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.0">
-          <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+        <state vertical-scroll-proportion="-2.4827585">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.586206">
+        <state vertical-scroll-proportion="0.775">
           <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/clienti.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6666667">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.05872757">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/calendar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2365416">
-          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.7340946">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64763457">
+          <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/newsletter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05872757">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/process.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.37037">
+          <caret line="37" column="1" selection-start-line="23" selection-start-column="0" selection-end-line="37" selection-end-column="1" />
+          <folding>
+            <marker date="1458501678114" expanded="true" signature="308:1006" placeholder="select cal_c... cal_calendario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="15" column="89" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="89" />
+          <folding>
+            <marker date="1458684242097" expanded="true" signature="1658:1713" placeholder="SELECT count... soci" />
+            <marker date="1458684242097" expanded="true" signature="2065:2120" placeholder="INSERT INTO soci... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="28" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/img/pontevecchio.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/img/header-bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/img/header.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.310345">
+          <caret line="34" column="105" selection-start-line="34" selection-start-column="105" selection-end-line="34" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.209622">
+          <caret line="499" column="22" selection-start-line="499" selection-start-column="22" selection-end-line="499" selection-end-column="22" />
           <folding />
         </state>
       </provider>
