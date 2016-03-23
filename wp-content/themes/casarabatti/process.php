@@ -8,9 +8,10 @@ try {
 } catch (mysqli_sql_exception $error) {
     echo json_encode(array("error" => $error->getMessage()));
 }
-
-$events = array();
-$query = mysqli_query($con, "select  cal_calendario.id as id,
+switch ($_POST['type']) {
+    case 'fetch':
+        $events = array();
+        $query = mysqli_query($con, "select  cal_calendario.id as id,
                                         cal_clienti.nome as cliente,
                                         cal_calendario.inizio as inizio,
                                         cal_calendario.fine as fine,
@@ -21,20 +22,32 @@ $query = mysqli_query($con, "select  cal_calendario.id as id,
                                  ON cal_ambienti.id = cal_calendario.ambiente
                                  JOIN cal_clienti
                                  ON cal_clienti.id = cal_calendario.cliente");
-if (!$query) {
-    echo json_encode(array("Error:" => mysqli_error($con)));
-    exit();
-}
-while ($fetch = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
-    $e = array();
-    $e['id'] = $fetch['id'];
-    $e['title'] = $fetch['cliente'];
-    $e['start'] = $fetch['inizio'];
-    $e['end'] = $fetch['fine'];
-    $e['color'] = $fetch['colore'];
-    $allday = true;
-    $e['allDay'] = $allday;
-    array_push($events, $e);
-}
+        if (!$query) {
+            echo json_encode(array("Error:" => mysqli_error($con)));
+            exit();
+        }
+        while ($fetch = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
+            $e = array();
+            $e['id'] = $fetch['id'];
+            $e['title'] = $fetch['cliente'];
+            $e['start'] = $fetch['inizio'];
+            $e['end'] = $fetch['fine'];
+            $e['color'] = $fetch['colore'];
+            $allday = true;
+            $e['allDay'] = $allday;
+            array_push($events, $e);
+        }
 
-echo json_encode($events);
+        echo json_encode($events);
+        break;
+
+    case 'new':
+        $inizio = $_POST['inizio'];
+        $fine = $_POST['fine'];
+        $cliente = $_POST['cliente'];
+        $ambiente = $_POST['ambiente'];
+        $insert = mysqli_query($con,"INSERT INTO calendar(`title`, `startdate`, `enddate`, `allDay`) VALUES('$title','$startdate','$startdate','false')");
+        $lastid = mysqli_insert_id($con);
+        echo json_encode(array('status'=>'success','eventid'=>$lastid));
+        break;
+}

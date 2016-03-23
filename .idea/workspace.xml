@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d45683f-af4f-40d5-aee8-5ea03b183e37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-db.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-others.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-plugins.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-themes.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-uploads.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/img/genesi.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.0a10f531aecc.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-23-2142_Casa_Rabatti_be1ec765dfab-db.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-23-2142_Casa_Rabatti_be1ec765dfab-others.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-23-2142_Casa_Rabatti_be1ec765dfab-plugins.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-23-2142_Casa_Rabatti_be1ec765dfab-themes.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-23-2142_Casa_Rabatti_be1ec765dfab-uploads.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.be1ec765dfab.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/clientiSubmit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/calendar.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/calendar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/clienti.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/clienti.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/agenda-views.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/agenda-views.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/background-events.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/background-events.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/default.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/default.html" />
@@ -23,6 +19,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/languages.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/languages.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/selectable.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/selectable.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/timezones.html" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/fullcalendar-2.6.1/demos/timezones.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/process.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/process.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/style.css" />
     </list>
     <ignored path="casarabatti.iws" />
@@ -44,38 +42,7 @@
     <favorites_list name="casarabatti" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.310345">
-              <caret line="34" column="105" selection-start-line="34" selection-start-column="105" selection-end-line="34" selection-end-column="105" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.209622">
-              <caret line="499" column="22" selection-start-line="499" selection-start-column="22" selection-end-line="499" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="creative.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="28" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,18 +66,21 @@
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/nggallery/gallery-one.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/nggallery/gallery-limonaia.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/process.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/calendarConnect.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/calendar.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/clienti.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletter.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/clienti.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/process.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/nazioni.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/nazioni.json" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/clientiSubmit.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/calendar.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js" />
       </list>
     </option>
   </component>
@@ -154,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,7 +219,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="casarabatti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="casarabatti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="casarabatti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -281,7 +278,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,17 +291,17 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/css" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/img" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/font-awesome/old" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/db-scripts" />
       <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/img" />
       <recent name="$PROJECT_DIR$/wp-content/plugins" />
       <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/fonts" />
       <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/font-awesome" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/css" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/img" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/casarabatti/font-awesome/old" />
     </key>
   </component>
   <component name="RunManager">
@@ -383,7 +379,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458588862449</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="iniziata gestione newsletter">
+      <created>1458686434675</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1458686434675</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -394,21 +396,21 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31492537" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -428,29 +430,14 @@
     <MESSAGE value="aggiornata interfaccia grafica" />
     <MESSAGE value="iniziato sviluppo backend del calendario" />
     <MESSAGE value="aggiunto backup db" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunto backup db" />
+    <MESSAGE value="iniziata gestione newsletter" />
+    <option name="LAST_COMMIT_MESSAGE" value="iniziata gestione newsletter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="174" column="49" selection-start-line="174" selection-start-column="49" selection-end-line="174" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -463,7 +450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -494,7 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,27 +678,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/clienti.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/db-scripts/20160321-backup.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4827585">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.775">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,15 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.05872757">
           <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/calendar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7340946">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,7 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.64763457">
           <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,36 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05872757">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/process.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.37037">
-          <caret line="37" column="1" selection-start-line="23" selection-start-column="0" selection-end-line="37" selection-end-column="1" />
-          <folding>
-            <marker date="1458501678114" expanded="true" signature="308:1006" placeholder="select cal_c... cal_calendario" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="15" column="89" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="89" />
-          <folding>
-            <marker date="1458684242097" expanded="true" signature="1658:1713" placeholder="SELECT count... soci" />
-            <marker date="1458684242097" expanded="true" signature="2065:2120" placeholder="INSERT INTO soci... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="28" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,7 +723,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.310345">
+        <state vertical-scroll-proportion="0.029363785">
           <caret line="34" column="105" selection-start-line="34" selection-start-column="105" selection-end-line="34" selection-end-column="105" />
           <folding />
         </state>
@@ -803,8 +731,95 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.209622">
-          <caret line="499" column="22" selection-start-line="499" selection-start-column="22" selection-end-line="499" selection-end-column="22" />
+        <state vertical-scroll-proportion="-20.037037">
+          <caret line="617" column="0" selection-start-line="617" selection-start-column="0" selection-end-line="617" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74285716">
+          <caret line="113" column="15" selection-start-line="95" selection-start-column="8" selection-end-line="113" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0025445">
+          <caret line="64" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="24" />
+          <folding>
+            <marker date="1458684242097" expanded="true" signature="1658:1713" placeholder="SELECT count... soci" />
+            <marker date="1458684242097" expanded="true" signature="2065:2120" placeholder="INSERT INTO soci... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/clientiSubmit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4477612">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <marker date="1458774296485" expanded="true" signature="1055:1199" placeholder="INSERT INTO cal_clienti... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/process.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2114428">
+          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+          <folding>
+            <marker date="1458768304543" expanded="true" signature="367:1065" placeholder="select cal_c... cal_calendario" />
+            <marker date="1458768304543" expanded="true" signature="1857:1971" placeholder="INSERT INTO calendar... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/clienti.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4477612">
+          <caret line="10" column="111" selection-start-line="10" selection-start-column="111" selection-end-line="10" selection-end-column="111" />
+          <folding>
+            <marker date="1458767613740" expanded="true" signature="245:315" placeholder="SELECT nome cal_clienti" />
+            <marker date="1458767613740" expanded="true" signature="245:331" placeholder="SELECT nome cal_clienti" />
+            <marker date="1458767613740" expanded="true" signature="245:333" placeholder="SELECT nome cal_clienti" />
+            <marker date="1458767613740" expanded="true" signature="245:473" placeholder="SELECT nome cal_clienti" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/calendar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8103448">
+          <caret line="84" column="84" selection-start-line="84" selection-start-column="84" selection-end-line="84" selection-end-column="84" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+            <marker date="1458775696149" expanded="true" signature="172:254" placeholder="SELECT * FRO... cal_ambienti" />
+            <marker date="1458775696149" expanded="true" signature="772:846" placeholder="..." />
+            <marker date="1458775696149" expanded="true" signature="979:3228" placeholder="..." />
+            <marker date="1458775696149" expanded="true" signature="1026:3221" placeholder="..." />
+            <marker date="1458775696149" expanded="true" signature="1062:3210" placeholder="..." />
+            <marker date="1458775696149" expanded="true" signature="1101:1348" placeholder="..." />
+            <marker date="1458775696149" expanded="true" signature="1385:2960" placeholder="..." />
+            <marker date="1458775696149" expanded="true" signature="2027:2212" placeholder="..." />
+            <marker date="1458775696149" expanded="true" signature="2253:2499" placeholder="..." />
+            <marker date="1458775696149" expanded="true" signature="2398:2476" placeholder="..." />
+            <marker date="1458775696149" expanded="true" signature="2540:2716" placeholder="..." />
+            <marker date="1458775696149" expanded="true" signature="2757:2941" placeholder="..." />
+            <marker date="1458775696149" expanded="true" signature="2999:3195" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
           <folding />
         </state>
       </provider>
