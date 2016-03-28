@@ -1,5 +1,6 @@
 jQuery(document).ready(function(){
 
+
   jQuery('#arrivo-cal').datetimepicker({
     format: 'DD/MM/YYYY',
     locale: 'it'
@@ -119,6 +120,8 @@ jQuery(document).ready(function(){
       jQuery("#search-customer").show();
       jQuery('#customer-detail').modal('show');
   });
+
+
 
 });
 

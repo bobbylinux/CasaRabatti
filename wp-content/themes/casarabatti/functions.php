@@ -17,6 +17,7 @@ function casarabatti_scripts()
     wp_register_script( 'bootstrap-datepicker-js', get_template_directory_uri() . '/js/bootstrap.datepicker.min.js',  true );
     wp_register_script( 'bootstrap-datepicker-locale-it-js', get_template_directory_uri() . '/js/bootstrap.datepicker.locale.it.js',  true );
 
+
     wp_enqueue_style( 'bootstrap-css' );
     wp_enqueue_style( 'bootstrap-datepicker-css' );
     wp_enqueue_style( 'font-css' );
@@ -51,6 +52,9 @@ function custom_register_admin_scripts() {
     wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), true );
     wp_register_script( 'bootstrap-datepicker-js', get_template_directory_uri() . '/js/bootstrap.datepicker.min.js',  true );
     wp_register_script( 'bootstrap-datepicker-locale-it-js', get_template_directory_uri() . '/js/bootstrap.datepicker.locale.it.js',  true );
+    wp_register_script( 'ckeditor-js', get_template_directory_uri() . '/sendletter/ckeditor/ckeditor.js', true);
+    wp_register_script( 'ckeditor-adapter-js', get_template_directory_uri() . '/sendletter/ckeditor/adapters/jquery.js', true);
+    wp_register_script( 'sendletter-js', get_template_directory_uri() . '/sendletter/sendletter.js', true);
 
     wp_enqueue_style( 'bootstrap-css' );
     wp_enqueue_style( 'bootstrap-datepicker-css' );
@@ -65,7 +69,10 @@ function custom_register_admin_scripts() {
     wp_enqueue_script( 'fullcalendar-lang' );
     wp_enqueue_script( 'bootstrap-datepicker-js' );
     wp_enqueue_script( 'bootstrap-datepicker-locale-it-js' );
+    wp_enqueue_script( 'ckeditor-js' );
+    wp_enqueue_script( 'ckeditor-adapter-js' );
     wp_enqueue_script( 'custom-javascript' );
+    wp_enqueue_script( 'sendletter-js' );
 
 } // end custom_register_admin_scripts
 add_action( 'admin_enqueue_scripts', 'custom_register_admin_scripts' );
@@ -107,6 +114,18 @@ function mt_calendar_page() {
     include 'calendar.php';
 }
 
+
+function mt_add_newsletter_pages(){
+    add_menu_page( 'Newsletter', 'Newsletter', 1/*'manage_options'*/,'any-url' /*'any-url'*/, 'mt_newsletter_page', 'dashicons-external', 7 );
+}
+
+function mt_newsletter_page(){
+    include 'sendletter/sendletter.php';
+}
+
+add_action( 'admin_menu', 'mt_add_newsletter_pages' );
+
 add_action('admin_menu', 'mt_add_calendar_pages');
+
 ?>
 
