@@ -17,7 +17,7 @@ try {
 
 $subject = isset($_POST['oggetto']) ? trim($_POST['oggetto']) : '';
 $message = isset($_POST['testo']) ? trim($_POST['testo']) : '';
-//$subject = addslashes($subject);
+$subject = addslashes($subject);
 $message = str_replace("\n", "<br>", "$message");
 $message = addslashes($message);
 $date = date('d-m-Y H:i', time());

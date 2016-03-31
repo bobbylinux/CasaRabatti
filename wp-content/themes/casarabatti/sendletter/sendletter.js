@@ -1,7 +1,7 @@
 jQuery(document).ready(function () {
 
     var $selectedVar = false;
-
+    var $body = jQuery("body");
     jQuery(document).on("submit", "#form-newsletter", function (event) {
         event.preventDefault();
 
@@ -102,4 +102,119 @@ jQuery(document).ready(function () {
         return allSelected;
     }
 
+    jQuery(document).on("click","#btn-add-interesse",function(event){
+        event.preventDefault();
+        // process the form
+        var formData = {
+            'interesse': jQuery("#interesse-input").val(),
+            'type'     : 'add'
+
+        };
+
+
+        jQuery(".wait-msg").modal('show');
+
+        jQuery.ajax({
+            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url: '../wp-content/themes/casarabatti/sendletter/interessiSubmit.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            encode: true
+        })
+            // using the done promise callback
+            .done(function (data) {
+                jQuery(".wait-msg").modal('hide');
+                console.log(data);
+                if (data.success == true) {
+                    jQuery("#table-interessi tr:last").after(data.message);
+                    jQuery("#interesse-input").val("");
+                } else {
+                    jQuery("#error-msg-text").html(data.errors);
+                    jQuery(".error-msg").modal("show");
+                }
+
+            });
+    });
+
+    jQuery(document).on("click",".btn-del-interesse",function(event){
+        event.preventDefault();
+        // process the form
+        var formData = {
+            'type'     : 'delete',
+            'id'       : jQuery(this).data("id")
+
+        };
+
+        jQuery(".wait-msg").modal('show');
+        jQuery.ajax({
+            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url: '../wp-content/themes/casarabatti/sendletter/interessiSubmit.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            context: this,
+            encode: true
+        })
+            // using the done promise callback
+            .done(function (data) {
+                jQuery(".wait-msg").modal('hide');
+                console.log(data);
+                if (data.success == true) {
+                    jQuery(this).closest('tr').remove();
+                } else {
+                    jQuery("#error-msg-text").html(data.errors);
+                    jQuery(".error-msg").modal("show");
+                }
+
+            });
+    });
+
+    jQuery(document).on("click",".btn-edit-interesse",function(event){
+        event.preventDefault();
+        jQuery(this).html("Salva");
+        jQuery(this).closest("tr").find(".interesse-edit-input").show();
+        jQuery(this).closest("tr").find(".interesse-td").hide();
+        jQuery(this).removeClass("btn-edit-interesse");
+        jQuery(this).addClass("btn-save-interesse");
+    });
+
+    jQuery(document).on("click",".btn-save-interesse",function(event){
+        event.preventDefault();
+        // process the form
+        var formData = {
+            'type'     : 'edit',
+            'id'       : jQuery(this).data("id"),
+            'interesse': jQuery(this).closest("tr").find(".interesse-edit-input").val()
+
+        };
+
+
+        jQuery(".wait-msg").modal('show');
+
+        jQuery.ajax({
+            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url: '../wp-content/themes/casarabatti/sendletter/interessiSubmit.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            encode: true,
+            context: this
+        })
+            // using the done promise callback
+            .done(function (data) {
+                jQuery(".wait-msg").modal('hide');
+                console.log(data);
+                if (data.success == true) {
+                    jQuery(this).html("Modifica");
+                    jQuery(this).removeClass("btn-save-interesse");
+                    jQuery(this).addClass("btn-edit-interesse");
+                    jQuery(this).closest("tr").find(".interesse-td").html(jQuery(this).closest("tr").find(".interesse-edit-input").val());
+                    jQuery(this).closest("tr").find(".interesse-edit-input").hide();
+                    jQuery(this).closest("tr").find(".interesse-td").show();
+                } else {
+                    jQuery("#error-msg-text").html(data.errors);
+                    jQuery(".error-msg").modal("show");
+                }
+
+            });
+    });
 });
+
