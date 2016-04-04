@@ -1,14 +1,27 @@
 jQuery(document).ready(function () {
-
+    var $submitter = null;
     var $selectedVar = false;
     var $body = jQuery("body");
+
+    jQuery(document).on("click",".btn-invia", function(event) {
+
+        $submitter = jQuery(this).html();
+    });
+
+    jQuery(document).on("click",".btn-invia-prova", function(event) {
+
+        $submitter = jQuery(this).html();
+    });
+
     jQuery(document).on("submit", "#form-newsletter", function (event) {
         event.preventDefault();
 
+        jQuery(".wait-msg").modal('show');
 
         jQuery("#subject-error").hide();
         jQuery("#message-error").hide();
         jQuery("#interessi-error").hide();
+
 
         var chkArray = [];
 
@@ -25,8 +38,8 @@ jQuery(document).ready(function () {
             'oggetto': jQuery("#subject-newsletter").val(),
             'testo': jQuery("#text-newsletter").val(),
             'interessi': selected,
-            'interessiTutti': jQuery("#all-selected-newsletter").val()
-
+            'interessiTutti': jQuery("#all-selected-newsletter").val(),
+            'invio' : $submitter
         };
 
 
@@ -40,6 +53,8 @@ jQuery(document).ready(function () {
         })
             // using the done promise callback
             .done(function (data) {
+
+                console.log(data);
                 if (typeof data.errors !== 'undefined') {
                     $num = data.errors.length;
                     for ($i = 0; $i < $num; $i++) {
@@ -53,8 +68,31 @@ jQuery(document).ready(function () {
                             jQuery("#interessi-error").show();
                         }
                     }
+
+                    jQuery(".wait-msg").modal('hide');
                 } else {
-                    jQuery("#modal-invio").modal('show');
+                    if (typeof data.message !== 'undefined') {
+                        if (data.message == "fake") {
+                            jQuery.ajax({
+                                type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+                                url: '../wp-content/themes/casarabatti/sendletter/mailAjax.php', // the url where we want to POST
+                                data: formData, // our data object
+                                dataType: 'json', // what type of data do we expect back from the server
+                                encode: true
+
+                            }).done(function (data) {
+
+                                jQuery(".wait-msg").modal('hide');
+                                jQuery("#modal-invio-prova").modal('show');
+
+                            });
+                        } else {
+
+                            jQuery(".wait-msg").modal('hide');
+                            jQuery("#modal-invio").modal('show');
+                        }
+                    }
+
                 }
 
             });
@@ -216,5 +254,187 @@ jQuery(document).ready(function () {
 
             });
     });
+
+
+    jQuery(document).on("click",".btn-del-iscritto",function(event){
+        event.preventDefault();
+        // process the form
+        var formData = {
+            'type'     : 'delete',
+            'id'       : jQuery(this).data("id")
+
+        };
+
+        jQuery(".wait-msg").modal('show');
+        jQuery.ajax({
+            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url: '../wp-content/themes/casarabatti/sendletter/iscrittiSubmit.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            context: this,
+            encode: true
+        })
+            // using the done promise callback
+            .done(function (data) {
+                jQuery(".wait-msg").modal('hide');
+                console.log(data);
+                if (data.success == true) {
+                    jQuery(this).closest('tr').remove();
+                } else {
+                    jQuery("#error-msg-text").html(data.errors);
+                    jQuery(".error-msg").modal("show");
+                }
+
+            });
+    });
+
+    jQuery(document).on("click",".btn-confirm-iscritto",function(event){
+        event.preventDefault();
+        // process the form
+        var formData = {
+            'type'     : 'confirm',
+            'id'       : jQuery(this).data("id")
+
+        };
+
+        jQuery(".wait-msg").modal('show');
+        jQuery.ajax({
+            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url: '../wp-content/themes/casarabatti/sendletter/iscrittiSubmit.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            context: this,
+            encode: true
+        })
+            // using the done promise callback
+            .done(function (data) {
+                jQuery(".wait-msg").modal('hide');
+                console.log(data);
+                if (data.success == true) {
+                    jQuery(this).closest('tr').remove();
+                } else {
+                    jQuery("#error-msg-text").html(data.errors);
+                    jQuery(".error-msg").modal("show");
+                }
+
+            });
+    });
+
+
+    jQuery(document).on("click","#btn-add-iscritto-prova",function(event){
+        event.preventDefault();
+        // process the form
+        var formData = {
+            'indirizzo': jQuery("#iscritto-prova-input").val(),
+            'type'     : 'add'
+
+        };
+
+
+        jQuery(".wait-msg").modal('show');
+
+        jQuery.ajax({
+            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url: '../wp-content/themes/casarabatti/sendletter/iscrittiProvaSubmit.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            encode: true
+        })
+            // using the done promise callback
+            .done(function (data) {
+                jQuery(".wait-msg").modal('hide');
+                console.log(data);
+                if (data.success == true) {
+                    jQuery("#table-iscritti-prova tr:last").after(data.message);
+                    jQuery("#iscritto-prova-input").val("");
+                } else {
+                    jQuery("#error-msg-text").html(data.errors);
+                    jQuery(".error-msg").modal("show");
+                }
+
+            });
+    });
+
+    jQuery(document).on("click",".btn-edit-iscritto-prova",function(event){
+        event.preventDefault();
+        jQuery(this).html("Salva");
+        jQuery(this).closest("tr").find(".iscritto-prova-edit-input").show();
+        jQuery(this).closest("tr").find(".iscritto-prova-td").hide();
+        jQuery(this).removeClass("btn-edit-iscritto-prova");
+        jQuery(this).addClass("btn-save-iscritto-prova");
+    });
+
+    jQuery(document).on("click",".btn-save-iscritto-prova",function(event){
+        event.preventDefault();
+        // process the form
+        var formData = {
+            'type'     : 'edit',
+            'id'       : jQuery(this).data("id"),
+            'indirizzo': jQuery(this).closest("tr").find(".iscritto-prova-edit-input").val()
+
+        };
+
+
+        jQuery(".wait-msg").modal('show');
+
+        jQuery.ajax({
+            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url: '../wp-content/themes/casarabatti/sendletter/iscrittiProvaSubmit.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            encode: true,
+            context: this
+        })
+            // using the done promise callback
+            .done(function (data) {
+                jQuery(".wait-msg").modal('hide');
+                console.log(data);
+                if (data.success == true) {
+                    jQuery(this).html("Modifica");
+                    jQuery(this).removeClass("btn-save-iscritto-prova");
+                    jQuery(this).addClass("btn-edit-iscritto-prova");
+                    jQuery(this).closest("tr").find(".iscritto-prova-td").html(jQuery(this).closest("tr").find(".iscritto-prova-edit-input").val());
+                    jQuery(this).closest("tr").find(".iscritto-prova-edit-input").hide();
+                    jQuery(this).closest("tr").find(".iscritto-prova-td").show();
+                } else {
+                    jQuery("#error-msg-text").html(data.errors);
+                    jQuery(".error-msg").modal("show");
+                }
+
+            });
+    });
+
+    jQuery(document).on("click",".btn-del-iscritto-prova",function(event){
+        event.preventDefault();
+        // process the form
+        var formData = {
+            'type'     : 'delete',
+            'id'       : jQuery(this).data("id")
+
+        };
+
+        jQuery(".wait-msg").modal('show');
+        jQuery.ajax({
+            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url: '../wp-content/themes/casarabatti/sendletter/iscrittiProvaSubmit.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            context: this,
+            encode: true
+        })
+            // using the done promise callback
+            .done(function (data) {
+                jQuery(".wait-msg").modal('hide');
+                console.log(data);
+                if (data.success == true) {
+                    jQuery(this).closest('tr').remove();
+                } else {
+                    jQuery("#error-msg-text").html(data.errors);
+                    jQuery(".error-msg").modal("show");
+                }
+
+            });
+    });
+
 });
 

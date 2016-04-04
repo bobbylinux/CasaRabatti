@@ -2,36 +2,287 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d45683f-af4f-40d5-aee8-5ea03b183e37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-28-2238_Casa_Rabatti_a6fab027cff8-db.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-28-2238_Casa_Rabatti_a6fab027cff8-others.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-28-2238_Casa_Rabatti_a6fab027cff8-plugins.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-28-2238_Casa_Rabatti_a6fab027cff8-themes.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-28-2238_Casa_Rabatti_a6fab027cff8-uploads.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-31-2041_Casa_Rabatti_d37faaa56fd8-db.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-31-2041_Casa_Rabatti_d37faaa56fd8-others.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-31-2041_Casa_Rabatti_d37faaa56fd8-plugins.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-31-2041_Casa_Rabatti_d37faaa56fd8-themes.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-31-2041_Casa_Rabatti_d37faaa56fd8-uploads.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-31-2045_Casa_Rabatti_813bcf794e09-db.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-31-2045_Casa_Rabatti_813bcf794e09-others.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-31-2045_Casa_Rabatti_813bcf794e09-plugins.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-31-2045_Casa_Rabatti_813bcf794e09-themes.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-31-2045_Casa_Rabatti_813bcf794e09-uploads.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/interessiSubmit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.813bcf794e09.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.a6fab027cff8.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.be1a3a9227b5.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.d37faaa56fd8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-04-04-1914_Casa_Rabatti_7aaf68cd8b90-db.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-04-04-1914_Casa_Rabatti_7aaf68cd8b90-others.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-04-04-1914_Casa_Rabatti_7aaf68cd8b90-plugins.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-04-04-1914_Casa_Rabatti_7aaf68cd8b90-themes.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-04-04-1914_Casa_Rabatti_7aaf68cd8b90-uploads.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-04-04-2051_Casa_Rabatti_ba7fe7d621a8-db.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-04-04-2051_Casa_Rabatti_ba7fe7d621a8-others.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-04-04-2051_Casa_Rabatti_ba7fe7d621a8-plugins.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-04-04-2051_Casa_Rabatti_ba7fe7d621a8-themes.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-04-04-2051_Casa_Rabatti_ba7fe7d621a8-uploads.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/errlog02.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201604042142.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201604042143.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201604042144.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201604042145.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201604042223.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201604042231.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201604042234.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201604042235.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201604042236.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201604042237.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201604042313.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/iscrittiProvaSubmit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/iscrittiSubmit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.7aaf68cd8b90.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.ba7fe7d621a8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/mailAjax.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/mailFunction.php" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-20-1958_Casa_Rabatti_9ff459833574-db.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-20-1958_Casa_Rabatti_9ff459833574-others.zip" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-20-1958_Casa_Rabatti_9ff459833574-plugins.zip" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-20-1958_Casa_Rabatti_9ff459833574-themes.zip" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-20-1958_Casa_Rabatti_9ff459833574-uploads.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-db.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-others.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-plugins.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-themes.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-22-2045_Casa_Rabatti_0a10f531aecc-uploads.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-23-2142_Casa_Rabatti_be1ec765dfab-db.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-23-2142_Casa_Rabatti_be1ec765dfab-others.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-23-2142_Casa_Rabatti_be1ec765dfab-plugins.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-23-2142_Casa_Rabatti_be1ec765dfab-themes.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-23-2142_Casa_Rabatti_be1ec765dfab-uploads.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-26-1942_Casa_Rabatti_819afe2ed0af-db.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-26-1942_Casa_Rabatti_819afe2ed0af-others.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-26-1942_Casa_Rabatti_819afe2ed0af-plugins.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-26-1942_Casa_Rabatti_819afe2ed0af-themes.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-26-1942_Casa_Rabatti_819afe2ed0af-uploads.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-27-2227_Casa_Rabatti_3d2960cec892-db.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-27-2227_Casa_Rabatti_3d2960cec892-others.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-27-2227_Casa_Rabatti_3d2960cec892-plugins.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-27-2227_Casa_Rabatti_3d2960cec892-themes.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/backup_2016-03-27-2227_Casa_Rabatti_3d2960cec892-uploads.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.0a10f531aecc.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.3d2960cec892.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.819afe2ed0af.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.9ff459833574.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/log.be1ec765dfab.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/Front_end/maps_front_end_view.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/admin/circle_func.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/admin/huge_it_featured_plugins.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/admin/maps_func.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/admin/maps_view.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/admin/marker_func.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/admin/polygone_func.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/admin/polyline_func.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/googlemap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/122.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/123.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/89.GIF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/Huge-It-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/boxik.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/colorbox-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/default-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/edit1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/google-maps-18-x-18.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/google-maps-20-x-20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/huge-it1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icon-user-manual.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/azuremarker16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/azuremarker24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/azuremarker256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/azuremarker48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/azuremarker64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/baseflag16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/baseflag24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/baseflag256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/baseflag48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/baseflag64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/blackmarker16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/blackmarker24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/blackmarker256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/blackmarker48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/blackmarker64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/blueflag16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/blueflag24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/blueflag256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/blueflag48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/blueflag64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/bluemarker16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/bluemarker24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/bluemarker256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/bluemarker48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/bluemarker64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/flagleft16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/flagleft24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/flagleft256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/flagleft48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/flagleft64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/flagright.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/flagright16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/flagright24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/flagright256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/flagright32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/flagright48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/flagright64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/greenflag16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/greenflag24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/greenflag256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/greenflag48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/greenflag64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/greenmarker16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/greenmarker24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/greenmarker256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/greenmarker48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/greenmarker64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/marker16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/marker24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/marker256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/marker48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/marker64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/paperflag16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/paperflag24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/paperflag256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/paperflag48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/paperflag64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkflag16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkflag24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkflag256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkflag48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkflag64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkgreen16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkgreen24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkgreen256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkgreen48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkgreen64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkleft16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkleft24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkleft256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkleft48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkleft64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkright16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkright24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkright256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkright48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinkright64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinleft16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinleft24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinleft256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinleft48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinleft64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinpink16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinpink24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinpink256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinpink32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinpink48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinpink64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinright16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinright24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinright256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinright48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pinright64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointcenter16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointcenter24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointcenter256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointcenter48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointcenter64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointer16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointer24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointer256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointer48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointer64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointleft16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointleft24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointleft256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointleft48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointleft64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointright16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointright24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointright256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointright48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/pointright64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/redflag16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/redflag24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/redflag256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/redflag48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/redflag64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/redmarker16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/redmarker24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/redmarker256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/redmarker48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/redmarker64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/shopmarker16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/shopmarker24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/shopmarker256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/shopmarker48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/shopmarker64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/star16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/star24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/star256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/star48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/star64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/starmarker16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/starmarker24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/starmarker256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/starmarker48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/starmarker64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/toyflag16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/toyflag24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/toyflag256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/toyflag48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/icons/toyflag64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/image-gallery-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/lightbox-logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/maps_img_for_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/potfolio-gallery-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/pro01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/product-catalog-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/share-buttons-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/slider.logo_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/tick.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/tick1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/tick2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/video-gallery-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/wp-forms-logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/wp_banner_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/images/wp_shop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/js/front_end.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/js/js.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/js/maps_ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/js/simple-slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/jscolor/arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/jscolor/cross.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/jscolor/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/jscolor/hs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/jscolor/hv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/jscolor/jscolor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/style/simple-slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-maps/style/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201404031649.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201404031954.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201404032015.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201405051700.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201405081815.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201408081815.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201408221815.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201409021815.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201412051915.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201412101915.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201412291915.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201504121815.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201508061815.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/.htaccess" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/config.inc.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/config.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/mail/contact_me.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/mail/contact_me.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/erroreinvio.log" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/erroreinvio.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/index.html" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/log.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/log.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/mail.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletter.js" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletter.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletterSubmit.php" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletterSubmit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/casarabatti/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/casarabatti/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/sucuri/sucuri-auditqueue.php" afterPath="$PROJECT_DIR$/wp-content/uploads/sucuri/sucuri-auditqueue.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/web.config" afterPath="$PROJECT_DIR$/D:/BACKUP_WP/CASARABATTI/web.config" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="casarabatti.iws" />
@@ -48,12 +299,144 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - casarabatti@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="casarabatti" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="casarabatti" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.125">
+              <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+              <folding>
+                <marker date="1459805015000" expanded="true" signature="7892:7940" placeholder="SELECT ID, n..interessi..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sendletter.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.738924">
+              <caret line="395" column="127" selection-start-line="395" selection-start-column="127" selection-end-line="395" selection-end-column="127" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iscrittiProvaSubmit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/iscrittiProvaSubmit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.9215684">
+              <caret line="52" column="93" selection-start-line="52" selection-start-column="93" selection-end-line="52" selection-end-column="93" />
+              <folding>
+                <marker date="1459811471000" expanded="true" signature="787:838" placeholder="insert into ..." />
+                <marker date="1459811471000" expanded="true" signature="2151:2209" placeholder="UPDATE inter..." />
+                <marker date="1459811471000" expanded="true" signature="2942:2980" placeholder="delete from ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mailAjax.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/mailAjax.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.3333335">
+              <caret line="170" column="45" selection-start-line="170" selection-start-column="45" selection-end-line="170" selection-end-column="45" />
+              <folding>
+                <marker date="1459809313000" expanded="true" signature="1052:1126" placeholder="SELECT count..mail..." />
+                <marker date="1459809313000" expanded="true" signature="1404:1477" placeholder="SELECT id,og..mail..." />
+                <marker date="1459809313000" expanded="true" signature="1508:1603" placeholder="SELECT id,og..mail..." />
+                <marker date="1459809313000" expanded="true" signature="2055:2110" placeholder="UPDATE mail ..." />
+                <marker date="1459809313000" expanded="true" signature="2232:2337" placeholder="DELETE FROM ..." />
+                <marker date="1459809313000" expanded="true" signature="3007:3051" placeholder="..." />
+                <marker date="1459809313000" expanded="true" signature="3349:3455" placeholder="..." />
+                <marker date="1459809313000" expanded="true" signature="3675:3778" placeholder="SELECT DISTI..soci..." />
+                <marker date="1459809313000" expanded="true" signature="3904:4093" placeholder="SELECT DISTI..soci..." />
+                <marker date="1459809313000" expanded="true" signature="4135:4175" placeholder="SELECT DISTI..soci_prova..." />
+                <marker date="1459809313000" expanded="true" signature="6877:7043" placeholder="INSERT INTO ..." />
+                <marker date="1459809313000" expanded="true" signature="7371:7538" placeholder="INSERT INTO ..." />
+                <marker date="1459809313000" expanded="true" signature="7838:7897" placeholder="UPDATE mail ..." />
+                <marker date="1459809313000" expanded="true" signature="8272:8331" placeholder="UPDATE mail ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sendletterSubmit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletterSubmit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.458334">
+              <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+              <folding>
+                <marker date="1459808158000" expanded="true" signature="1770:1890" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/log.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-45.0">
+              <caret line="153" column="18" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/config.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+              <folding>
+                <marker date="1459805569000" expanded="true" signature="342:354" placeholder="..." />
+                <marker date="1459805569000" expanded="true" signature="435:447" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sendletter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.875">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <marker date="1459811230000" expanded="true" signature="251:299" placeholder="SELECT ID, n..interessi..." />
+                <marker date="1459811230000" expanded="true" signature="1022:1220" placeholder="SELECT disti..interessi..." />
+                <marker date="1459811230000" expanded="true" signature="1780:1848" placeholder="SELECT ID, n..soci..." />
+                <marker date="1459811230000" expanded="true" signature="2357:2406" placeholder="SELECT ID, n..soci..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,22 +463,31 @@
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/calendarConnect.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletter.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/clienti.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/process.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/nazioni.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/nazioni.json" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/clientiSubmit.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/calendar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/interessiSubmit.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/mail/contact_me.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/iscrittiSubmit.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/MailClass.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d943f584-9fee-4a81-96e0-f4ae55c0604a/console.sql" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/mailFunction.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/config.inc.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/log.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/mail.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletterSubmit.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/interessiSubmit.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/mailAjax.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletter.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/iscrittiProvaSubmit.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletter.js" />
       </list>
     </option>
@@ -141,6 +533,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,7 +655,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
+              <option name="myItemId" value="sendletter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -279,48 +677,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="casarabatti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="casarabatti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="casarabatti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="casarabatti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db-scripts" />
+              <option name="myItemId" value="plugins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,6 +695,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -429,7 +792,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459198397230</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="iniziata gestione interessi sendletter">
+      <created>1459466348792</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1459466348792</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -438,23 +807,24 @@
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31392932" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3056443" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21831736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31492537" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -476,111 +846,14 @@
     <MESSAGE value="aggiunto backup db" />
     <MESSAGE value="iniziata gestione newsletter" />
     <MESSAGE value="iniziata gestione background sendletter" />
-    <option name="LAST_COMMIT_MESSAGE" value="iniziata gestione background sendletter" />
+    <MESSAGE value="iniziata gestione interessi sendletter" />
+    <option name="LAST_COMMIT_MESSAGE" value="iniziata gestione interessi sendletter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="57" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="57" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/css/animate.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45762712">
-          <caret line="5" column="2264" selection-start-line="5" selection-start-column="2264" selection-end-line="5" selection-end-column="2264" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77795786">
-          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/wow.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/font-awesome/old/scss/_core.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -675,31 +948,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/classie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.19375">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08972268">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/db-scripts/20160321-backup.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4827585">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.05872757">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -725,38 +977,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029363785">
-          <caret line="34" column="105" selection-start-line="34" selection-start-column="105" selection-end-line="34" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.037037">
-          <caret line="617" column="0" selection-start-line="617" selection-start-column="0" selection-end-line="617" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74285716">
-          <caret line="113" column="15" selection-start-line="95" selection-start-column="8" selection-end-line="113" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/clientiSubmit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4477612">
           <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/process.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2114428">
-          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -774,115 +998,296 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/interessi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.03618421">
-          <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/process.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69078946">
+          <caret line="42" column="0" selection-start-line="12" selection-start-column="7" selection-end-line="42" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/classie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8717949">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/rabatti.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01650165">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="53" column="49" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/interessiSubmit.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/contact_me.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8323896">
-          <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
-          <folding>
-            <marker date="1459464694000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1459464694000" expanded="true" signature="-1:-1" placeholder="UPDATE inter..." />
-            <marker date="1459464694000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1459464694000" expanded="true" signature="-1:-1" placeholder="select count..interessi_soci..." />
-            <marker date="1459464694000" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/interessi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1318681">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/mail/contact_me.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/js/creative.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="128" column="53" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/insert_mailing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/iscrittiSubmit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33748585">
+          <caret line="23" column="62" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d943f584-9fee-4a81-96e0-f4ae55c0604a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="95" selection-start-line="0" selection-start-column="95" selection-end-line="0" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/mailFunction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding>
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="select img f..interessi..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="select count..interessi..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="select * fro..interessi..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="SELECT count..mail..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="SELECT id,og..mail..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="SELECT id,og..mail..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="UPDATE mail ..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..soci..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..soci..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..soci_prova..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="UPDATE mail ..." />
+            <marker date="1459802902000" expanded="true" signature="-1:-1" placeholder="UPDATE mail ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletterSubmit.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/newsletterSubmit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31318682">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5674342">
+          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
           <folding>
-            <marker date="1459463316000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1459803054000" expanded="true" signature="-1:-1" placeholder="SELECT count..interessi..." />
+            <marker date="1459803054000" expanded="true" signature="-1:-1" placeholder="SELECT count..soci..." />
+            <marker date="1459803054000" expanded="true" signature="-1:-1" placeholder="SELECT nome ..interessi..." />
+            <marker date="1459803054000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1459803054000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletter.js">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8554604">
-          <caret line="214" column="17" selection-start-line="214" selection-start-column="17" selection-end-line="214" selection-end-column="17" />
+        <state vertical-scroll-proportion="-12.851851">
+          <caret line="499" column="25" selection-start-line="499" selection-start-column="25" selection-end-line="499" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/wonderplugin-slider-creator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/master-slider/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3322785">
+          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wonderplugin-slider/app/class-wonderplugin-slider-view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28399312">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <marker date="1459005654000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1459005654000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.125">
+          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+          <folding>
+            <marker date="1459805015000" expanded="true" signature="7892:7940" placeholder="SELECT ID, n..interessi..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/logs/invio201604042144.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-45.0">
+          <caret line="153" column="18" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5769231">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.14802065">
+          <caret line="170" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
           <folding>
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="SELECT id,og..mail..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="UPDATE mail ..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..soci..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..soci..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="UPDATE mail ..." />
-            <marker date="1444238742000" expanded="true" signature="-1:-1" placeholder="UPDATE mail ..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="SELECT count..mail..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="SELECT id,og..mail..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="SELECT id,og..mail..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="UPDATE mail ..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..soci..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..soci..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..soci_prova..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="UPDATE mail ..." />
+            <marker date="1459807128000" expanded="true" signature="-1:-1" placeholder="UPDATE mail ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/interessiSubmit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28125">
+          <caret line="26" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/mailAjax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3333335">
+          <caret line="170" column="45" selection-start-line="170" selection-start-column="45" selection-end-line="170" selection-end-column="45" />
+          <folding>
+            <marker date="1459809313000" expanded="true" signature="1052:1126" placeholder="SELECT count..mail..." />
+            <marker date="1459809313000" expanded="true" signature="1404:1477" placeholder="SELECT id,og..mail..." />
+            <marker date="1459809313000" expanded="true" signature="1508:1603" placeholder="SELECT id,og..mail..." />
+            <marker date="1459809313000" expanded="true" signature="2055:2110" placeholder="UPDATE mail ..." />
+            <marker date="1459809313000" expanded="true" signature="2232:2337" placeholder="DELETE FROM ..." />
+            <marker date="1459809313000" expanded="true" signature="3007:3051" placeholder="..." />
+            <marker date="1459809313000" expanded="true" signature="3349:3455" placeholder="..." />
+            <marker date="1459809313000" expanded="true" signature="3675:3778" placeholder="SELECT DISTI..soci..." />
+            <marker date="1459809313000" expanded="true" signature="3904:4093" placeholder="SELECT DISTI..soci..." />
+            <marker date="1459809313000" expanded="true" signature="4135:4175" placeholder="SELECT DISTI..soci_prova..." />
+            <marker date="1459809313000" expanded="true" signature="6877:7043" placeholder="INSERT INTO ..." />
+            <marker date="1459809313000" expanded="true" signature="7371:7538" placeholder="INSERT INTO ..." />
+            <marker date="1459809313000" expanded="true" signature="7838:7897" placeholder="UPDATE mail ..." />
+            <marker date="1459809313000" expanded="true" signature="8272:8331" placeholder="UPDATE mail ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <marker date="1459805569000" expanded="true" signature="342:354" placeholder="..." />
+            <marker date="1459805569000" expanded="true" signature="435:447" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletterSubmit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.458334">
+          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+          <folding>
+            <marker date="1459808158000" expanded="true" signature="1770:1890" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7621744">
-          <caret line="177" column="19" selection-start-line="177" selection-start-column="19" selection-end-line="177" selection-end-column="19" />
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
-            <marker date="1459466037000" expanded="true" signature="-1:-1" placeholder="SELECT ID, n..interessi..." />
-            <marker date="1459466037000" expanded="true" signature="-1:-1" placeholder="SELECT ID, n..interessi..." />
-            <marker date="1459466037000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459466037000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1459466037000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459466037000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459466037000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459466037000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459466037000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459466037000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459466037000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459466037000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1459811230000" expanded="true" signature="251:299" placeholder="SELECT ID, n..interessi..." />
+            <marker date="1459811230000" expanded="true" signature="1022:1220" placeholder="SELECT disti..interessi..." />
+            <marker date="1459811230000" expanded="true" signature="1780:1848" placeholder="SELECT ID, n..soci..." />
+            <marker date="1459811230000" expanded="true" signature="2357:2406" placeholder="SELECT ID, n..soci..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/iscrittiProvaSubmit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.9215684">
+          <caret line="52" column="93" selection-start-line="52" selection-start-column="93" selection-end-line="52" selection-end-column="93" />
+          <folding>
+            <marker date="1459811471000" expanded="true" signature="787:838" placeholder="insert into ..." />
+            <marker date="1459811471000" expanded="true" signature="2151:2209" placeholder="UPDATE inter..." />
+            <marker date="1459811471000" expanded="true" signature="2942:2980" placeholder="delete from ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/casarabatti/sendletter/sendletter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.738924">
+          <caret line="395" column="127" selection-start-line="395" selection-start-column="127" selection-end-line="395" selection-end-column="127" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -194,7 +194,7 @@ while ($row_mail = mysqli_fetch_assoc($result_mail)) {
 }
 
 
-echo "done";
+echo json_encode("done");
 
 
 ?>

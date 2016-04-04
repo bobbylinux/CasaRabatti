@@ -1,8 +1,13 @@
 <?php
 require_once('../../../../wp-config.php');
+require_once "config.inc.php";
+include "swift/lib/swift_required.php";
+include "log.php";
+include "mailFunction.php";
 
 $errors         = array();      // array to hold validation errors
 $data           = array();      // array to pass back data
+
 
 try {
     $con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD);
@@ -21,6 +26,13 @@ $subject = addslashes($subject);
 $message = str_replace("\n", "<br>", "$message");
 $message = addslashes($message);
 $date = date('d-m-Y H:i', time());
+$invio = $_POST['invio'];
+$real = true;
+
+if ($invio == "Invia Una Prova") {
+    $real = false;
+}
+
 $interessi = array();
 $interessi = explode(',',$_POST['interessi']);
 $interessiTutti= $_POST['interessiTutti'];
@@ -35,16 +47,22 @@ if ($message == '') {
     $data['errors'][$iCount]  = 'messaggio';
     $iCount++;
 }
-if ($interesse=="" && $interessiTutti=="0") {
+if ($interesse=="" && $interessiTutti=="0" && $real) {
     $data['errors'][$iCount]  = 'interessi';
     $iCount++;
 }
 if ( !empty($data['errors'])) {
     $data['success'] = false;
 } else {
-    $subject = trim($_POST['oggetto']);
-    $message = trim($_POST['testo']);
-    $intQuery = trim($_POST['interessi']);
+    if (!$real) {
+        $intQuery = -1;
+    } else {
+        if ($interessiTutti== "1") {
+            $intQuery = "0";
+        } else {
+            $intQuery = trim($_POST['interessi']);
+        }
+    }
 
     try {
         $query_insert = "INSERT INTO mail (id,oggetto,messaggio,associazione,data,inviare) VALUES (NULL,'$subject','$message','$intQuery',NULL,1);";
@@ -55,6 +73,10 @@ if ( !empty($data['errors'])) {
         $errors['connessione'] = 'Errore in fase di inserimento nel database';
         $data['success'] = false;
         $data['errors']  = $errors;
+    }
+
+    if (!$real) {
+        $data['message'] = "fake";
     }
 
 }

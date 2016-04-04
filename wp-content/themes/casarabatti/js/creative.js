@@ -87,10 +87,24 @@
         e.preventDefault();
         // get the form data
         // there are many ways to get this data using jQuery (you can use the class or id also)
+
+        jQuery(".wait-msg").modal('show');
+        var chkArray = [];
+
+        /* look for all checkboes that have a class 'chk' attached to it and check if it was checked */
+        jQuery(".chk:checked").each(function () {
+            chkArray.push(jQuery(this).val());
+        });
+
+        /* we join the array separated by the comma */
+        var $selected;
+        $selected = chkArray.join(',');
+
         var formData = {
             'nome'              : $("#nome").val(),
             'email'             : $("#email").val(),
-            'captchaResponse'   : $("#g-recaptcha-response").val()
+            'captchaResponse'   : $("#g-recaptcha-response").val(),
+            'interessi'         : $selected,
         };
 
         // process the form
@@ -103,14 +117,20 @@
             })
             // using the done promise callback
             .done(function(data) {
-
+                jQuery(".wait-msg").modal('hide');
                 // log data to the console so we can see
-                if (data.success== true) {
+                if (data.success === true) {
+
                     $('#modal-newsletter').modal('show');
                 } else {
+                    var $errors = "";
                     console.log(data);
+                    $.each( data.errors, function( key, value ) {
+                        $errors += "<p>"+value+ "</p>";
+                    });
+                    jQuery("#error-msg-text").html($errors);
+                    jQuery(".error-msg").modal("show");
                 }
-                // here we will handle errors and validation messages
             });
     })
 

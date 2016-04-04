@@ -42,19 +42,19 @@
     <div class="container-fluid">
         <?php $the_post = get_post(11); ?>
         <div class="row">
-            <div class="col-lg-12 text-center main-title">
+            <div class="col-md-12 text-center main-title">
                 <h2 class="section-heading"><?php echo $the_post->post_title; ?></h2>
                 <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
                      class="img-responsive primary" alt="">
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-lg-offset-1 vcenter">
+            <div class="col-md-5 col-md-offset-1 vcenter">
                 <p class="text-faded">
                     <?php echo $the_post->post_content; ?>
                 </p>
             </div>
-            <div class="col-lg-4 vcenter">
+            <div class="col-md-5 vcenter hidden-sm">
                 <img src="<?php echo get_template_directory_uri() . '/img/header.jpg'; ?>"
                      class="img-responsive" alt="">
             </div>
@@ -62,45 +62,45 @@
     </div>
 </section>
 <section id="locali" class="rooms">
+    <?php $the_post = get_post(16); ?>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-5 vcenter">
+            <div class="col-md-12 text-center main-title">
+                <h2 class="section-heading"><?php echo $the_post->post_title; ?></h2>
+                <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
+                      class="img-responsive primary" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 col-sm-8 col-sm-offset-2 vcenter">
                 <div class="row no-gutter">
-                    <div class="col-lg-6">
+                    <div class="col-sm-6">
                         <a href="#" class="portfolio-box">
                             <?php echo do_shortcode('[nggallery id=20 template=limonaia]'); ?>
                         </a>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-sm-6">
                         <a href="#" class="portfolio-box">
                             <?php echo do_shortcode('[nggallery id=21 template=limonaia]'); ?>
                         </a>
                     </div>
                 </div>
                 <div class="row no-gutter">
-                    <div class="col-lg-6">
+                    <div class="col-sm-6">
                         <a href="#" class="portfolio-box">
                             <?php echo do_shortcode('[nggallery id=22 template=limonaia]'); ?>
                         </a>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-sm-6">
                         <a href="#" class="portfolio-box">
                             <?php echo do_shortcode('[nggallery id=23 template=limonaia]'); ?>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 vcenter">
-                <?php $the_post = get_post(16); ?>
+            <div class="col-md-4 col-sm-8 col-sm-offset-2 vcenter">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading"><?php echo $the_post->post_title; ?></h2>
-                        <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
-                             class="img-responsive primary" alt="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 text-center">
+                    <div class="col-md-12 text-center">
                         <p class="">
                             <?php echo $the_post->post_content; ?>
                         </p>
@@ -111,53 +111,52 @@
 
     </div>
 </section>
-
 <section class="bg-primary welcome" id="dove-siamo">
     <div class="container-fluid">
         <?php $the_post = get_post(18); ?>
         <div class="row">
-            <div class="col-lg-12 text-center main-title">
+            <div class="col-md-12 text-center main-title">
                 <h2 class="section-heading"><?php echo $the_post->post_title; ?></h2>
                 <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
                      class="img-responsive primary" alt="">
             </div>
         </div>
+        <div class="row map-row">
+            <div class="col-xs-10 col-xs-offset-1 vcenter text-center">
+                <?php echo do_shortcode("[huge_it_maps id='1']"); ?>
+            </div>
+        </div>
         <div class="row">
-            <div class="col-lg-5 col-lg-offset-1 vcenter">
+            <div class="col-xs-10 col-xs-offset-1 vcenter text-center">
                 <p class="text-faded">
                     <?php echo $the_post->post_content; ?>
                 </p>
             </div>
-            <div class="col-lg-5 vcenter">
-                <?php echo do_shortcode("[huge_it_maps id='1']"); ?>
-            </div>
         </div>
     </div>
 </section>
-
 <section id="contatti" class="contacts">
-    <div class="container">
-
+    <div class="container-fluid">
         <?php $the_post = get_post(224); ?>
         <div class="row">
-            <div class="col-lg-12 text-center main-title">
+            <div class="col-md-12 text-center main-title">
                 <h2 class="section-heading"><?php echo $the_post->post_title; ?></h2>
                 <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
                      class="img-responsive primary" alt="">
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-md-12 text-center">
                 <p><?php echo $the_post->post_content; ?></p>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-lg-offset-2 text-center">
+            <div class="col-md-4 col-md-offset-2 text-center">
                 <i class="fa fa-phone fa-3x wow bounceIn"></i>
 
                 <p>+39 338.1534159</p>
             </div>
-            <div class="col-lg-4 text-center">
+            <div class="col-md-4 text-center">
                 <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
 
                 <p><a href="mailto:info@casarabatti.it">info@casarabatti.it</a></p>
@@ -169,18 +168,43 @@
 <section class="bg-primary newsletter" id="newsletter">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center main-title">
+            <div class="col-md-12 text-center main-title">
                 <h2 class="section-heading">Newsletter</h2>
                 <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
                      class="img-responsive primary" alt="">
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-md-12 text-center">
                 <p>Se siete interessati a ricevere informazioni da Casa Rabatti
                     <br>iscrivetevi alla nostra mailing list.</p>
             </div>
         </div>
+        <?php
+
+        try {
+            $con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD);
+            mysqli_select_db($con, "casarabatti");
+        } catch (mysqli_sql_exception $error) {
+            echo json_encode(array("error" => $error->getMessage()));
+        }
+        $result_interessi = mysqli_query($con,"SELECT ID, nome FROM interessi ORDER BY nome ASC");
+        $tabCounter = 0;
+        while ($row = mysqli_fetch_assoc($result_interessi)) {
+            if (($tabCounter % 4) == 0) {
+                $interessi .= '<div class="checkbox">';
+            }
+            $interessi .= '<label class="checkbox-inline"><input type="checkbox" class="chk" value="' . $row['ID'] . '" ';
+            $interessi .= ">" . stripslashes($row['nome']);
+            $interessi .= "</label>";
+            if (($tabCounter % 4) == 3) {
+                $interessi .= "</div>";
+            }
+            $tabCounter++;
+        }
+
+
+        ?>
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3 text-center">
                 <form class="form-newsletter">
@@ -190,6 +214,12 @@
                     <div class="form-group">
                         <input type="email" class="form-control" id="email" placeholder="Email">
                     </div>
+                    <?php if ($interessi != "") {?>
+                    <div class="form-group">
+                        <label for="interessi">Sono interessato a:</label>
+                        <?php echo $interessi; ?>
+                    </div>
+                    <?php } ?>
                     <div class="form-group">
                         <div class="g-recaptcha" data-sitekey="6LfagxsTAAAAAA5Cy4nVCL3qs5tTAlFli-qpCf4R"></div>
                     </div>
@@ -203,20 +233,20 @@
 </section>
 <section class="partners" id="partners">
     <div class="container-fluid">
-        <?php $the_post =  get_post(231); ?>
+        <?php $the_post = get_post(231); ?>
         <div class="row">
-            <div class="col-lg-12 text-center main-title">
+            <div class="col-md-12 text-center main-title">
                 <h2 class="section-heading"><?php echo $the_post->post_title; ?></h2>
                 <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
                      class="img-responsive primary" alt="">
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-lg-offset-1 vcenter">
+            <div class="col-md-5 col-md-offset-1 vcenter">
                 <img src="<?php echo get_template_directory_uri() . '/img/genesi.jpg'; ?>"
                      class="img-responsive" alt="">
             </div>
-            <div class="col-lg-6 vcenter">
+            <div class="col-md-5 vcenter">
                 <p>
                     <?php echo $the_post->post_content; ?>
                 </p>
@@ -224,17 +254,52 @@
         </div>
     </div>
 </section>
-<div class="modal fade" id="modal-newsletter" tabindex="-1" role="dialog">
+<div class="modal fade newsletter-confirm" id="modal-newsletter" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-                <p>Iscrizione alla newsletter avvenuta correttamente<br>A breve riceverai una mail di conferma</p>
+                <p>Richiesta di iscrizione alla newsletter avvenuta correttamente<br>A breve riceverai una mail di conferma</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade wait-msg" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                    </div>
+                </div>
+                <h4 class="text-center">Attendere Prego</h4>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade error-msg" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+
+                <h4 class="modal-title">Errore</h4>
+            </div>
+            <div class="modal-body text-center">
+
+                <p id="error-msg-text"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">Chiudi</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

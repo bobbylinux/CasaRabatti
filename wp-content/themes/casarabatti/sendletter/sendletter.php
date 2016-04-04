@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once('../wp-config.php');
 require_once "../wp-content/themes/casarabatti/sendletter/log.php";
 
@@ -9,14 +8,17 @@ try {
 
     $result = mysqli_query($con, 'SELECT ID, nome FROM interessi ORDER BY nome ASC');
 
-    $tabCounter = 0;
+    $tabellaInteressi ="";
     while ($row = mysqli_fetch_assoc($result)) {
-        $tabellaInteressi .= '<tr><td class="col-xs-8"><span class="interesse-td">'.stripslashes($row["nome"]).'</span><input type="text" class="form-control interesse-edit-input" value="'.$row["nome"].'" ></td><td class="col-xs-4 text-right"><button type="button" class="btn btn-primary btn-edit-interesse" data-id="'.$row["ID"].'">Modifica</button><button type="button" class="btn btn-danger btn-del-interesse" data-id="'.$row["ID"].'">Elimina</button></td></tr>';
-
-
+        $tabellaInteressi .= '<tr><td class="col-xs-8"><span class="interesse-td">'.stripslashes($row["nome"]).'</span><input type="text" class="form-control interesse-edit-input" value="'.stripslashes($row["nome"]).'" ></td><td class="col-xs-4 text-right"><button type="button" class="btn btn-primary btn-edit-interesse" data-id="'.$row["ID"].'">Modifica</button><button type="button" class="btn btn-danger btn-del-interesse" data-id="'.$row["ID"].'">Elimina</button></td></tr>';
     }
 
-    $result_join = mysqli_query($con,"SELECT ID, nome FROM interessi INNER JOIN interessi_soci ON id = id_interesse");
+    if ($tabellaInteressi == "") {
+        $interessiTutti = "1";
+    } else {
+        $interessiTutti = "0";
+    }
+    $result_join = mysqli_query($con,"SELECT distinct interessi.ID as ID, interessi.nome FROM interessi INNER JOIN interessi_soci ON interessi.id = id_interesse JOIN soci ON soci.id = id_socio WHERE soci.confermato = 1 ORDER BY nome ASC");
     $tabCounter = 0;
     while ($row_join = mysqli_fetch_assoc($result_join)) {
         if (($tabCounter % 4) == 0) {
@@ -29,6 +31,18 @@ try {
             $interessi .= "</div>";
         }
         $tabCounter++;
+    }
+
+    $result_iscritti = mysqli_query($con, "SELECT ID, nome, mail FROM soci WHERE confermato = 0 ORDER BY id ASC");
+
+    while ($row = mysqli_fetch_assoc($result_iscritti)) {
+        $tabellaIscritti .= '<tr><td class="col-xs-8"><span class="inscritto-td">'.stripslashes($row["nome"]).' - '.$row["mail"].'</span></td><td class="col-xs-4 text-right"><button type="button" class="btn btn-primary btn-confirm-iscritto" data-id="'.$row["ID"].'">Conferma</button><button type="button" class="btn btn-danger btn-del-iscritto" data-id="'.$row["ID"].'">Elimina</button></td></tr>';
+    }
+
+    $result_prova = mysqli_query($con, "SELECT id, mail FROM soci_prova ORDER BY mail ASC");
+
+    while ($row = mysqli_fetch_assoc($result_prova)) {
+        $tabellaIscrittiProva .= '<tr><td class="col-xs-8"><span class="iscritto-prova-td">'.$row["mail"].'</span><input type="text" class="form-control iscritto-prova-edit-input" value="'.$row["mail"].'" ></td><td class="col-xs-4 text-right"><button type="button" class="btn btn-primary btn-edit-iscritto-prova" data-id="'.$row["id"].'">Modifica</button><button type="button" class="btn btn-danger btn-del-iscritto-prova" data-id="'.$row["id"].'">Elimina</button></td></tr>';
     }
 
 } catch (mysqli_sql_exception $error) {
@@ -44,11 +58,11 @@ try {
         left: 10%;
 
     }
-    .interesse-edit-input {
+    .interesse-edit-input, .iscritto-prova-edit-input {
         display: none;
     }
 
-    .interessi-modal {
+    .interessi-modal, .iscritti-modal, .iscritti-prova-modal {
         left: 10%;
     }
     .alert {
@@ -67,8 +81,9 @@ try {
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <!-- Large modal -->
             <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target=".interessi-modal">Gestione Interessi</button>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".iscritti-modal">Gestione Iscritti</button>
+            <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target=".iscritti-prova-modal">Gestione Invio Prova</button>
         </div>
     </div>
     <?php
@@ -96,10 +111,14 @@ try {
 
             <div class="alert alert-danger" id="message-error" role="alert">Non hai inserito il messaggio.</div>
         </div>
-        <input type="hidden" class="form-control" id="all-selected-newsletter" placeholder="Oggetto"
-               value="0">
+        <input type="hidden" class="form-control" id="all-selected-newsletter"
+               value="<?php echo $interessiTutti;?>">
         <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block">Invia</button>
+            <button type="submit" class="btn btn-primary btn-block btn-invia">Invia</button>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-warning btn-block btn-invia-prova">Invia Una Prova</button>
         </div>
     </form>
 </div>
@@ -119,6 +138,23 @@ try {
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modal-invio-prova">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Newsletter</h4>
+            </div>
+            <div class="modal-body">
+                <p>Invio di prova effettuato. Tra poco riceverai la mail agli indirizzi inseriti nella sezione di prova</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <div class="modal fade interessi-modal" tabindex="-1" role="dialog" >
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -148,6 +184,70 @@ try {
                             <tr><th>Interesse</th><th></th></tr>
                             </thead>
                             <?php echo $tabellaInteressi; ?>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning btn-block" data-dismiss="modal">Chiudi</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade iscritti-modal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Iscritti da confermare</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <table class="table table-striped" id="table-soci">
+                            <thead>
+                            <tr><th>Iscritto</th><th></th></tr>
+                            </thead>
+                            <?php echo $tabellaIscritti; ?>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning btn-block" data-dismiss="modal">Chiudi</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade iscritti-prova-modal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Gestione Invio Prova</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Iscritti Per Prova</label>
+                                <input type="text" class="form-control" id="iscritto-prova-input" placeholder="Indirizzo Mail">
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-block btn-success" id="btn-add-iscritto-prova">Aggiungi Indirizzo Mail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <table class="table table-striped" id="table-iscritti-prova">
+                            <thead>
+                            <tr><th>Indirizzo</th><th></th></tr>
+                            </thead>
+                            <?php echo $tabellaIscrittiProva; ?>
                         </table>
                     </div>
                 </div>

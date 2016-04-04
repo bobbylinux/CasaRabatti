@@ -61,7 +61,6 @@ h6 {
 
 p {
     margin-bottom: 20px;
-    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -84,7 +83,7 @@ p {
 }
 
 .rooms {
-    padding: 15% 0% 15% 10%;
+    padding: 15% 0% 15% 0;
     min-height: 100%;
 }
 
@@ -153,7 +152,7 @@ p {
     background-color: transparent;
 }
 
-/*@media(min-width:768px) {
+@media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
         background-color: transparent;
@@ -202,7 +201,7 @@ p {
     .navbar-default.affix .nav>li>a:focus:hover {
         color: #f05f40;
     }
-}*/
+}
 
 header {
     width: 100%;
@@ -216,7 +215,7 @@ header {
 }
 
 
-@media(min-width:768px) {
+/*@media(min-width:768px) {*/
 
     header .header-content {
     }
@@ -232,7 +231,7 @@ header {
         max-width: 80%;
         font-size: 18px;
     }
-}
+/*}*/
 
 .section-heading {
     margin-top: 0;
@@ -498,8 +497,8 @@ body {
 .reservation {
     color: #f2f2f2;
     padding-top: 15px;
+    padding-bottom: 10px;
     text-align: center;
-    height: 100px;
     background-color: #191e23;
 }
 
@@ -589,14 +588,9 @@ ul.social-buttons li a:active {
     margin: 0 auto;
 }
 
-.main-title {
-    margin-bottom: 100px;
-}
-
 .master-slider{
     height: 100% !important;
 }
-
 
 .gallery-holder {
     width: 100% !important;
@@ -615,3 +609,40 @@ ul.social-buttons li a:active {
     transition: all .35s;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    p {
+        font-size: 14px;
+    }
+
+    .main-title {
+        margin-bottom: 50px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    p {
+        font-size: 16px;
+    }
+    .main-title {
+        margin-bottom: 50px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    p {
+        font-size: 18px;
+    }
+
+    .main-title {
+        margin-bottom: 100px;
+    }
+
+}
+
+.map-row {
+    margin-bottom: 5%;
+}

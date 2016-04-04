@@ -23,7 +23,7 @@ class log
 	}
 	
 	function close(){
-		fclose($fileH1);
+		fclose($file1);
 		$fileH1 = FALSE;
 	}
 	
