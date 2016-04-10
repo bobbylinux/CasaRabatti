@@ -37,28 +37,23 @@
             </button>
             <a class="navbar-brand page-scroll" href="#page-top"><img src="<?php echo get_template_directory_uri(). '/img/logo.png';?>" class="img-responsive" alt=""></a>
         </div>
-
+        <?php
+        $menu = wp_menu_id_by_name("HomeMenu");
+        ?>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+                <?php
+                $menuArray = wp_get_nav_menu_items (5);
+                foreach ($menuArray as $menuItem) {
+                    $menuId = str_replace(' ', '-', $menuItem->title);
+                ?>
                 <li>
-                    <a class="page-scroll" href="#struttura">STRUTTURA</a>
+                    <a class="page-scroll" href="#<?php echo strtolower($menuId); ?>"><?php echo $menuItem->title; ?></a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#locali">LOCALI</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#dove-siamo">DOVE SIAMO</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contatti">CONTATTI</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#newsletter">NEWSLETTER</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#partners">PARTNERS</a>
-                </li>
+                <?php
+                }
+                ?>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

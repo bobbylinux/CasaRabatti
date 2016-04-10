@@ -7,4 +7,10 @@ CKEDITOR.editorConfig = function( config ) {
 	// Define changes to default configuration here. For example:
 	// config.language = 'fr';
 	// config.uiColor = '#AADC6E';
+
+    config.extraPlugins = 'link';
+    config.extraPlugins = 'attach';
+    config.extraPlugins = 'uploadimage';
+    config.uploadUrl = '../wp-content/themes/casarabatti/sendletter/upload.php';
 };
+

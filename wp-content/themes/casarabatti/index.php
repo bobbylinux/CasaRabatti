@@ -38,12 +38,16 @@
         </form>
     </div>
 </section>
-<section class="bg-primary welcome" id="struttura">
+<?php
+    $the_post = get_post(11);
+    $postId = str_replace(' ', '-', __($the_post->post_title));
+?>
+
+<section class="bg-primary welcome" id="<?php echo strtolower($postId);?>">
     <div class="container-fluid">
-        <?php $the_post = get_post(11); ?>
         <div class="row">
             <div class="col-md-12 text-center main-title">
-                <h2 class="section-heading"><?php echo $the_post->post_title; ?></h2>
+                <h2 class="section-heading"><?php echo /*$the_post->post_title;*/ __($the_post->post_title); ?></h2>
                 <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
                      class="img-responsive primary" alt="">
             </div>
@@ -51,7 +55,7 @@
         <div class="row">
             <div class="col-md-5 col-md-offset-1 vcenter">
                 <p class="text-faded">
-                    <?php echo $the_post->post_content; ?>
+                    <?php echo __($the_post->post_content); ?>
                 </p>
             </div>
             <div class="col-md-5 vcenter hidden-sm">
@@ -188,7 +192,7 @@
         } catch (mysqli_sql_exception $error) {
             echo json_encode(array("error" => $error->getMessage()));
         }
-        $result_interessi = mysqli_query($con,"SELECT ID, nome FROM interessi ORDER BY nome ASC");
+        $result_interessi = mysqli_query($con,"SELECT ID, nome FROM interessi WHERE cancellato = 0 ORDER BY nome ASC");
         $tabCounter = 0;
         while ($row = mysqli_fetch_assoc($result_interessi)) {
             if (($tabCounter % 4) == 0) {
@@ -231,8 +235,8 @@
         </div>
     </div>
 </section>
-<section class="partners" id="partners">
-    <div class="container-fluid">
+
+<section id="partners" class="partners">
         <?php $the_post = get_post(231); ?>
         <div class="row">
             <div class="col-md-12 text-center main-title">
@@ -242,18 +246,12 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-5 col-md-offset-1 vcenter">
-                <img src="<?php echo get_template_directory_uri() . '/img/genesi.jpg'; ?>"
-                     class="img-responsive" alt="">
-            </div>
-            <div class="col-md-5 vcenter">
-                <p>
-                    <?php echo $the_post->post_content; ?>
-                </p>
+            <div class="col-md-12 text-center">
+                <p><?php echo $the_post->post_content; ?></p>
             </div>
         </div>
-    </div>
 </section>
+
 <div class="modal fade newsletter-confirm" id="modal-newsletter" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">

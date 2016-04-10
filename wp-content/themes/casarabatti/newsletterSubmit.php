@@ -1,7 +1,7 @@
 <?php
 // getting the captcha
 $captcha = "";
-if (isset($_POST["captchaResponse"]))
+/*if (isset($_POST["captchaResponse"]))
     $captcha = $_POST["captchaResponse"];
 
 if (!$captcha) {
@@ -22,14 +22,12 @@ if ($response["success"] == false) {
     $data['errors'] = $errors;
     echo json_encode($data);
     die;
-}
+}*/
 
 require_once('../../../wp-config.php');
 
 $errors = array();      // array to hold validation errors
 $data = array();      // array to pass back data
-$interessiArray = array();
-$noInteressi = false;
 
 try {
     $con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD);
@@ -47,30 +45,8 @@ if (empty($_POST['nome']))
 if (empty($_POST['email']))
     $errors['email'] = 'Email richiesta.';
 
-try {
-    $query_controllo = "SELECT count(1) as interessi FROM interessi";
-    $return = mysqli_query($con, $query_controllo);
-    $count = 0;
-
-    while ($fetch = mysqli_fetch_array($return, MYSQLI_ASSOC)) {
-        $count = $fetch['interessi'];
-    }
-
-    if ($count == 0) {
-        $noInteressi = true;
-    }
-
-} catch (mysqli_sql_exception $error) {
-    $errors['connessione'] = 'Errore nella query di controllo interessi';
-    $data['success'] = false;
-    $data['errors'] = $errors;
-    echo json_encode($data);
-    exit;
-}
-
-if (empty($_POST['interessi']) && !$noInteressi) {
+if (empty($_POST['interessi']))
     $errors['interessi'] = 'Seleziona almeno un interesse per iscriverti.';
-}
 
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
     $errors['email'] = "Inserire un indirizzo mail valido";
@@ -79,6 +55,7 @@ if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
 if (!empty($errors)) {
     $data['success'] = false;
     $data['errors'] = $errors;
+
 } else {
 
     $nome = mysqli_real_escape_string($con,trim(strtoupper(trim($_POST['nome']))));
@@ -88,35 +65,27 @@ if (!empty($errors)) {
     $query_controllo = "SELECT count(1) as soci FROM soci WHERE mail = '$email'";
     $return = mysqli_query($con, $query_controllo);
     $count = 0;
-
     while ($fetch = mysqli_fetch_array($return, MYSQLI_ASSOC)) {
         $count = $fetch['soci'];
     }
 
     if ($count == 0) {
         try {
-
-            if (!$noInteressi) {
-
-                echo json_encode($data);
-                exit;
-                $query_check_interessi = "SELECT nome FROM interessi WHERE id in ($interessi);";
-                $result = mysqli_query($con, $query_check_interessi);
-                $count = 0;
-                $interessi_testo = "";
-                while ($row_check = mysqli_fetch_assoc($result)) {
-                    $count++;
-                    $interessi_testo .= " " . $row_check['nome'].",";
-                }
-
-                $interessi_testo=substr($interessi_testo, 0, -1);
-
-                $interessiArray = explode(",", $interessi);
-                if (count($interessiArray) !=$count) {
-                    throw new Exception();
-                }
+            $query_check_interessi = "SELECT nome FROM interessi WHERE id in ($interessi);";
+            $result = mysqli_query($con, $query_check_interessi);
+            $count = 0;
+            $interessi_testo = "";
+            while ($row_check = mysqli_fetch_assoc($result)) {
+                $count++;
+                $interessi_testo .= " " . $row_check['nome'].",";
             }
 
+            $interessi_testo=substr($interessi_testo, 0, -1);
+
+            $interessiArray = explode(",", $interessi);
+            if (count($interessiArray) !=$count) {
+                throw new Exception();
+            }
             $query_insert = "INSERT INTO soci (nome, mail) values ('$nome','$email');";
             $return_insert = mysqli_query($con, $query_insert);
             $idSocio = mysqli_insert_id($con);
@@ -147,11 +116,11 @@ if (!empty($errors)) {
 
 
     //sending email
-    if ($data['success']) {
+    /*if ($data['success']) {
         try {
-            $to = 'roberto.bani@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+            $to = 'info@casarabatti.it'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
             $email_subject = "Richiesta di iscrizione alla newsletter casarabatti.it:  $nome";
-            $email_body = "Hai appena ricevuto una richiesta di iscrizione alla newsletter di casarabatti.it.<br>" . "Ecco i dettagli:<br>Nome: $nome<br>Email: $email<br> Interessi: $interessi_testo<br>";
+            $email_body = "Hai appena ricevuto una richiesta di iscrizione alla newsletter di casarabatti.it.\n\n" . "Ecco i dettagli:\n\nNome: $nome\n\nEmail: $email\n\n Interessi: $interessi_testo\n\n";
             $headers = "MIME-Version: 1.0\r\n";
             $headers .= "Content-type: text/html; charset=utf-8\r\n";
             $headers .= "From: $nome - <$email>\n";
@@ -161,7 +130,7 @@ if (!empty($errors)) {
             $errors['mail'] = $error->getMessage();
             $data['errors'] = $errors;
         }
-    }
+    }*/
 }
 
 // return all our data to an AJAX call

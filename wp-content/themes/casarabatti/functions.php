@@ -1,5 +1,16 @@
 <?php
 
+function wp_menu_id_by_name( $name ) {
+    $menus = get_terms( 'nav_menu' );
+
+    foreach ( $menus as $menu ) {
+        if( $name === $menu->name ) {
+            return $menu->term_id;
+        }
+    }
+    return false;
+}
+
 function casarabatti_scripts()
 {
     wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), 'all' );

@@ -6,7 +6,7 @@ $db_user = DB_USER;
 $db_password = DB_PASSWORD;
 $db_name = DB_NAME;
 require_once "config.inc.php";
-include "swift/lib/swift_required.php";
+include "swiftmailer-5.x/lib/swift_required.php";
 include "log.php";
 
 $real = true;
@@ -14,7 +14,12 @@ $real = true;
 //new one
 //devo allungare il tempo limite di script
 //creo il transport
+/*$transport = Swift_SmtpTransport::newInstance('bulkmailer.mclink.it', 25)
+    ->setUsername('roberto.bani@gmail.com')
+    ->setPassword('Firenze@19#83')
+;*/
 $transport = Swift_MailTransport::newInstance();
+//$transport = Swift_SendmailTransport::newInstance('/usr/sbin/sendmail -bs');
 $mailer = Swift_Mailer::newInstance($transport);
 //Use AntiFlood to re-connect after 100 emails
 //$mailer->registerPlugin(new Swift_Plugins_AntiFloodPlugin(100,30));
@@ -42,7 +47,7 @@ if ($count > 0) {
 
 // recupero i dati inviati
 if ($real) {
-    $query_mail = "SELECT id,oggetto,messaggio,associazione,data FROM mail WHERE inviare = 1";
+    $query_mail = "SELECT id,oggetto,messaggio,associazione,data FROM mail WHERE inviare = 1 AND associazione <> -1";
 } else {
     $query_mail = "SELECT id,oggetto,messaggio,associazione,data FROM mail WHERE inviare = 1 AND associazione = -1";
 }
@@ -80,9 +85,9 @@ while ($row_mail = mysqli_fetch_assoc($result_mail)) {
     // crea il BODY del messaggio html
     $msgtxt = "<html><head><meta htp-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body topmargin=0 style='font-size: small; background-color: #FFFFFF;'><img src='" . $image_testatamail . "' /><br />\n";
     $msgtxt .= "Data: {$date}<hr />\n";
-    $msgtxt .= "<p><b>ATTENZIONE: per non ricevere pi&ugrave; questa newsletter fare click <a href='" . $unsuscribeAddress . "'>QUI</a></b></p>";
+    //$msgtxt .= "<p><b>ATTENZIONE: per non ricevere pi&ugrave; questa newsletter fare click <a href='" . $unsuscribeAddress . "'>QUI</a></b></p>";
     $msgtxt .= "{$message}\n";
-    $msgtxt .= "<div style='text-align: center; margin: 0 auto; width: 1000px; color: white; background-color: #62643f; align: center;'><p>\n";
+    $msgtxt .= "<div style='text-align: center; margin: 0 auto; width: 1000px; align: center;'><p>\n";
     $msgtxt .= $message_base;
     $msgtxt .= "</div></body></html>\n";
 
@@ -159,7 +164,8 @@ while ($row_mail = mysqli_fetch_assoc($result_mail)) {
                 //invio del messaggio
                 try {
                     $ret = $mailer->send($msg);
-
+                    //$ret = mail($destinatari,$subject,$msgtxt);        
+                    echo $destinatari;
                     if ($ret > 0) {
                         //log email correttamente inviata esito = true
                         $qry_log_mail = 'INSERT INTO tmpmail(id,indirizzo,id_utente,ora_invio,oggetto_mail,esito)

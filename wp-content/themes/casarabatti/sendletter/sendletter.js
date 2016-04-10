@@ -99,6 +99,7 @@ jQuery(document).ready(function () {
 
     });
 
+
     jQuery('#text-newsletter').ckeditor();
 
     jQuery(document).on("click", "#toggle-selection", function (event) {
