@@ -1,7 +1,5 @@
 <?php
 require_once('../../../../wp-config.php');
-require_once "config.inc.php";
-include "swift/lib/swift_required.php";
 include "log.php";
 
 $errors         = array();      // array to hold validation errors

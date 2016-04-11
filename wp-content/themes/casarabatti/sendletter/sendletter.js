@@ -81,7 +81,7 @@ jQuery(document).ready(function () {
                                 encode: true
 
                             }).done(function (data) {
-
+                                console.log(data);
                                 jQuery(".wait-msg").modal('hide');
                                 jQuery("#modal-invio-prova").modal('show');
 

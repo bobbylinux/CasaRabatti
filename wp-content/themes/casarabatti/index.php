@@ -15,14 +15,20 @@
                         <i class="fa fa-4x fa-calendar-check-o wow bounceIn text-primary" data-wow-delay=".1s"></i>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="arrivo" placeholder="Arrivo">
+                        <input type="text" class="form-control" id="arrivo" placeholder="<?php echo (get_locale() == 'en_US') ? 'Arrival' : 'Arrivo'; ?>">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="partenza" placeholder="Partenza">
+                        <input type="text" class="form-control" id="partenza" placeholder="<?php echo (get_locale() == 'en_US') ? 'Departure' : 'Partenza'; ?>">
                     </div>
-                    <div class="form-group persone">
-                        <label for="sel1">Persone</label>
-                        <select class="form-control" id="persone" placeholder="Persone">
+                    <div class="form-group adulti">
+                        <label for="sel1">
+                        <?php if (get_locale() == "en_US") { ?>
+                            Adults
+                        <?php } else { ?>
+                            Adulti
+                        <?php } ?>
+                        </label>
+                        <select class="form-control" id="persone" placeholder="Adulti">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -32,7 +38,32 @@
                             <option>7</option>
                         </select>
                     </div>
-                    <a href="#" class="btn btn-default btn-xl btn-verifica">Verifica Disponibilit&agrave;</a>
+                    <div class="form-group bambini">
+                        <label for="sel1">
+                            <?php if (get_locale() == "en_US") { ?>
+                                Children
+                            <?php } else { ?>
+                                Bambini
+                            <?php } ?>
+                        </label>
+                        <select class="form-control" id="bambini" placeholder="<?php $bambini = (get_locale() == 'en_US') ? 'Children' : 'Bambini'; ?>">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                        </select>
+                    </div>
+
+                    <a href="#" class="btn btn-default btn-xl btn-verifica">
+                        <?php if (get_locale() == "en_US") { ?>
+                            Search
+                        <?php } else { ?>
+                            Verifica Disponibilit&agrave;
+                        <?php } ?>
+                    </a>
                 </div>
             </div>
         </form>
@@ -40,14 +71,13 @@
 </section>
 <?php
     $the_post = get_post(11);
-    $postId = str_replace(' ', '-', __($the_post->post_title));
 ?>
 
-<section class="bg-primary welcome" id="<?php echo strtolower($postId);?>">
+<section class="bg-primary welcome" id="<?php echo strtolower(str_replace(' ', '-', _e($the_post->post_title)));?>">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center main-title">
-                <h2 class="section-heading"><?php echo /*$the_post->post_title;*/ __($the_post->post_title); ?></h2>
+                <h2 class="section-heading"><?php echo _e($the_post->post_title); ?></h2>
                 <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
                      class="img-responsive primary" alt="">
             </div>
@@ -55,7 +85,7 @@
         <div class="row">
             <div class="col-md-5 col-md-offset-1 vcenter">
                 <p class="text-faded">
-                    <?php echo __($the_post->post_content); ?>
+                    <?php echo _e($the_post->post_content); ?>
                 </p>
             </div>
             <div class="col-md-5 vcenter hidden-sm">
@@ -65,12 +95,14 @@
         </div>
     </div>
 </section>
-<section id="locali" class="rooms">
-    <?php $the_post = get_post(16); ?>
+<?php
+$the_post = get_post(16);
+?>
+<section id="<?php echo str_replace(' ', '-', _e($the_post->post_title));?>" class="rooms">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center main-title">
-                <h2 class="section-heading"><?php echo $the_post->post_title; ?></h2>
+                <h2 class="section-heading"><?php echo _e($the_post->post_title); ?></h2>
                 <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
                       class="img-responsive primary" alt="">
             </div>
@@ -106,21 +138,22 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <p class="">
-                            <?php echo $the_post->post_content; ?>
+                            <?php echo _e($the_post->post_content); ?>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
-<section class="bg-primary welcome" id="dove-siamo">
+<?php
+$the_post = get_post(18);
+?>
+<section class="bg-primary welcome" id="<?php echo strtolower(str_replace(' ', '-', _e($the_post->post_title)));?>">
     <div class="container-fluid">
-        <?php $the_post = get_post(18); ?>
         <div class="row">
             <div class="col-md-12 text-center main-title">
-                <h2 class="section-heading"><?php echo $the_post->post_title; ?></h2>
+                <h2 class="section-heading"><?php echo _e($the_post->post_title); ?></h2>
                 <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
                      class="img-responsive primary" alt="">
             </div>
@@ -133,25 +166,27 @@
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1 vcenter text-center">
                 <p class="text-faded">
-                    <?php echo $the_post->post_content; ?>
+                    <?php echo _e($the_post->post_content); ?>
                 </p>
             </div>
         </div>
     </div>
 </section>
-<section id="contatti" class="contacts">
+<?php
+$the_post = get_post(224);
+?>
+<section id="<?php echo strtolower(str_replace(' ', '-', _e($the_post->post_title)));?>" class="contacts">
     <div class="container-fluid">
-        <?php $the_post = get_post(224); ?>
         <div class="row">
             <div class="col-md-12 text-center main-title">
-                <h2 class="section-heading"><?php echo $the_post->post_title; ?></h2>
+                <h2 class="section-heading"><?php echo _e($the_post->post_title); ?></h2>
                 <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
                      class="img-responsive primary" alt="">
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <p><?php echo $the_post->post_content; ?></p>
+                <p><?php echo _e($the_post->post_content); ?></p>
             </div>
         </div>
         <div class="row">
@@ -235,19 +270,21 @@
         </div>
     </div>
 </section>
-
-<section id="partners" class="partners">
+<?php
+$the_post = get_post(231);
+?>
+<section id="<?php echo strtolower(str_replace(' ', '-', _e($the_post->post_title)));?>" class="partners">
         <?php $the_post = get_post(231); ?>
         <div class="row">
             <div class="col-md-12 text-center main-title">
-                <h2 class="section-heading"><?php echo $the_post->post_title; ?></h2>
+                <h2 class="section-heading"><?php echo _e($the_post->post_title); ?></h2>
                 <img src="<?php echo get_template_directory_uri() . '/img/alloro.png'; ?>"
                      class="img-responsive primary" alt="">
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <p><?php echo $the_post->post_content; ?></p>
+                <p><?php echo _e($the_post->post_content); ?></p>
             </div>
         </div>
 </section>

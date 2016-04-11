@@ -1,7 +1,7 @@
 <?php
 // datastore=auditqueue;
 // created_on=1456137597;
-// updated_on=1460317772;
+// updated_on=1460409551;
 exit(0);
 ?>
 2bbb64d8a0a5a5aa163ccb9bb45622e6:{"created_at":1457167259,"message":null}
@@ -52,3 +52,14 @@ dc14a42766e3cf2ead9cc051586d6469:{"created_at":1460314607,"message":"Warning: ad
 0f1b87f76ad5fc3f8ecbe558068a38fc:{"created_at":1460316342,"message":"Notice: admin, 192.168.1.2; Post was updated; identifier: 11; name: [:it]La Struttura[:en]The Location[:]"}
 1dd610712d709089a417fbd4fd6c9007:{"created_at":1460317761,"message":"Notice: admin, 192.168.1.2; Nav_menu_item (private to published); identifier: 274; name: "}
 91ed9a4f19118f066a771cba5ea53140:{"created_at":1460317767,"message":"Notice: admin, 192.168.1.2; Nav_menu_item (private to published); identifier: 275; name: "}
+422a602f6ec4e418dfbc96c3e421ae1f:{"created_at":1460396796,"message":"Notice: 192.168.1.2; User authentication succeeded: admin"}
+f8296b2f6bdf8d316b0bc99db2d9e73e:{"created_at":1460397053,"message":"Notice: admin, 192.168.1.2; Post was updated; identifier: 16; name: I Locali"}
+693f71ecd8d5af7070b562022b6a84c6:{"created_at":1460397122,"message":"Notice: admin, 192.168.1.2; Post was updated; identifier: 16; name: I Locali"}
+460bce41bc39cf840769d2d1fd4f92f8:{"created_at":1460397194,"message":"Notice: admin, 192.168.1.2; Page was created; identifier: 281; name: [:it]Camere Economiche[:]"}
+d797ca1a828862528f717e523c190ece:{"created_at":1460397270,"message":"Notice: admin, 192.168.1.2; Post was updated; identifier: 16; name: I Locali"}
+66db0de054c4d1eb59b548348adfe579:{"created_at":1460406123,"message":"Warning: admin, 192.168.1.2; Plugin activated: Menu Items Visibility Control (v0.3.2; menu-items-visibility-control\/init.php)"}
+924e22e796755d0f2ba37cd6414cbd61:{"created_at":1460407068,"message":"Warning: admin, 192.168.1.2; Plugin activated: Insert PHP (v1.3; insert-php\/insert_php.php)"}
+0e1f6a7abb5f9973ad4a759f0bc90c38:{"created_at":1460407498,"message":"Notice: admin, 192.168.1.2; Post was created; identifier: 285; name: [:en]Newsletter[:]"}
+29a5da4a8088d5d99c01d15ff39436bc:{"created_at":1460408150,"message":"Notice: admin, 192.168.1.2; Post was updated; identifier: 285; name: Newsletter"}
+5388e222791a32e8421771870efd4029:{"created_at":1460408664,"message":"Warning: admin, 192.168.1.2; Post moved to trash; identifier: 285; name: Newsletter; status: publish"}
+9d2b7a6cf18444c2e6a13dd4d1eec401:{"created_at":1460409546,"message":"Notice: admin, 192.168.1.2; Post was updated; identifier: 16; name: [:it]I Locali[:en]Rooms[:]"}

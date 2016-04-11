@@ -18,7 +18,7 @@ try {
     } else {
         $interessiTutti = "0";
     }
-    $result_join = mysqli_query($con,"SELECT distinct interessi.ID as ID, interessi.nome FROM interessi INNER JOIN interessi_soci ON interessi.id = id_interesse JOIN soci ON soci.id = id_socio WHERE soci.confermato = 1 ORDER BY nome ASC");
+    $result_join = mysqli_query($con,"SELECT distinct interessi.ID as ID, interessi.nome FROM interessi ORDER BY nome ASC");
     $tabCounter = 0;
     while ($row_join = mysqli_fetch_assoc($result_join)) {
         if (($tabCounter % 4) == 0) {

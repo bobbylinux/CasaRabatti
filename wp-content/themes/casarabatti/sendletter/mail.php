@@ -1,5 +1,4 @@
 <?php
-chdir(dirname(__FILE__));
 require_once('../../../../wp-config.php');
 $db_host = DB_HOST;
 $db_user = DB_USER;
@@ -9,51 +8,26 @@ require_once "config.inc.php";
 include "swiftmailer-5.x/lib/swift_required.php";
 include "log.php";
 
-$real = true;
-
-//new one
-//devo allungare il tempo limite di script
-//creo il transport
-/*$transport = Swift_SmtpTransport::newInstance('bulkmailer.mclink.it', 25)
-    ->setUsername('roberto.bani@gmail.com')
-    ->setPassword('Firenze@19#83')
-;*/
 $transport = Swift_MailTransport::newInstance();
 //$transport = Swift_SendmailTransport::newInstance('/usr/sbin/sendmail -bs');
 $mailer = Swift_Mailer::newInstance($transport);
-//Use AntiFlood to re-connect after 100 emails
-//$mailer->registerPlugin(new Swift_Plugins_AntiFloodPlugin(100,30));
-//Rate limit to 100 emails per-minute
 $mailer->registerPlugin(new Swift_Plugins_ThrottlerPlugin(
     100, Swift_Plugins_ThrottlerPlugin::MESSAGES_PER_MINUTE
 ));
 // crea la lista destinatari
 $db = mysqli_connect($db_host, $db_user, $db_password);
 if ($db == FALSE) {
-    die("Errore nella connessione. Verificare i parametri nel file config.inc.php");
-}
-mysqli_select_db($db,$db_name) or die("Errore nella selezione del database. Verificare i parametri nel file config.inc.php");
-$query_prova = "SELECT count(1) as prova FROM mail WHERE associazione = -1 AND inviare = 1;";
-$result_prova = mysqli_query($db,$query_prova);
-//Repeat for each email to send
-while ($row_prova = mysqli_fetch_assoc($result_prova)) {
-    $count = $row_prova['prova'];
+    echo json_encode("Errore nella connessione al database");
+    die;
 }
 
-if ($count > 0) {
-    $real = false;
-}
+mysqli_select_db($db, $db_name) or die("Errore nella selezione del database. Verificare i parametri nel file config.inc.php");
 
+$query_mail = "SELECT id,oggetto,messaggio,associazione,data FROM mail WHERE inviare = 1 AND associazione <> -1";
 
-// recupero i dati inviati
-if ($real) {
-    $query_mail = "SELECT id,oggetto,messaggio,associazione,data FROM mail WHERE inviare = 1 AND associazione <> -1";
-} else {
-    $query_mail = "SELECT id,oggetto,messaggio,associazione,data FROM mail WHERE inviare = 1 AND associazione = -1";
-}
 // se il form  stato inviato
 // recupero i dati inviati
-$result_mail = mysqli_query($db,$query_mail);
+$result_mail = mysqli_query($db, $query_mail);
 
 //Repeat for each email to send
 while ($row_mail = mysqli_fetch_assoc($result_mail)) {
@@ -65,12 +39,12 @@ while ($row_mail = mysqli_fetch_assoc($result_mail)) {
 
     //puts the inviare to 0 so it doesn;t send it many times
     $query = "UPDATE mail SET inviare = '0'  where id = '" . $id . "'";
-    $result = mysqli_query($db,$query) or die(mysqli_error($db));
+    $result = mysqli_query($db, $query) or die(mysqli_error($db));
 
     //prima cancello i log precedenti
     $query = "DELETE FROM tmpmail WHERE 
                                     ora_invio < (SYSDATE() - INTERVAL 1 MONTH);";
-    $result = mysqli_query($db,$query) or die(mysqli_error($db));
+    $result = mysqli_query($db, $query) or die(mysqli_error($db));
 
     $email = $mail_mail; //mi server per il replay to
 
@@ -91,18 +65,15 @@ while ($row_mail = mysqli_fetch_assoc($result_mail)) {
     $msgtxt .= $message_base;
     $msgtxt .= "</div></body></html>\n";
 
+
     //==========mio
     //read all address for association or for interessi from the DB
     if ($associazione == "0") {
         $query = 'SELECT DISTINCT mail, id FROM soci WHERE mail is not null and trim(mail) not in ("") and confermato = 1';
-        $result = mysqli_query($db,$query) or die(mysqli_error());
+        $result = mysqli_query($db, $query) or die(mysqli_error());
     } else {
-        if ($real) {
-            $query = 'SELECT DISTINCT mail, soci.id FROM soci, interessi_soci WHERE id_interesse IN (' . $associazione . ') AND soci.id=id_socio AND mail is not null and trim(mail) not in ("") and confermato = 1';
-        } else {
-            $query = 'SELECT DISTINCT mail, id FROM soci_prova';
-        }
-        $result = mysqli_query($db,$query) or die(mysqli_error());
+        $query = 'SELECT DISTINCT mail, soci.id FROM soci, interessi_soci WHERE id_interesse IN (' . $associazione . ') AND soci.id=id_socio AND mail is not null and trim(mail) not in ("") and confermato = 1';
+        $result = mysqli_query($db, $query) or die(mysqli_error());
     }
 
     /*
@@ -113,7 +84,9 @@ while ($row_mail = mysqli_fetch_assoc($result_mail)) {
 
     //parto il ciclo di lettura degli indirizzi
     $log_error = new log();
+
     $log_error->scrivi_invio("\n\n=================================================================\n");
+
     $log_error->scrivi_invio($subject . "\n\n");
     $log_error->scrivi_errore_invio("\n\n============================================================\n");
     $log_error->scrivi_errore_invio($subject . "\n\n");
@@ -139,11 +112,6 @@ while ($row_mail = mysqli_fetch_assoc($result_mail)) {
         $search = array(';', ',,', ',');
         $replace = array('', '', '');
 
-//     	$shortSubject = substr($subject, 0, 15);
-//     	if(!$shortSubject){
-//     		$shortSubject = $subject;
-//     	}
-
         $msgok = 0;
         while ($row = mysqli_fetch_assoc($result)) { //per ogni riga sul db
             if ($row['mail'] != '') {
@@ -164,25 +132,25 @@ while ($row_mail = mysqli_fetch_assoc($result_mail)) {
                 //invio del messaggio
                 try {
                     $ret = $mailer->send($msg);
-                    //$ret = mail($destinatari,$subject,$msgtxt);        
-                    //echo $destinatari;
+
                     if ($ret > 0) {
                         //log email correttamente inviata esito = true
                         $qry_log_mail = 'INSERT INTO tmpmail(id,indirizzo,id_utente,ora_invio,oggetto_mail,esito)
 	    				VALUES (NULL,"' . $destinatari . '",' . $id_utente . ',NULL,"' . $subject . '",true)';
-                        $result_log_mail_ok = mysqli_query($db,$qry_log_mail);
+                        $result_log_mail_ok = mysqli_query($db, $qry_log_mail);
                         $msgok++;
                         $log_error->scrivi_invio($id_utente . ' - ' . $destinatari);
                     } else {
                         //log email errata esito = false
                         $qry_log_mail = 'INSERT INTO tmpmail(id,indirizzo,id_utente,ora_invio,oggetto_mail,esito)
 	    				VALUES (NULL,"' . $destinatari . '",' . $id_utente . ',NULL,"' . $subject . '",false)';
-                        $result_log_mail_failed = mysqli_query($qry_log_mail);
+                        $result_log_mail_failed = mysqli_query($db, $qry_log_mail);
                         $log_error->scrivi_errore_invio($id_utente . ' - ' . $destinatari);
                     }
+
                     if ($msgok % 300 == 0) {//to change back to 1000
                         $query2 = "UPDATE mail SET inviate = '$msgok' where id = '" . $id . "'";
-                        mysqli_query($db,$query2);
+                        mysqli_query($db, $query2);
                     }
                 } catch (Exception $e) {
                     $log_error->scrivi_errori($e->getMessage() . ';');
@@ -195,12 +163,10 @@ while ($row_mail = mysqli_fetch_assoc($result_mail)) {
     }
 
     $query = "UPDATE mail SET inviate = '$msgok' where id = '" . $id . "'";
-    $result = mysqli_query($db,$query);
-    //$log_error->close();
+    $result = mysqli_query($db, $query);
 }
 
-
-echo json_encode("done");
+echo "done";
 
 
 ?>
