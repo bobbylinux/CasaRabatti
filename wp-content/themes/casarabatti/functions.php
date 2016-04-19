@@ -15,7 +15,7 @@ function casarabatti_scripts()
 {
     wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), 'all' );
     wp_register_style( 'animate-css', get_template_directory_uri() . '/css/animate.min.css', array(), 'all' );
-    wp_register_style( 'bootstrap-datepicker-css', get_template_directory_uri() . '/css/bootstrap.datepicker.min.css', array(), 'all' );
+    wp_register_style( 'bootstrap-datepicker-css', get_template_directory_uri() . '/js/bsdp/css/bootstrap-datepicker.css', array(), 'all' );
     wp_register_style( 'font-css', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', array(), 'all' );
     wp_register_style( 'style-css', get_template_directory_uri() . '/style.css', array(), 'all' );
 
@@ -25,8 +25,8 @@ function casarabatti_scripts()
     wp_register_script( 'wow-js', get_template_directory_uri() . '/js/wow.min.js', true );
     wp_register_script( 'creative-js', get_template_directory_uri() . '/js/creative.js', true );
     wp_register_script( 'moments-js', get_template_directory_uri() . '/js/moments.js',  true );
-    wp_register_script( 'bootstrap-datepicker-js', get_template_directory_uri() . '/js/bootstrap.datepicker.min.js',  true );
-    wp_register_script( 'bootstrap-datepicker-locale-it-js', get_template_directory_uri() . '/js/bootstrap.datepicker.locale.it.js',  true );
+    wp_register_script( 'bootstrap-datepicker-js', get_template_directory_uri() . '/js/bsdp/js/bootstrap-datepicker.js',  true );
+    wp_register_script( 'bootstrap-datepicker-locale-it-js', get_template_directory_uri() . '/js/bsdp/locales/bootstrap-datepicker.it.min.js',  true );
 
 
     wp_enqueue_style( 'bootstrap-css' );
@@ -53,7 +53,7 @@ remove_filter('the_content', 'wpautop');
 function custom_register_admin_scripts() {
     wp_register_style( 'fullcalendar-css', get_template_directory_uri() . '/js/fullcalendar-2.6.1/fullcalendar.min.css', array(), 'all' );
     wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), 'all' );
-    wp_register_style( 'bootstrap-datepicker-css', get_template_directory_uri() . '/css/bootstrap.datepicker.min.css', array(), 'all' );
+    wp_register_style( 'bootstrap-datepicker-css', get_template_directory_uri() . '/js/bsdp/css/bootstrap-datepicker.css', array(), 'all' );
     wp_register_style( 'font-css', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', array(), 'all' );
 
     wp_register_script( 'moments-js', get_template_directory_uri() . '/js/fullcalendar-2.6.1/lib/moment.min.js',  true );
@@ -61,8 +61,8 @@ function custom_register_admin_scripts() {
     wp_register_script( 'fullcalendar-lang', get_template_directory_uri() . '/js/fullcalendar-2.6.1/lang/it.js',  true );
     wp_register_script( 'custom-javascript', get_template_directory_uri() . '/js/rabatti.js' );
     wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), true );
-    wp_register_script( 'bootstrap-datepicker-js', get_template_directory_uri() . '/js/bootstrap.datepicker.min.js',  true );
-    wp_register_script( 'bootstrap-datepicker-locale-it-js', get_template_directory_uri() . '/js/bootstrap.datepicker.locale.it.js',  true );
+    wp_register_script( 'bootstrap-datepicker-js', get_template_directory_uri() . '/js/bsdp/js/bootstrap-datepicker.js',  true );
+    wp_register_script( 'bootstrap-datepicker-locale-it-js', get_template_directory_uri() . '/js/bsdp/locales/bootstrap-datepicker.it.min.js',  true );
     wp_register_script( 'ckeditor-js', get_template_directory_uri() . '/sendletter/ckeditor/ckeditor.js', true);
     wp_register_script( 'ckeditor-adapter-js', get_template_directory_uri() . '/sendletter/ckeditor/adapters/jquery.js', true);
     wp_register_script( 'sendletter-js', get_template_directory_uri() . '/sendletter/sendletter.js', true);

@@ -1,7 +1,7 @@
 <?php
 // datastore=auditqueue;
 // created_on=1456137597;
-// updated_on=1460409551;
+// updated_on=1461091642;
 exit(0);
 ?>
 2bbb64d8a0a5a5aa163ccb9bb45622e6:{"created_at":1457167259,"message":null}
@@ -63,3 +63,17 @@ d797ca1a828862528f717e523c190ece:{"created_at":1460397270,"message":"Notice: adm
 29a5da4a8088d5d99c01d15ff39436bc:{"created_at":1460408150,"message":"Notice: admin, 192.168.1.2; Post was updated; identifier: 285; name: Newsletter"}
 5388e222791a32e8421771870efd4029:{"created_at":1460408664,"message":"Warning: admin, 192.168.1.2; Post moved to trash; identifier: 285; name: Newsletter; status: publish"}
 9d2b7a6cf18444c2e6a13dd4d1eec401:{"created_at":1460409546,"message":"Notice: admin, 192.168.1.2; Post was updated; identifier: 16; name: [:it]I Locali[:en]Rooms[:]"}
+90bf5357fddae9cd9ebdfe692644ce29:{"created_at":1460659635,"message":null}
+0f4ad0884cf0c6be40e15752850696c6:{"created_at":1460660359,"message":"Notice: admin, 192.168.1.2; Post (private to published); identifier: 294; name: [:it]Appartamento Grande[:]"}
+1df2ad3b551351704af37022c3168fab:{"created_at":1460660404,"message":"Notice: admin, 192.168.1.2; Post (private to published); identifier: 296; name: [:it]Camera Tripla[:]"}
+7c0a0bf6d8a4e797199142142b2799ba:{"created_at":1460660469,"message":"Notice: admin, 192.168.1.2; Post was created; identifier: 298; name: [:it]Camera Dello Zio[:]"}
+b2607be19d905253b1d3bc259169d196:{"created_at":1460662457,"message":"Notice: admin, 192.168.1.2; Category created; identifier: 6; name: I Nostri Ambienti"}
+b5a7dc5c4850e31ea30c2f41b77488e4:{"created_at":1460662525,"message":"Notice: admin, 192.168.1.2; Post was updated; identifier: 298; name: [:it]Camera Dello Zio[:]"}
+2a5d1c8a1bd435a94b93cc1bb57e5628:{"created_at":1460662637,"message":"Notice: admin, 192.168.1.2; Post was updated; identifier: 296; name: [:it]Camera Tripla[:]"}
+d601038a35942150b0b6970644e618fd:{"created_at":1460662729,"message":"Notice: admin, 192.168.1.2; Post was updated; identifier: 294; name: [:it]Appartamento Grande[:]"}
+705cc348b592e5f94d7c2b6ca4d1e5df:{"created_at":1460664438,"message":"Notice: admin, 192.168.1.2; Page was created; identifier: 302; name: [:it]Ambienti[:]"}
+6ff66c6204e3d194706052db0a0375a7:{"created_at":1460880486,"message":null}
+8fe061c77b58e5780fa8b81935c12213:{"created_at":1460881846,"message":"Warning: admin, 192.168.1.2; Plugin activated: Posts in Page (v1.2.4; posts-in-page\/posts_in_page.php)"}
+9a0748cec3591a7d6709489639bff670:{"created_at":1460883200,"message":"Notice: admin, 192.168.1.2; Page was updated; identifier: 302; name: [:it]Ambienti[:]"}
+88138dc2fa0c191415c30b8507ff669e:{"created_at":1461004031,"message":null}
+aff6a9f205f902e24b92a3a63eb7d24a:{"created_at":1461091637,"message":null}

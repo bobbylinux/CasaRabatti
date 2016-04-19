@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,6 +27,7 @@
 <body id="page-top">
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -48,7 +50,7 @@
                         $menuId = str_replace(' ', '-', $menuItem->title);
                     ?>
                     <li>
-                        <a class="page-scroll" href="#<?php echo strtolower($menuId); ?>"><?php echo _e($menuItem->title); ?></a>
+                        <a class="page-scroll" href="#<?php echo strtolower($menuId); ?>"><?php echo $menuItem->title; ?></a>
                     </li>
                     <?php
                     }

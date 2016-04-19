@@ -1,7 +1,7 @@
 <?php
 // getting the captcha
 $captcha = "";
-/*if (isset($_POST["captchaResponse"]))
+if (isset($_POST["captchaResponse"]))
     $captcha = $_POST["captchaResponse"];
 
 if (!$captcha) {
@@ -22,7 +22,7 @@ if ($response["success"] == false) {
     $data['errors'] = $errors;
     echo json_encode($data);
     die;
-}*/
+}
 
 require_once('../../../wp-config.php');
 

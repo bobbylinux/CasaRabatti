@@ -1,127 +1,229 @@
-jQuery(document).ready(function(){
+jQuery(document).ready(function () {
 
+    jQuery(".alert").hide();
 
-  jQuery('#arrivo-cal').datetimepicker({
-    format: 'DD/MM/YYYY',
-    locale: 'it'
-  });
-  jQuery('#partenza').datetimepicker({
-    format: 'DD/MM/YYYY',
-    locale: 'it',
-    useCurrent: false //Important! See issue #1075
-  });
-  jQuery("#arrivo").on("dp.change", function (e) {
-    $('#partenza').data("DateTimePicker").minDate(e.date);
-  });
-  jQuery("#partenza").on("dp.change", function (e) {
-    $('#arrivo').data("DateTimePicker").maxDate(e.date);
-    console.log(e.date);
-  });
+    jQuery('#arrivo-cal').datepicker({
+        format: 'dd/mm/yyyy',
+        language: 'it',
+        autoclose: true
+    });
 
-  jQuery('#calendar').fullCalendar({
-    firstDay: 1,
-    events: "../wp-content/themes/casarabatti/process.php",
-    dayClick: function(date, allDay, jsEvent, view) {
+    jQuery('#partenza-cal').datepicker({
+        format: 'dd/mm/yyyy',
+        language: 'it',
+        autoclose: true
+    });
 
-      jQuery("#arrivo-cal").val(date.format('DD/MM/YYYY'));
-      jQuery('#new-event-detail').modal('show');
-    },
-    eventReceive: function(event){
-      var title = event.title;
-      var start = event.start.format("YYYY-MM-DD[T]HH:MM:SS");
-      $.ajax({
-        url: 'process.php',
-        data: 'type=new&title='+title+'&startdate='+start+'&zone='+zone,
-        type: 'POST',
-        dataType: 'json',
-        success: function(response){
-          event.id = response.eventid;
-          $('#calendar').fullCalendar('updateEvent',event);
+    jQuery('#calendar').fullCalendar({
+        firstDay: 1,
+        eventTextColor: "black",
+        events: {
+            url: '../wp-content/themes/casarabatti/process.php',
+            type: 'POST', // Send post data
+            error: function (data) {
+                alert('Errore caricamento calendario');
+            },
         },
-        error: function(e){
-          console.log(e.responseText);
+        dayClick: function (date, allDay, jsEvent, view) {
+            jQuery("#ricerca-cliente").val("");
+            jQuery("#ricerca-cliente-hidden").val("");
+            jQuery("#cliente").val("");
+            jQuery("#ambiente").val("");
+            jQuery("#partenza-cal").val("");
+            jQuery(".alert").hide();
+            jQuery("#arrivo-cal").val(date.format('DD/MM/YYYY'));
+            jQuery("#event-type-hidden").val("new");
+            jQuery(".btn-elimina-evento").hide();
+            jQuery('#event-detail').modal('show');
+        },
+        eventClick: function (calEvent, jsEvent, view) {
+            //var title = prompt('Event Title:', calEvent.title, { buttons: { Ok: true, Cancel: false} });
+            // jQuery("#arrivo-cal").val(date.format('DD/MM/YYYY'));
+            jQuery("#ricerca-cliente").val("");
+            jQuery("#PrenotazioneLabel").html("Modifica Prenotazione");
+            jQuery("#cliente").val(calEvent.title);
+            jQuery("#ricerca-cliente-hidden").val(calEvent.cliente);
+            jQuery("#ambiente").val(calEvent.ambiente);
+            jQuery("#arrivo-cal").val(calEvent.start.format("DD/MM/YYYY"));
+            jQuery("#partenza-cal").val((calEvent.end).format("DD/MM/YYYY"));
+            jQuery(".alert").hide();
+            jQuery("#event-type-hidden").val("edit");
+            jQuery("#event-id-hidden").val(calEvent.id);
+            jQuery(".btn-elimina-evento").show();
+            jQuery('#event-detail').modal('show');
         }
-      });
-      $('#calendar').fullCalendar('updateEvent',event);
-    }
-  });
+    });
 
-  jQuery(document).on("click",".fc-content",function(){
 
-  });
+    jQuery(document).on("click", ".fc-content", function () {
 
-  jQuery("#ricerca-cliente, #ricerca-cliente-edit").autocomplete({
-    source: "../wp-content/themes/casarabatti/clienti.php",
-    minLength: 1,//search after two characters
-    select: function(event, ui) {
-      /*var url = ui.item.id;
-      if(url != '#') {
-        location.href = '/blog/' + url;
-      }*/
-    },
-  });
+    });
 
-  jQuery(document).on("click","#add-customer",function(event){
-    event.preventDefault();
-    var customer = jQuery("#ricerca-cliente").val();
-    if (customer.toString() !== "") {
-      jQuery("#cliente").val(customer);
-    }
-  });
+    jQuery("#ricerca-cliente, #ricerca-cliente-edit").autocomplete({
+        source: function (request, response) {
+            jQuery.ajax({
+                url: "../wp-content/themes/casarabatti/clienti.php",
+                dataType: "json",
+                type: "POST",
+                data: {
+                    term: request.term,
+                    row_num: 1
+                },
+                success: function (data) {
+                    response(jQuery.map(data, function (item) {
+                        var code = item.split("|");
+                        return {
+                            label: code[1],
+                            value: code[1],
+                            data: item
+                        }
+                    }));
+                }
+            });
+        },
+        autoFocus: true,
+        minLength: 2,
+        select: function (event, ui) {
+            var names = ui.item.data.split("|");
+            jQuery("#ricerca-cliente-hidden").val(names[0]); // save selected id to hidden input
+        }
+    });
 
-  jQuery(document).on("click","#new-customer",function(){
-    jQuery("#ClienteLabel").html("Nuovo Cliente");
-    jQuery("#label-search-customer").hide();
-    jQuery("#search-customer").hide();
-    jQuery('#new-event-detail').modal('hide');
-    jQuery('#customer-detail').modal('show');
-  });
+    jQuery(document).on("click", "#add-customer", function (event) {
+        event.preventDefault();
+        var customer = jQuery("#ricerca-cliente").val();
+        if (customer.toString() !== "") {
+            jQuery("#cliente").val(customer);
+            var idCliente = jQuery("#ricerca-cliente").data("id");
+            jQuery("#cliente").data("id", idCliente);
+        }
+    });
 
-  jQuery(document).on("click","#save-customer",function(event){
-    event.preventDefault();
-    var formData = {
-      'nome'              : jQuery("#cognome-nome").val(),
-      'email'             : jQuery("#email").val(),
-      'telefono'          : jQuery("#telefono").val(),
-      'indirizzo'         : jQuery("#indirizzo").val(),
-      'citta'             : jQuery("#citta").val(),
-      'nazione'           : jQuery("#nazione").val()
-    };
+    jQuery(document).on("click", "#new-customer", function () {
+        jQuery("#ClienteLabel").html("Nuovo Cliente");
+        jQuery("#label-search-customer").hide();
+        jQuery("#search-customer").hide();
+        jQuery('#event-detail').modal('hide');
+        jQuery('#customer-detail').modal('show');
+    });
 
-    // process the form
-    jQuery.ajax({
-          type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-          url         : '../wp-content/themes/casarabatti/clientiSubmit.php', // the url where we want to POST
-          data        : formData, // our data object
-          dataType    : 'json', // what type of data do we expect back from the server
-          encode          : true
+    jQuery(document).on("click", "#save-customer", function (event) {
+        event.preventDefault();
+        jQuery(".wait-msg").modal("show");
+        var formData = {
+            'nome': jQuery("#cognome-nome").val(),
+            'email': jQuery("#email").val(),
+            'telefono': jQuery("#telefono").val(),
+            'indirizzo': jQuery("#indirizzo").val(),
+            'citta': jQuery("#citta").val(),
+            'nazione': jQuery("#nazione").val()
+        };
+
+        // process the form
+        jQuery.ajax({
+            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url: '../wp-content/themes/casarabatti/clientiSubmit.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            encode: true
         })
-        // using the done promise callback
-        .done(function(data) {
+            // using the done promise callback
+            .done(function (data) {
+                // log data to the console so we can see
+                if (data.success == false) {
+                    console.log(data);
+                }
+                jQuery(".wait-msg").modal("hide");
+                jQuery('#customer-detail').modal('hide');
+                // here we will handle errors and validation messages
+            });
 
-          // log data to the console so we can see
-          if (data.success== true) {
-            jQuery('#new-customer-detail').modal('hide');
-            jQuery('#new-event-detail').modal('show');
-          } else {
-            console.log(data);
-            jQuery('#new-customer-detail').modal('hide');
-            jQuery('#new-event-detail').modal('show');
-          }
-          // here we will handle errors and validation messages
-        });
+    });
 
-  });
+    jQuery(document).on("click", "#manage-customer", function (event) {
+        event.preventDefault();
+        jQuery("#ClienteLabel").html("Gestisci Clienti");
+        jQuery("#label-search-customer").show();
+        jQuery("#search-customer").show();
+        jQuery('#customer-detail').modal('show');
+    });
 
-  jQuery(document).on("click","#manage-customer",function(event){
-      event.preventDefault();
-      jQuery("#ClienteLabel").html("Gestisci Clienti");
-      jQuery("#label-search-customer").show();
-      jQuery("#search-customer").show();
-      jQuery('#customer-detail').modal('show');
-  });
+    jQuery('#customer-detail').on('show.bs.modal', function () {
+        jQuery("#cognome-nome").val("");
+        jQuery("#email").val("");
+        jQuery("#telefono").val("");
+        jQuery("#indirizzo").val("");
+        jQuery("#citta").val("");
+        jQuery("#nazione").val("");
+        jQuery("#ricerca-cliente-edit").val("");
+        jQuery(".alert").hide();
+    });
 
+    jQuery(document).on("click", ".btn-elimina-evento", function (event) {
+        jQuery("#event-type-hidden").val("delete");
+        jQuery( ".btn-salva-evento" ).trigger( "click" );
+    });
 
+    jQuery(document).on("click", ".btn-salva-evento", function (event) {
+        event.preventDefault();
 
+        var evento = {
+            cliente: jQuery("#ricerca-cliente-hidden").val(),
+            ambiente: jQuery("#ambiente").val(),
+            arrivo: jQuery("#arrivo-cal").val(),
+            partenza: jQuery("#partenza-cal").val(),
+            tipo: jQuery("#event-type-hidden").val(),
+            id: jQuery("#event-id-hidden").val()
+        };
+
+        manageEvent(evento);
+
+    });
+
+    function manageEvent(evento) {
+        jQuery.ajax({
+            url: '../wp-content/themes/casarabatti/eventiSubmit.php', // the url where we want to POST
+            data: evento,
+            type: "POST",
+            dataType: 'json'
+        })
+            .done(function (data) {
+                if (data.success == false) {
+                    jQuery.each(data.errors, function (key, value) {
+                        switch (key) {
+                            case "cliente":
+                                jQuery("#cliente-error").html(value);
+                                jQuery("#cliente-error").show();
+                                break;
+                            case "arrivo":
+                                jQuery("#arrivo-error").html(value);
+                                jQuery("#arrivo-error").show();
+                                break;
+                            case "partenza":
+                                jQuery("#partenza-error").html(value);
+                                jQuery("#partenza-error").show();
+                                break;
+                            case "ambiente":
+                                jQuery("#ambiente-error").html(value);
+                                jQuery("#ambiente-error").show();
+                                break;
+                        }
+                    });
+                } else {
+                    jQuery("#ricerca-cliente").val("");
+                    jQuery("#ricerca-cliente-hidden").val("");
+                    jQuery("#cliente").val("");
+                    jQuery("#ambiente").val("");
+                    jQuery("#partenza-cal").val("");
+                    jQuery(".alert").hide();
+                    jQuery('#event-detail').modal('hide');
+                    jQuery('#calendar').fullCalendar(
+                        'refetchEvents'
+                    );
+                }
+
+            });
+
+    }
 });
 
