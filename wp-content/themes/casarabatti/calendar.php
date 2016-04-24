@@ -53,8 +53,8 @@ try {
                 <div class="input-group">
                     <input type="text" class="form-control" id="ricerca-cliente" placeholder="Cliente">
                     <input type="hidden" id="ricerca-cliente-hidden" placeholder="Cliente" value="">
-                    <span class="input-group-btn" id="add-customer" style="cursor:pointer"><button class="btn btn-success" type="button"><i class="fa fa-plus"></i></button></span>
-                    <span class="input-group-btn" id="new-customer" style="cursor:pointer"><button class="btn btn-primary" type="button"><i class="fa fa-user"></i></button></span>
+                    <span class="input-group-btn" id="add-customer" style="cursor:pointer"><button class="btn btn-success" type="button"><i class="fa fa-check"></i></button></span>
+                    <span class="input-group-btn" id="new-customer" style="cursor:pointer"><button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></span>
                 </div>
                 <div class="form-group">
                     <label for="cliente">Cliente</label>
@@ -98,10 +98,10 @@ try {
             </div>
             <div class="modal-body">
                 <label for="cliente" id="label-search-customer">Ricerca cliente</label>
-                <div class="input-group" id="search-customer">
+                <div class="form-group" id="search-customer">
                     <input type="text" class="form-control" id="ricerca-cliente-edit" placeholder="Cliente" data-id="">
-                    <span class="input-group-btn" id="add-customer" style="cursor:pointer"><button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button></span>
                 </div>
+                <input type="hidden" id="ricerca-cliente-edit-hidden" placeholder="Cliente" value="">
                 <div class="form-group">
                     <label for="cliente">Cognome & Nome</label>
                     <input type="text" class="form-control" id="cognome-nome" placeholder="Cognome & Nome">

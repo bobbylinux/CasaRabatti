@@ -10,3 +10,4 @@
 {"user_id":1,"user_login":"admin","user_remoteaddr":"127.0.0.1","user_hostname":"localhost","user_lastlogin":"2016-04-19 21:40:03"}
 {"user_id":1,"user_login":"admin","user_remoteaddr":"127.0.0.1","user_hostname":"localhost","user_lastlogin":"2016-04-19 23:45:39"}
 {"user_id":1,"user_login":"admin","user_remoteaddr":"192.168.1.2","user_hostname":"condor.dev","user_lastlogin":"2016-04-20 00:33:33"}
+{"user_id":1,"user_login":"admin","user_remoteaddr":"127.0.0.1","user_hostname":"localhost","user_lastlogin":"2016-04-23 17:52:20"}

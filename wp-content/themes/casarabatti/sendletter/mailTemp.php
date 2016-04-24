@@ -1,10 +1,9 @@
 <?php
-require_once('../../../../wp-config.php');
+require_once "config.inc.php";
 $db_host = DB_HOST;
 $db_user = DB_USER;
 $db_password = DB_PASSWORD;
 $db_name = DB_NAME;
-require_once "config.inc.php";
 include "swiftmailer-5.x/lib/swift_required.php";
 include "log.php";
 

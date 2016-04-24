@@ -11,12 +11,12 @@ try {
 
         $term = $_POST['term'];
         $row_num = $_POST['row_num'];
-        $query_clienti = "SELECT id, nome FROM cal_clienti WHERE LOWER(TRIM(nome)) LIKE LOWER(TRIM('%" . $term . "%'))";
+        $query_clienti = "SELECT id, nome,telefono,mail,indirizzo,citta,nazione FROM cal_clienti WHERE LOWER(TRIM(nome)) LIKE LOWER(TRIM('%" . $term . "%'))";
 
         $return = mysqli_query($con, $query_clienti);
 
         while ($fetch = mysqli_fetch_array($return, MYSQLI_ASSOC)) {
-            $row_array = $fetch['id'].'|'.$fetch['nome'].'|'.$row_num;
+            $row_array = $fetch['id'].'|'.$fetch['nome'].'|'.$fetch['telefono'].'|'.$fetch['mail'].'|'.$fetch['indirizzo'].'|'.$fetch['citta'].'|'.$fetch['nazione'].'|'.$row_num;
             array_push($return_arr,$row_array);
         }
     }

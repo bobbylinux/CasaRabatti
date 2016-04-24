@@ -1,8 +1,8 @@
 <?php
 require_once('../../../wp-config.php');
 
-$errors         = array();      // array to hold validation errors
-$data           = array();      // array to pass back data
+$errors = array();      // array to hold validation errors
+$data = array();      // array to pass back data
 
 try {
     $con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD);
@@ -10,39 +10,44 @@ try {
 } catch (mysqli_sql_exception $error) {
     $errors['connessione'] = 'Nessuna connessione al database';
     $data['success'] = false;
-    $data['errors']  = $errors;
+    $data['errors'] = $errors;
     echo json_encode($data);
 }
 
-if (empty($_POST['cliente']))
-    $errors['cliente'] = 'Cliente richiesto.';
+if (empty($_POST['tipo']))
+    $errors['tipo'] = 'Tipo operazione richiesto.';
 
-if (empty($_POST['arrivo']))
-    $errors['arrivo'] = 'Arrivo richiesto.';
+if ($_POST['tipo'] != "delete") {
+    if (empty($_POST['cliente']))
+        $errors['cliente'] = 'Cliente richiesto.';
 
-if (empty($_POST['partenza']))
-    $errors['partenza'] = 'Partenza richiesto.';
+    if (empty($_POST['arrivo']))
+        $errors['arrivo'] = 'Arrivo richiesto.';
 
-if (empty($_POST['ambiente']))
-    $errors['ambiente'] = 'Ambiente richiesto.';
+    if (empty($_POST['partenza']))
+        $errors['partenza'] = 'Partenza richiesto.';
 
-$arrivoTmp = $_POST['arrivo'];
-$partenzaTmp = $_POST['partenza'];
+    if (empty($_POST['ambiente']))
+        $errors['ambiente'] = 'Ambiente richiesto.';
 
-$arrivoTmp = str_replace('/', '-', $arrivoTmp);
-$arrivoTmp = date("Y-m-d", strtotime($arrivoTmp));
-$partenzaTmp = str_replace('/', '-', $partenzaTmp);
-$partenzaTmp = date("Y-m-d", strtotime($partenzaTmp));
+    $arrivoTmp = $_POST['arrivo'];
+    $partenzaTmp = $_POST['partenza'];
 
-$datadiff = (round(abs(strtotime($partenzaTmp)-strtotime($arrivoTmp))/86400));
+    $arrivoTmp = str_replace('/', '-', $arrivoTmp);
+    $arrivoTmp = date("Y-m-d", strtotime($arrivoTmp));
+    $partenzaTmp = str_replace('/', '-', $partenzaTmp);
+    $partenzaTmp = date("Y-m-d", strtotime($partenzaTmp));
 
-if ($datadiff < 5) {
-    $errors['partenza'] = "La durata minima del soggiorno deve essere di 5 giorni.";
+    $datadiff = (round(abs(strtotime($partenzaTmp) - strtotime($arrivoTmp)) / 86400));
+
+    if ($datadiff < 5) {
+        $errors['partenza'] = "La durata minima del soggiorno deve essere di 5 giorni.";
+    }
 }
 
-if ( !empty($errors)) {
+if (!empty($errors)) {
     $data['success'] = false;
-    $data['errors']  = $errors;
+    $data['errors'] = $errors;
 } else {
     $cliente = trim($_POST['cliente']);
     $ambiente = trim($_POST['ambiente']);
@@ -56,7 +61,7 @@ if ( !empty($errors)) {
             } catch (mysqli_sql_exception $error) {
                 $errors['connessione'] = 'Errore in fase di inserimento nel database';
                 $data['success'] = false;
-                $data['errors']  = $errors;
+                $data['errors'] = $errors;
             }
             break;
         case "edit":
@@ -69,7 +74,7 @@ if ( !empty($errors)) {
             } catch (mysqli_sql_exception $error) {
                 $errors['connessione'] = 'Errore in fase di modifica nel database';
                 $data['success'] = false;
-                $data['errors']  = $errors;
+                $data['errors'] = $errors;
             }
             break;
         case "delete":
@@ -82,12 +87,10 @@ if ( !empty($errors)) {
             } catch (mysqli_sql_exception $error) {
                 $errors['connessione'] = 'Errore in fase di cancellazione nel database';
                 $data['success'] = false;
-                $data['errors']  = $errors;
+                $data['errors'] = $errors;
             }
             break;
     }
-
-
 
 
 }

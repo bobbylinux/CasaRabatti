@@ -1,7 +1,7 @@
 <?php
 // datastore=auditqueue;
 // created_on=1456137597;
-// updated_on=1461091642;
+// updated_on=1461402981;
 exit(0);
 ?>
 2bbb64d8a0a5a5aa163ccb9bb45622e6:{"created_at":1457167259,"message":null}
@@ -77,3 +77,7 @@ d601038a35942150b0b6970644e618fd:{"created_at":1460662729,"message":"Notice: adm
 9a0748cec3591a7d6709489639bff670:{"created_at":1460883200,"message":"Notice: admin, 192.168.1.2; Page was updated; identifier: 302; name: [:it]Ambienti[:]"}
 88138dc2fa0c191415c30b8507ff669e:{"created_at":1461004031,"message":null}
 aff6a9f205f902e24b92a3a63eb7d24a:{"created_at":1461091637,"message":null}
+397104628ca357ae856b96b24d801651:{"created_at":1461402899,"message":null}
+2b8a53483587f9621c74407996975032:{"created_at":1461402966,"message":"Warning: 127.0.0.1; Post deleted; identifier: 2"}
+36c92aecc9d176907c2c327557798b65:{"created_at":1461402971,"message":"Warning: 127.0.0.1; Post deleted; identifier: 300"}
+f66c12d17022bca624853db2c37ffe4a:{"created_at":1461402976,"message":"Warning: 127.0.0.1; Post deleted; identifier: 301"}

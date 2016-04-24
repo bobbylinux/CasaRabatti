@@ -23,7 +23,8 @@
     })
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function () {
+
+    $(document).on("click",".navbar-collapse a", function(){
         $('.navbar-toggle:visible').click();
     });
 
@@ -86,14 +87,14 @@
         });
     });
 
-    $(document).on("click",".btn-contattaci",function(event) {
+    $(document).on("click", ".btn-contattaci", function (event) {
         event.preventDefault();
 
         $("#ambiente-id").val($(this).data("id"));
         $('#contact-detail').modal('show');
     });
 
-    $(document).on("submit",".form-newsletter",function(e){
+    $(document).on("submit", ".form-newsletter", function (e) {
         e.preventDefault();
         // get the form data
         // there are many ways to get this data using jQuery (you can use the class or id also)
@@ -111,22 +112,22 @@
         $selected = chkArray.join(',');
 
         var formData = {
-            'nome'              : $("#nome").val(),
-            'email'             : $("#email").val(),
-            'captchaResponse'   : $("#g-recaptcha-response").val(),
-            'interessi'         : $selected,
+            'nome': $("#nome").val(),
+            'email': $("#email").val(),
+            'captchaResponse': $("#g-recaptcha-response").val(),
+            'interessi': $selected,
         };
 
         // process the form
         $.ajax({
-                type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-                url         : 'wp-content/themes/casarabatti/newsletterSubmit.php', // the url where we want to POST
-                data        : formData, // our data object
-                dataType    : 'json', // what type of data do we expect back from the server
-                encode          : true
-            })
+            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url: 'wp-content/themes/casarabatti/newsletterSubmit.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            encode: true
+        })
             // using the done promise callback
-            .done(function(data) {
+            .done(function (data) {
                 jQuery(".wait-msg").modal('hide');
                 // log data to the console so we can see
                 if (data.success === true) {
@@ -135,8 +136,8 @@
                 } else {
                     var $errors = "";
                     console.log(data);
-                    $.each( data.errors, function( key, value ) {
-                        $errors += "<p>"+value+ "</p>";
+                    $.each(data.errors, function (key, value) {
+                        $errors += "<p>" + value + "</p>";
                     });
                     jQuery("#error-msg-text").html($errors);
                     jQuery(".error-msg").modal("show");
@@ -144,35 +145,35 @@
             });
     });
 
-    $(document).on("click",".btn-invia-richiesta",function(e){
+    $(document).on("click", ".btn-invia-richiesta", function (e) {
         e.preventDefault();
-        $("body").css({"cursor":"wait"});
+        $("body").css({"cursor": "wait"});
         $(".alert").hide();
 
         var formData = {
-            'nome'              : $("#nome").val(),
-            'mail'              : $("#mail").val(),
-            'telefono'          : $("#telefono").val(),
-            'arrivo'            : $("#arrivo").val(),
-            'partenza'          : $("#partenza").val(),
-            'adulti'            : $("#adulti").val(),
-            'bambini'           : $("#bambini").val(),
-            'messaggio'         : $("#messaggio").val(),
-            'ambiente'          : $("#ambiente-id").val()
+            'nome': $("#nome").val(),
+            'mail': $("#mail").val(),
+            'telefono': $("#telefono").val(),
+            'arrivo': $("#arrivo").val(),
+            'partenza': $("#partenza").val(),
+            'adulti': $("#adulti").val(),
+            'bambini': $("#bambini").val(),
+            'messaggio': $("#messaggio").val(),
+            'ambiente': $("#ambiente-id").val()
         };
 
         // process the form
         $.ajax({
-            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : 'wp-content/themes/casarabatti/contattaciSubmit.php', // the url where we want to POST
-            data        : formData, // our data object
-            dataType    : 'json', // what type of data do we expect back from the server
-            encode          : true
+            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url: 'wp-content/themes/casarabatti/contattaciSubmit.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            encode: true
         })
             // using the done promise callback
-            .done(function(data) {
+            .done(function (data) {
 
-                $("body").css({"cursor":"pointer"});
+                $("body").css({"cursor": "pointer"});
                 // log data to the console so we can see
                 if (data.success === true) {
                     $("#nome").val("");
@@ -189,8 +190,8 @@
                 } else {
                     var $errors = "";
                     console.log(data);
-                    $.each( data.errors, function( key, value ) {
-                        switch(key) {
+                    $.each(data.errors, function (key, value) {
+                        switch (key) {
                             case "nome":
                                 $("#nome-error").html(value);
                                 $("#nome-error").show();
@@ -226,7 +227,7 @@
             });
     });
 
-    $(document).on("click",".btn-annulla-richiesta",function(){
+    $(document).on("click", ".btn-annulla-richiesta", function () {
         $("#contact-detail").modal("hide");
         $("#nome").val("");
         $("#mail").val("");
@@ -239,5 +240,4 @@
         $("#ambiente-id").val("");
         $(".alert").hide();
     });
-
 })(jQuery); // End of use strict

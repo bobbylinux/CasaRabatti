@@ -59,12 +59,14 @@ jQuery(document).ready(function () {
 
     });
 
-    jQuery("#ricerca-cliente, #ricerca-cliente-edit").autocomplete({
+
+    jQuery("#ricerca-cliente").autocomplete({
         source: function (request, response) {
             jQuery.ajax({
                 url: "../wp-content/themes/casarabatti/clienti.php",
                 dataType: "json",
                 type: "POST",
+                context: this,
                 data: {
                     term: request.term,
                     row_num: 1
@@ -89,6 +91,46 @@ jQuery(document).ready(function () {
         }
     });
 
+
+    jQuery("#ricerca-cliente-edit").autocomplete({
+        source: function (request, response) {
+            jQuery.ajax({
+                url: "../wp-content/themes/casarabatti/clienti.php",
+                dataType: "json",
+                type: "POST",
+                context: this,
+                data: {
+                    term: request.term,
+                    row_num: 1
+                },
+                success: function (data) {
+                    response(jQuery.map(data, function (item) {
+                        var code = item.split("|");
+                        return {
+                            label: code[1],
+                            value: code[1],
+                            data: item
+                        }
+                    }));
+                }
+            });
+        },
+        autoFocus: true,
+        minLength: 2,
+        select: function (event, ui) {
+            var names = ui.item.data.split("|");
+            jQuery("#ricerca-cliente-edit-hidden").val(names[0]); // save selected id to hidden input
+            jQuery("#cognome-nome").val(names[1]);
+            jQuery("#telefono").val(names[2]);
+            jQuery("#email").val(names[3]);
+            jQuery("#indirizzo").val(names[4]);
+            jQuery("#citta").val(names[5]);
+            jQuery("#nazione").val(names[6]);
+
+        }
+    });
+
+
     jQuery(document).on("click", "#add-customer", function (event) {
         event.preventDefault();
         var customer = jQuery("#ricerca-cliente").val();
@@ -101,12 +143,50 @@ jQuery(document).ready(function () {
 
     jQuery(document).on("click", "#new-customer", function () {
         jQuery("#ClienteLabel").html("Nuovo Cliente");
+        jQuery("#edit-customer").attr("id","save-customer");
         jQuery("#label-search-customer").hide();
         jQuery("#search-customer").hide();
         jQuery('#event-detail').modal('hide');
         jQuery('#customer-detail').modal('show');
     });
 
+    jQuery(document).on("click","#edit-customer",function(event) {
+        event.preventDefault();
+        jQuery(".wait-msg").modal("show");
+        var formData = {
+            'id' : jQuery("#ricerca-cliente-edit-hidden").val(),
+            'nome': jQuery("#cognome-nome").val(),
+            'email': jQuery("#email").val(),
+            'telefono': jQuery("#telefono").val(),
+            'indirizzo': jQuery("#indirizzo").val(),
+            'citta': jQuery("#citta").val(),
+            'nazione': jQuery("#nazione").val(),
+            'type' : "edit"
+        };
+
+        // process the form
+        jQuery.ajax({
+            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url: '../wp-content/themes/casarabatti/clientiSubmit.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            encode: true
+        })
+            // using the done promise callback
+            .done(function (data) {
+                // log data to the console so we can see
+                if (data.success == false) {
+                    console.log(data);
+                }
+                jQuery(".wait-msg").modal("hide");
+                jQuery('#customer-detail').modal('hide');
+                jQuery("#ricerca-cliente-edit-hidden").val("");
+                jQuery("#edit-customer").attr("id","save-customer");
+                // here we will handle errors and validation messages
+            });
+
+
+    });
     jQuery(document).on("click", "#save-customer", function (event) {
         event.preventDefault();
         jQuery(".wait-msg").modal("show");
@@ -116,7 +196,8 @@ jQuery(document).ready(function () {
             'telefono': jQuery("#telefono").val(),
             'indirizzo': jQuery("#indirizzo").val(),
             'citta': jQuery("#citta").val(),
-            'nazione': jQuery("#nazione").val()
+            'nazione': jQuery("#nazione").val(),
+            'type' : "add"
         };
 
         // process the form
@@ -145,6 +226,7 @@ jQuery(document).ready(function () {
         jQuery("#ClienteLabel").html("Gestisci Clienti");
         jQuery("#label-search-customer").show();
         jQuery("#search-customer").show();
+        jQuery("#save-customer").attr("id","edit-customer");
         jQuery('#customer-detail').modal('show');
     });
 
@@ -225,5 +307,9 @@ jQuery(document).ready(function () {
             });
 
     }
+
+    jQuery(document).on("click",".btn-cliente-edit",function(){
+       alert("clicked");
+    });
 });
 

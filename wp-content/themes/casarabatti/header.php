@@ -12,8 +12,12 @@
 
 
     <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link
+        href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link
+        href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <?php wp_head(); ?>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -29,13 +33,13 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
+            <a class="navbar-brand page-scroll" href="#page-top"><img src="<?php echo get_template_directory_uri(). '/img/logo.png';?>" class="img-responsive" alt=""></a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top"><img src="<?php echo get_template_directory_uri(). '/img/logo.png';?>" class="img-responsive" alt=""></a>
         </div>
         <?php
         $menu = wp_menu_id_by_name("HomeMenu");
@@ -48,11 +52,11 @@
                 if (is_home()) {
                     foreach ($menuArray as $menuItem) {
                         $menuId = str_replace(' ', '-', $menuItem->title);
-                    ?>
-                    <li>
-                        <a class="page-scroll" href="#<?php echo strtolower($menuId); ?>"><?php echo $menuItem->title; ?></a>
-                    </li>
-                    <?php
+                        ?>
+                        <li>
+                            <a class="page-scroll" href="#<?php echo strtolower($menuId); ?>"><?php echo $menuItem->title; ?></a>
+                        </li>
+                        <?php
                     }
                 } else { ?>
                     <li>
