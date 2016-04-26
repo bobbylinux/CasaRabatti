@@ -3,7 +3,7 @@ require_once('../../../wp-config.php');
 
 $errors = array();      // array to hold validation errors
 $data = array();      // array to pass back data
-
+$minStay = MIN_STAY;
 try {
     $con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD);
     mysqli_select_db($con, "casarabatti");
@@ -45,7 +45,7 @@ $partenzaTmp = date("Y-m-d", strtotime($partenzaTmp));
 
 $datadiff = (round(abs(strtotime($partenzaTmp)-strtotime($arrivoTmp))/86400));
 
-if ($datadiff < 5) {
+if ($datadiff < $minStay) {
     $errors['partenza'] = "La durata minima del soggiorno deve essere di 5 giorni.";
 }
 

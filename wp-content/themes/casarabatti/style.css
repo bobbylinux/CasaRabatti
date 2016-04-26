@@ -65,12 +65,12 @@ p {
 }
 
 .bg-primary {
-    background-color: #424242;
+    background-color: #9ea7af;
 }
 
 .bg-dark {
     color: #fff;
-    background-color: #424242;
+    background-color: #9ea7af;
 }
 
 .text-faded {
@@ -365,7 +365,7 @@ body {
     padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
-    background-color: #424242;
+    background-color: #9ea7af;
 }
 
 .btn-verifica {
@@ -381,7 +381,7 @@ footer {
     padding: 25px 0;
     text-align: center;
     color: #fff;
-    background-color: #424242;
+    background-color: #9ea7af;
 
 }
 
@@ -407,7 +407,7 @@ ul.social-buttons {
 ul.social-buttons li a {
     padding-top: 20%;
     display: block;
-    background-color: #424242;
+    background-color: #9ea7af;
     height: 40px;
     width: 40px;
     border-radius: 100%;
