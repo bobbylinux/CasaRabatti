@@ -24,12 +24,12 @@ if ( !empty($errors)) {
     $data['success'] = false;
     $data['errors']  = $errors;
 } else {
-    $nome = strtoupper(trim($_POST['nome']));
-    $email = strtolower(trim($_POST['email']));
-    $telefono = strtoupper(trim($_POST['telefono']));
-    $indirizzo = strtoupper(trim($_POST['indirizzo']));
-    $citta = strtoupper(trim($_POST['citta']));
-    $nazione = strtoupper(trim($_POST['nazione']));
+    $nome = strtoupper(trim(mysqli_real_escape_string ( $con ,$_POST['nome'])));
+    $email = strtolower(trim(addslashes($_POST['email'])));
+    $telefono = strtoupper(trim(addslashes($_POST['telefono'])));
+    $indirizzo = strtoupper(trim(mysqli_real_escape_string($con, $_POST['indirizzo'])));
+    $citta = strtoupper(trim(addslashes($_POST['citta'])));
+    $nazione = strtoupper(trim(addslashes($_POST['nazione'])));
 
     switch($_POST['type']) {
         case "add":

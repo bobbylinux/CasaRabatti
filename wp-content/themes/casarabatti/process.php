@@ -16,7 +16,8 @@ $query = mysqli_query($con, "select  cal_calendario.id as id,
                                         cal_calendario.inizio as inizio,
                                         cal_calendario.fine as fine,
                                         cal_calendario.ambiente as ambiente,
-                                        cal_ambienti.colore as colore
+                                        cal_ambienti.colore as colore,
+                                        cal_calendario.note as note
                                  from cal_calendario
                                  JOIN cal_ambienti
                                  ON cal_ambienti.id = cal_calendario.ambiente
@@ -38,21 +39,10 @@ while ($fetch = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
     $e['end'] = $fetch['fine'];
     $e['color'] = $fetch['colore'];
     $e['ambiente'] = $fetch['ambiente'];
+    $e['note'] = $fetch['note'];
     $allday = true;
     $e['allDay'] = $allday;
     array_push($events, $e);
 }
 
 echo json_encode($events);
-//       break;
-
-/*    case 'new':
-        $inizio = $_POST['inizio'];
-        $fine = $_POST['fine'];
-        $cliente = $_POST['cliente'];
-        $ambiente = $_POST['ambiente'];
-        $insert = mysqli_query($con,"INSERT INTO calendar(`title`, `startdate`, `enddate`, `allDay`) VALUES('$title','$startdate','$startdate','false')");
-        $lastid = mysqli_insert_id($con);
-        echo json_encode(array('status'=>'success','eventid'=>$lastid));
-        break;
-}*/

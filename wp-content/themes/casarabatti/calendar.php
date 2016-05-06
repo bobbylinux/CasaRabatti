@@ -78,6 +78,11 @@ try {
                     <input type="text" class="form-control" id="partenza-cal" placeholder="Partenza">
                     <div class="alert alert-danger" id="partenza-error" role="alert">Partenza: </div>
                 </div>
+                <div class="form-group">
+                    <label for="partenza">Note</label>
+                    <textarea class="form-control" rows="3" id="note" placeholder="Note"></textarea>
+                    <div class="alert alert-danger" id="note-error" role="alert">Note: </div>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Annulla</button>

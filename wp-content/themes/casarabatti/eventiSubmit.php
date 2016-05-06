@@ -52,10 +52,11 @@ if (!empty($errors)) {
 } else {
     $cliente = trim($_POST['cliente']);
     $ambiente = trim($_POST['ambiente']);
+    $note = trim($_POST['note']);
     switch ($_POST['tipo']) {
         case "new":
             try {
-                $query_insert = "INSERT INTO cal_calendario (ambiente, cliente, inizio, fine) values ('$ambiente','$cliente','$arrivoTmp','$partenzaTmp');";
+                $query_insert = "INSERT INTO cal_calendario (ambiente, cliente, inizio, fine, note) values ('$ambiente','$cliente','$arrivoTmp','$partenzaTmp','$note');";
                 $return_insert = mysqli_query($con, $query_insert);
                 $data['success'] = true;
                 $data['message'] = 'Success!';
@@ -68,7 +69,7 @@ if (!empty($errors)) {
         case "edit":
             $idEvento = $_POST['id'];
             try {
-                $query_update = "UPDATE cal_calendario SET ambiente = '$ambiente', cliente = '$cliente', inizio = '$arrivoTmp', fine = '$partenzaTmp' WHERE id = $idEvento;";
+                $query_update = "UPDATE cal_calendario SET ambiente = '$ambiente', note= '$note', cliente = '$cliente', inizio = '$arrivoTmp', fine = '$partenzaTmp' WHERE id = $idEvento;";
                 $return_update = mysqli_query($con, $query_update);
                 $data['success'] = true;
                 $data['message'] = 'Success!';

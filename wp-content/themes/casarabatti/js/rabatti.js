@@ -46,6 +46,7 @@ jQuery(document).ready(function () {
             jQuery("#ambiente").val(calEvent.ambiente);
             jQuery("#arrivo-cal").val(calEvent.start.format("DD/MM/YYYY"));
             jQuery("#partenza-cal").val((calEvent.end).format("DD/MM/YYYY"));
+            jQuery("#note").val(calEvent.note);
             jQuery(".alert").hide();
             jQuery("#event-type-hidden").val("edit");
             jQuery("#event-id-hidden").val(calEvent.id);
@@ -238,6 +239,7 @@ jQuery(document).ready(function () {
         jQuery("#citta").val("");
         jQuery("#nazione").val("");
         jQuery("#ricerca-cliente-edit").val("");
+        jQuery("#note").val("");
         jQuery(".alert").hide();
     });
 
@@ -255,7 +257,8 @@ jQuery(document).ready(function () {
             arrivo: jQuery("#arrivo-cal").val(),
             partenza: jQuery("#partenza-cal").val(),
             tipo: jQuery("#event-type-hidden").val(),
-            id: jQuery("#event-id-hidden").val()
+            id: jQuery("#event-id-hidden").val(),
+            note: jQuery("#note").val()
         };
 
         manageEvent(evento);
