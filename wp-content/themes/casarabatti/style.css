@@ -64,6 +64,10 @@ p {
     line-height: 1.5;
 }
 
+.navbar-toggle {
+    margin-top: 80px;
+}
+
 .bg-primary {
     background-color: #9ea7af;
 }
@@ -405,7 +409,6 @@ ul.social-buttons {
 }
 
 ul.social-buttons li a {
-    padding-top: 20%;
     display: block;
     background-color: #9ea7af;
     height: 40px;
@@ -491,6 +494,7 @@ ul.social-buttons li a:active {
         padding: 25% 0 15% 0;
         min-height: 100%;
     }
+
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -552,7 +556,7 @@ ul.social-buttons li a:active {
     display: none;
 }
 
-.navbar-right {
+.navbar-right, .navbar-left {
     margin-top: 50px;
     margin-left: 50px;
 }

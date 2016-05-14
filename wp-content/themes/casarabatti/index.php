@@ -14,14 +14,14 @@
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control hidden-xs" id="arrivo" name="arrivo"
-                               placeholder="Arrivo">
+                            <?php echo (get_locale() == "it_IT") ? 'placeholder="Arrivo"' : 'placeholder="Check in"'; ?>>
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control hidden-xs" id="partenza" name="partenza"
-                               placeholder="Partenza">
+                            <?php echo (get_locale() == "it_IT") ? 'placeholder="Partenza"' : 'placeholder="Check out"'; ?>>
                     </div>
                     <div class="form-group persone hidden-xs">
-                        <label for="sel1">Adulti</label>
+                        <label for="sel1"><?php echo (get_locale() == "it_IT") ?  'Adulti'  : 'Adults'; ?></label>
                         <select class="form-control" id="persone" name="adulti" placeholder="Adulti">
                             <option>1</option>
                             <option>2</option>
@@ -33,7 +33,7 @@
                         </select>
                     </div>
                     <div class="form-group bambini hidden-xs">
-                        <label for="sel1">Bambini</label>
+                        <label for="sel1"><?php echo (get_locale() == "it_IT") ?  'Bambini 0-3'  : 'Children 0-3'; ?></label>
                         <select class="form-control" id="bambini" name="bambini" placeholder="Bambini">
                             <option>0</option>
                             <option>1</option>
@@ -46,7 +46,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-default btn-xl btn-verifica hidden-xs" value="verifica"/>
+                        <input type="submit" class="btn btn-default btn-xl btn-verifica hidden-xs" value="<?php echo (get_locale() == "it_IT") ?  'Verifica'  : 'Search'; ?>"/>
                     </div>
                 </div>
                 <div class="form-group visible-xs-block">
@@ -104,18 +104,18 @@ $postId = str_replace(' ', '-', __($the_post->post_title));
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-5 col-xs-offset-1">
+                <div class="col-xs-4 col-xs-offset-2">
                     <div class="row no-gutter">
-                        <div class="col-sm-12">
+                        <div class="col-xs-12">
                             <a href="#" class="portfolio-box">
                                 <?php echo do_shortcode('[nggallery id=290 template=limonaia]'); ?>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-5">
+                <div class="col-xs-4">
                     <div class="row no-gutter">
-                        <div class="col-sm-12">
+                        <div class="col-xs-12">
                             <a href="#" class="portfolio-box">
                                 <?php echo do_shortcode('[nggallery id=294 template=limonaia]'); ?>
                             </a>
@@ -124,7 +124,7 @@ $postId = str_replace(' ', '-', __($the_post->post_title));
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-5 col-xs-offset-1">
+                <div class="col-xs-4 col-xs-offset-2">
                     <div class="row no-gutter">
                         <div class="col-xs-12">
                             <a href="#" class="portfolio-box">
@@ -133,7 +133,7 @@ $postId = str_replace(' ', '-', __($the_post->post_title));
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-5">
+                <div class="col-xs-4">
                     <div class="row no-gutter">
                         <div class="col-xs-12">
                             <a href="#" class="portfolio-box">
@@ -214,7 +214,7 @@ $postId = str_replace(' ', '-', __($the_post->post_title));
     </section>
     <!-- newsletter -->
     <section class="bg-primary newsletter" id="newsletter">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center main-title">
                     <h2 class="section-heading">Newsletter</h2>
@@ -224,8 +224,8 @@ $postId = str_replace(' ', '-', __($the_post->post_title));
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p>Se siete interessati a ricevere informazioni da Casa Rabatti
-                        <br>iscrivetevi alla nostra mailing list.</p>
+                    <p><?php echo (get_locale() == "it_IT") ?  'Se siete interessati a ricevere informazioni da '  : 'If you are interested to receive information about '; ?>Casa Rabatti
+                        <br><?php echo (get_locale() == "it_IT") ?  'iscriviti alla nostra '  : 'join our '; ?>newsletter</p>
                 </div>
             </div>
             <?php
@@ -257,14 +257,14 @@ $postId = str_replace(' ', '-', __($the_post->post_title));
                 <div class="col-lg-6 col-lg-offset-3 text-center">
                     <form class="form-newsletter">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="nome" placeholder="Nome E Cognome">
+                            <input type="text" class="form-control" id="nome" placeholder="<?php echo (get_locale() == 'it_IT') ?  'Nome e Cognome '  : 'Name and Surname'; ?>">
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control" id="email" placeholder="Email">
                         </div>
                         <?php if ($interessi != "") { ?>
                             <div class="form-group">
-                                <label for="interessi">Sono interessato a:</label>
+                                <label for="interessi"><?php echo (get_locale() == "it_IT") ?  'Sono interessato a: '  : 'I am interested of: '; ?></label>
                                 <?php echo $interessi; ?>
                             </div>
                         <?php } ?>
@@ -272,7 +272,7 @@ $postId = str_replace(' ', '-', __($the_post->post_title));
                             <div class="g-recaptcha" data-sitekey="6LfagxsTAAAAAA5Cy4nVCL3qs5tTAlFli-qpCf4R"></div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-block btn-default">Registrati</button>
+                            <button type="submit" class="btn btn-block btn-default"><?php echo (get_locale() == "it_IT") ?  'Registrati'  : 'Sign Up'; ?></button>
                         </div>
                     </form>
                 </div>
