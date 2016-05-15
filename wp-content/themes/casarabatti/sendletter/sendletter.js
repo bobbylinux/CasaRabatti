@@ -3,12 +3,12 @@ jQuery(document).ready(function () {
     var $selectedVar = false;
     var $body = jQuery("body");
 
-    jQuery(document).on("click",".btn-invia", function(event) {
+    jQuery(document).on("click", ".btn-invia", function (event) {
 
         $submitter = jQuery(this).html();
     });
 
-    jQuery(document).on("click",".btn-invia-prova", function(event) {
+    jQuery(document).on("click", ".btn-invia-prova", function (event) {
 
         $submitter = jQuery(this).html();
     });
@@ -39,7 +39,7 @@ jQuery(document).ready(function () {
             'testo': jQuery("#text-newsletter").val(),
             'interessi': selected,
             'interessiTutti': jQuery("#all-selected-newsletter").val(),
-            'invio' : $submitter
+            'invio': $submitter
         };
 
 
@@ -141,13 +141,31 @@ jQuery(document).ready(function () {
         return allSelected;
     }
 
-    jQuery(document).on("click","#btn-add-interesse",function(event){
+    jQuery(document).on("click", "#btn-add-interesse", function (event) {
         event.preventDefault();
         // process the form
-        var formData = {
-            'interesse': jQuery("#interesse-input").val(),
-            'type'     : 'add'
+        var interesse = new Array();
+        var lingua = new Array();
+        var checkNull = true;
+        jQuery(".interesse-input").each(function() {
+            if (!jQuery(this).val()=="") {
+                checkNull = false;
+            }
+            interesse.push(jQuery(this).val());
+        });
 
+        if (checkNull) {
+            return;
+        }
+
+        jQuery(".lingua").each(function(){
+            lingua.push(jQuery(this).val());
+        });
+
+        var formData = {
+            'interesse': interesse,
+            'lingua': lingua,
+            'type': 'add'
         };
 
 
@@ -166,7 +184,7 @@ jQuery(document).ready(function () {
                 console.log(data);
                 if (data.success == true) {
                     jQuery("#table-interessi tr:last").after(data.message);
-                    jQuery("#interesse-input").val("");
+                    jQuery(".interesse-input").val("");
                 } else {
                     jQuery("#error-msg-text").html(data.errors);
                     jQuery(".error-msg").modal("show");
@@ -175,12 +193,12 @@ jQuery(document).ready(function () {
             });
     });
 
-    jQuery(document).on("click",".btn-del-interesse",function(event){
+    jQuery(document).on("click", ".btn-del-interesse", function (event) {
         event.preventDefault();
         // process the form
         var formData = {
-            'type'     : 'delete',
-            'id'       : jQuery(this).data("id")
+            'type': 'delete',
+            'id': jQuery(this).data("id")
 
         };
 
@@ -207,23 +225,70 @@ jQuery(document).ready(function () {
             });
     });
 
-    jQuery(document).on("click",".btn-edit-interesse",function(event){
+    jQuery(document).on("click", ".btn-edit-interesse", function (event) {
         event.preventDefault();
-        jQuery(this).html("Salva");
-        jQuery(this).closest("tr").find(".interesse-edit-input").show();
-        jQuery(this).closest("tr").find(".interesse-td").hide();
-        jQuery(this).removeClass("btn-edit-interesse");
-        jQuery(this).addClass("btn-save-interesse");
+
+        var $id = jQuery(this).data("id");
+        jQuery(".wait-msg").modal('show');
+        jQuery(this).attr("disabled", "disabled");
+
+        jQuery("#btn-save-interesse").data("id",$id);
+
+        jQuery("#btn-add-interesse-div").hide();
+        jQuery("#btn-save-interesse-div").show();
+
+
+        formData = {
+            id : $id
+        }
+
+        jQuery.ajax({
+            type: 'GET', // define the type of HTTP verb we want to use (POST for our form)
+            url: '../wp-content/themes/casarabatti/sendletter/getInteressiLingua.php', // the url where we want to POST
+            data: formData, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            encode: true
+        })
+            // using the done promise callback
+            .done(function (data) {
+                jQuery(".wait-msg").modal('hide');
+                console.log(data);
+                jQuery.each(data, function(k, v) {
+                    jQuery(".interesse-input").eq(k).val(v.nome);
+                    jQuery(".interesse-input").eq(k).val(v.nome);
+
+                    jQuery(".lingua").eq(k).val(v.lingua);
+
+                });
+
+            });
+
+
+
+        jQuery(this).removeAttr("disabled");
+
     });
 
-    jQuery(document).on("click",".btn-save-interesse",function(event){
+    jQuery(document).on("click","#btn-save-interesse", function(event) {
         event.preventDefault();
         // process the form
-        var formData = {
-            'type'     : 'edit',
-            'id'       : jQuery(this).data("id"),
-            'interesse': jQuery(this).closest("tr").find(".interesse-edit-input").val()
+        var interesse = new Array();
+        var lingua = new Array();
+        var id = jQuery(this).data("id");
 
+        jQuery(".interesse-input").each(function() {
+            interesse.push(jQuery(this).val());
+        });
+
+        jQuery(".lingua").each(function(){
+            lingua.push(jQuery(this).val());
+        });
+
+        var formData = {
+            'interesse': interesse,
+            'lingua': lingua,
+            'id': id,
+            'type': 'edit'
         };
 
 
@@ -239,30 +304,28 @@ jQuery(document).ready(function () {
         })
             // using the done promise callback
             .done(function (data) {
-                jQuery(".wait-msg").modal('hide');
                 console.log(data);
                 if (data.success == true) {
-                    jQuery(this).html("Modifica");
-                    jQuery(this).removeClass("btn-save-interesse");
-                    jQuery(this).addClass("btn-edit-interesse");
-                    jQuery(this).closest("tr").find(".interesse-td").html(jQuery(this).closest("tr").find(".interesse-edit-input").val());
-                    jQuery(this).closest("tr").find(".interesse-edit-input").hide();
-                    jQuery(this).closest("tr").find(".interesse-td").show();
+                    jQuery("table").find('[data-id="' + id + '"]').remove();
+                    jQuery("#table-interessi tr:last").after(data.message);
+                    jQuery(".interesse-input").val("");
                 } else {
                     jQuery("#error-msg-text").html(data.errors);
                     jQuery(".error-msg").modal("show");
                 }
 
+                jQuery("#btn-add-interesse-div").show();
+                jQuery("#btn-save-interesse-div").hide();
+                jQuery(".wait-msg").modal('hide');
             });
     });
 
-
-    jQuery(document).on("click",".btn-del-iscritto",function(event){
+    jQuery(document).on("click", ".btn-del-iscritto", function (event) {
         event.preventDefault();
         // process the form
         var formData = {
-            'type'     : 'delete',
-            'id'       : jQuery(this).data("id")
+            'type': 'delete',
+            'id': jQuery(this).data("id")
 
         };
 
@@ -289,12 +352,12 @@ jQuery(document).ready(function () {
             });
     });
 
-    jQuery(document).on("click",".btn-confirm-iscritto",function(event){
+    jQuery(document).on("click", ".btn-confirm-iscritto", function (event) {
         event.preventDefault();
         // process the form
         var formData = {
-            'type'     : 'confirm',
-            'id'       : jQuery(this).data("id")
+            'type': 'confirm',
+            'id': jQuery(this).data("id")
 
         };
 
@@ -322,12 +385,12 @@ jQuery(document).ready(function () {
     });
 
 
-    jQuery(document).on("click","#btn-add-iscritto-prova",function(event){
+    jQuery(document).on("click", "#btn-add-iscritto-prova", function (event) {
         event.preventDefault();
         // process the form
         var formData = {
             'indirizzo': jQuery("#iscritto-prova-input").val(),
-            'type'     : 'add'
+            'type': 'add'
 
         };
 
@@ -356,7 +419,7 @@ jQuery(document).ready(function () {
             });
     });
 
-    jQuery(document).on("click",".btn-edit-iscritto-prova",function(event){
+    jQuery(document).on("click", ".btn-edit-iscritto-prova", function (event) {
         event.preventDefault();
         jQuery(this).html("Salva");
         jQuery(this).closest("tr").find(".iscritto-prova-edit-input").show();
@@ -365,12 +428,12 @@ jQuery(document).ready(function () {
         jQuery(this).addClass("btn-save-iscritto-prova");
     });
 
-    jQuery(document).on("click",".btn-save-iscritto-prova",function(event){
+    jQuery(document).on("click", ".btn-save-iscritto-prova", function (event) {
         event.preventDefault();
         // process the form
         var formData = {
-            'type'     : 'edit',
-            'id'       : jQuery(this).data("id"),
+            'type': 'edit',
+            'id': jQuery(this).data("id"),
             'indirizzo': jQuery(this).closest("tr").find(".iscritto-prova-edit-input").val()
 
         };
@@ -405,12 +468,12 @@ jQuery(document).ready(function () {
             });
     });
 
-    jQuery(document).on("click",".btn-del-iscritto-prova",function(event){
+    jQuery(document).on("click", ".btn-del-iscritto-prova", function (event) {
         event.preventDefault();
         // process the form
         var formData = {
-            'type'     : 'delete',
-            'id'       : jQuery(this).data("id")
+            'type': 'delete',
+            'id': jQuery(this).data("id")
 
         };
 
@@ -436,6 +499,5 @@ jQuery(document).ready(function () {
 
             });
     });
-
 });
 

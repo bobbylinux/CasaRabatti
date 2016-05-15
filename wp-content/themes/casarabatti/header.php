@@ -68,12 +68,12 @@
         ?>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul  class="nav navbar-nav navbar-left">
+            <!--<ul  class="nav navbar-nav navbar-left">
                 <li><a href="<?php echo get_site_url() . '/it/'?>" target="_self">it</a>
                 </li>
                 <li><a href="<?php echo get_site_url() . '/en/'?>" target="_self">en</a>
                 </li>
-            </ul>
+            </ul>-->
             <ul class="nav navbar-nav navbar-right">
 
                 <?php

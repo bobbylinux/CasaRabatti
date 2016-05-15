@@ -236,7 +236,7 @@ $postId = str_replace(' ', '-', __($the_post->post_title));
             } catch (mysqli_sql__xception $error) {
                 echo json__ncode(array("error" => $error->getMessage()));
             }
-            $result_interessi = mysqli_query($con, "SELECT ID, nome FROM interessi WHERE cancellato = 0 ORDER BY nome ASC");
+            $result_interessi = mysqli_query($con, "SELECT ir.ID AS ID, i18.nome AS nome FROM interessi ir INNER JOIN interessi_i18ns i18 ON ir.id = i18.interesse INNER JOIN lingue ln ON ln.id = i18.lingua WHERE ln.lingua = '". get_locale()."' AND ln.cancellato = '0' AND ir.cancellato = '0' ORDER BY nome ASC");
             $tabCounter = 0;
             while ($row = mysqli_fetch_assoc($result_interessi)) {
                 if (($tabCounter % 4) == 0) {

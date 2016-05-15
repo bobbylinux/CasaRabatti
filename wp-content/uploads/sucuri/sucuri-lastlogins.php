@@ -15,3 +15,7 @@
 {"user_id":1,"user_login":"admin","user_remoteaddr":"192.168.1.2","user_hostname":"condor.dev","user_lastlogin":"2016-05-06 21:50:14"}
 {"user_id":1,"user_login":"admin","user_remoteaddr":"127.0.0.1","user_hostname":"localhost","user_lastlogin":"2016-05-14 11:33:12"}
 {"user_id":1,"user_login":"admin","user_remoteaddr":"127.0.0.1","user_hostname":"localhost","user_lastlogin":"2016-05-14 14:30:07"}
+{"user_id":1,"user_login":"admin","user_remoteaddr":"192.168.1.2","user_hostname":"condor.dev","user_lastlogin":"2016-05-15 14:05:47"}
+{"user_id":1,"user_login":"admin","user_remoteaddr":"127.0.0.1","user_hostname":"localhost","user_lastlogin":"2016-05-15 16:52:50"}
+{"user_id":1,"user_login":"admin","user_remoteaddr":"127.0.0.1","user_hostname":"localhost","user_lastlogin":"2016-05-15 17:49:48"}
+{"user_id":1,"user_login":"admin","user_remoteaddr":"127.0.0.1","user_hostname":"localhost","user_lastlogin":"2016-05-15 17:57:54"}

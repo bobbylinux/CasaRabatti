@@ -6,11 +6,11 @@ try {
     $con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD);
     mysqli_select_db($con, "casarabatti");
 
-    $result = mysqli_query($con, 'SELECT ID, nome FROM interessi ORDER BY nome ASC');
+    $result = mysqli_query($con, "SELECT ir.ID AS ID, i18.nome AS nome FROM interessi ir INNER JOIN interessi_i18ns i18 ON ir.id = i18.interesse INNER JOIN lingue ln ON ln.id = i18.lingua WHERE ln.lingua = '" . get_locale() . "' AND ln.cancellato = '0' AND ir.cancellato = 0 ORDER BY nome ASC");
 
-    $tabellaInteressi ="";
+    $tabellaInteressi = "";
     while ($row = mysqli_fetch_assoc($result)) {
-        $tabellaInteressi .= '<tr><td class="col-xs-8"><span class="interesse-td">'.stripslashes($row["nome"]).'</span><input type="text" class="form-control interesse-edit-input" value="'.stripslashes($row["nome"]).'" ></td><td class="col-xs-4 text-right"><button type="button" class="btn btn-primary btn-edit-interesse" data-id="'.$row["ID"].'">Modifica</button><button type="button" class="btn btn-danger btn-del-interesse" data-id="'.$row["ID"].'">Elimina</button></td></tr>';
+        $tabellaInteressi .= '<tr data-id="'.$row["ID"].'"><td class="col-xs-8"><span class="interesse-td">' . stripslashes($row["nome"]) . '</span><input type="text" class="form-control interesse-edit-input" value="' . stripslashes($row["nome"]) . '" ></td><td class="col-xs-4 text-right"><button type="button" class="btn btn-primary btn-edit-interesse" data-id="' . $row["ID"] . '">Modifica</button><button type="button" class="btn btn-danger btn-del-interesse" data-id="' . $row["ID"] . '">Elimina</button></td></tr>';
     }
 
     if ($tabellaInteressi == "") {
@@ -18,7 +18,46 @@ try {
     } else {
         $interessiTutti = "0";
     }
-    $result_join = mysqli_query($con,"SELECT distinct interessi.ID as ID, interessi.nome FROM interessi ORDER BY nome ASC");
+
+    $resultCountLang = mysqli_query($con, "SELECT count(1) as nlang FROM lingue WHERE cancellato = '0'");
+    while ($row_lingue = mysqli_fetch_assoc($resultCountLang)) {
+        $nlang = $row_lingue['nlang'];
+    }
+    $form = '';
+    for ($i = 0; $i<$nlang; $i++) {
+        $j = 0;
+        $form .=     '<div class="row">';
+        $form .=    '<div class="col-xs-12">';
+        $form .=    '<div class="page-header interessi-header">';
+        $form .=    '<div class="row">';
+        $form .=    '<div class="col-xs-6 vcenter">';
+        $form .=    '<input type="text" class="form-control interesse-input" placeholder="Interesse">';
+        $form .=    '</div>';
+        $form .=    '<div class="col-xs-1 vcenter">';
+        $form .=    '<label for="lingue">Lingua</label>';
+        $form .=    '</div>';
+        $form .=    '<div class="col-xs-2 vcenter">';
+
+        $result_lingue = mysqli_query($con, "SELECT id, lingua FROM lingue WHERE cancellato = '0' ORDER BY id");
+        $lingueSelect = '<select class="form-control lingua" name="lingua">';
+        while ($row_lingue = mysqli_fetch_assoc($result_lingue)) {
+            $lingueSelect .= "<option value='" . $row_lingue["id"] . "' ";
+            if ($j == $i) {
+                $lingueSelect .= 'selected="selected"';
+            }
+            $j++;
+            $lingueSelect .= '>' . $row_lingue["lingua"] . '</option>';
+        }
+        $lingueSelect .= '</select>';
+
+        $form .=    $lingueSelect;
+
+        $form .=    '</div></div></div></div></div>';
+    }
+
+
+
+    $result_join = mysqli_query($con, "SELECT ir.ID AS ID, i18.nome AS nome FROM interessi ir INNER JOIN interessi_i18ns i18 ON ir.id = i18.interesse INNER JOIN lingue ln ON ln.id = i18.lingua WHERE ln.lingua = '" . get_locale() . "' AND ln.cancellato = '0' ORDER BY nome ASC");
     $tabCounter = 0;
     while ($row_join = mysqli_fetch_assoc($result_join)) {
         if (($tabCounter % 4) == 0) {
@@ -36,13 +75,13 @@ try {
     $result_iscritti = mysqli_query($con, "SELECT ID, nome, mail FROM soci WHERE confermato = 0 ORDER BY id ASC");
 
     while ($row = mysqli_fetch_assoc($result_iscritti)) {
-        $tabellaIscritti .= '<tr><td class="col-xs-8"><span class="inscritto-td">'.stripslashes($row["nome"]).' - '.$row["mail"].'</span></td><td class="col-xs-4 text-right"><button type="button" class="btn btn-primary btn-confirm-iscritto" data-id="'.$row["ID"].'">Conferma</button><button type="button" class="btn btn-danger btn-del-iscritto" data-id="'.$row["ID"].'">Elimina</button></td></tr>';
+        $tabellaIscritti .= '<tr><td class="col-xs-8"><span class="inscritto-td">' . stripslashes($row["nome"]) . ' - ' . $row["mail"] . '</span></td><td class="col-xs-4 text-right"><button type="button" class="btn btn-primary btn-confirm-iscritto" data-id="' . $row["ID"] . '">Conferma</button><button type="button" class="btn btn-danger btn-del-iscritto" data-id="' . $row["ID"] . '">Elimina</button></td></tr>';
     }
 
     $result_prova = mysqli_query($con, "SELECT id, mail FROM soci_prova ORDER BY mail ASC");
 
     while ($row = mysqli_fetch_assoc($result_prova)) {
-        $tabellaIscrittiProva .= '<tr><td class="col-xs-8"><span class="iscritto-prova-td">'.$row["mail"].'</span><input type="text" class="form-control iscritto-prova-edit-input" value="'.$row["mail"].'" ></td><td class="col-xs-4 text-right"><button type="button" class="btn btn-primary btn-edit-iscritto-prova" data-id="'.$row["id"].'">Modifica</button><button type="button" class="btn btn-danger btn-del-iscritto-prova" data-id="'.$row["id"].'">Elimina</button></td></tr>';
+        $tabellaIscrittiProva .= '<tr><td class="col-xs-8"><span class="iscritto-prova-td">' . $row["mail"] . '</span><input type="text" class="form-control iscritto-prova-edit-input" value="' . $row["mail"] . '" ></td><td class="col-xs-4 text-right"><button type="button" class="btn btn-primary btn-edit-iscritto-prova" data-id="' . $row["id"] . '">Modifica</button><button type="button" class="btn btn-danger btn-del-iscritto-prova" data-id="' . $row["id"] . '">Elimina</button></td></tr>';
     }
 
 } catch (mysqli_sql_exception $error) {
@@ -54,10 +93,11 @@ try {
 <style>
 
     .wait-msg, .error-msg {
-        top:25%;
+        top: 25%;
         left: 10%;
 
     }
+
     .interesse-edit-input, .iscritto-prova-edit-input {
         display: none;
     }
@@ -65,6 +105,7 @@ try {
     .interessi-modal, .iscritti-modal, .iscritti-prova-modal {
         left: 10%;
     }
+
     .alert {
         display: none;
     }
@@ -81,9 +122,15 @@ try {
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target=".interessi-modal">Gestione Interessi</button>
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".iscritti-modal">Gestione Iscritti</button>
-            <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target=".iscritti-prova-modal">Gestione Invio Prova</button>
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target=".interessi-modal">
+                Gestione Interessi
+            </button>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".iscritti-modal">
+                Gestione Iscritti
+            </button>
+            <button type="button" class="btn btn-warning btn-lg" data-toggle="modal"
+                    data-target=".iscritti-prova-modal">Gestione Invio Prova
+            </button>
         </div>
     </div>
     <?php
@@ -98,9 +145,10 @@ try {
         </div>
         <div class="form-group">
             <?php if (isset($interessi)) { ?>
-            <label for="invia-a">Invia a</label>
-            <button type="submit" id="toggle-selection" class="btn btn-default">Seleziona Tutti</button>
-            <?php echo $interessi; } ?>
+                <label for="invia-a">Invia a</label>
+                <button type="submit" id="toggle-selection" class="btn btn-default">Seleziona Tutti</button>
+                <?php echo $interessi;
+            } ?>
             <div class="alert alert-danger" id="interessi-error" role="alert">Non hai selezionato nessun interesse.
             </div>
         </div>
@@ -112,7 +160,8 @@ try {
             <div class="alert alert-danger" id="message-error" role="alert">Non hai inserito il messaggio.</div>
         </div>
         <input type="hidden" class="form-control" id="all-selected-newsletter"
-               value="<?php echo $interessiTutti;?>">
+               value="<?php echo $interessiTutti; ?>">
+
         <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block btn-invia">Invia</button>
         </div>
@@ -126,53 +175,64 @@ try {
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Newsletter</h4>
             </div>
             <div class="modal-body">
-                <p>Inoltro pianificato correttamente, l'invio avverr&agrave; nella notte - E' possibile chiudere la finestra adesso</p>
+                <p>Inoltro pianificato correttamente, l'invio avverr&agrave; nella notte - E' possibile chiudere la
+                    finestra adesso</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
 </div><!-- /.modal -->
 <div class="modal fade" tabindex="-1" role="dialog" id="modal-invio-prova">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Newsletter</h4>
             </div>
             <div class="modal-body">
-                <p>Invio di prova effettuato. Tra poco riceverai la mail agli indirizzi inseriti nella sezione di prova</p>
+                <p>Invio di prova effettuato. Tra poco riceverai la mail agli indirizzi inseriti nella sezione di
+                    prova</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
-<div class="modal fade interessi-modal" tabindex="-1" role="dialog" >
+<!-- modal gestione interessi-->
+<div class="modal fade interessi-modal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Gestione Interessi</h4>
             </div>
             <div class="modal-body">
+                <?php echo $form; ?>
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="page-header">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Interesse</label>
-                                <input type="text" class="form-control" id="interesse-input" placeholder="Interesse">
-                            </div>
-                            <div class="form-group">
-                                <button type="button" class="btn btn-block btn-success" id="btn-add-interesse">Aggiungi Interesse</button>
-                            </div>
+                        <div class="form-group" id="btn-add-interesse-div">
+                            <button type="button" class="btn btn-block btn-success" id="btn-add-interesse">
+                                Aggiungi Interesse
+                            </button>
+                        </div>
+                        <div class="form-group" id="btn-save-interesse-div" style="display:none">
+                            <button type="button" class="btn btn-block btn-primary" id="btn-save-interesse" data-id="">
+                                Salva Modifiche
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -181,7 +241,10 @@ try {
                     <div class="col-xs-12">
                         <table class="table table-striped" id="table-interessi">
                             <thead>
-                            <tr><th>Interesse</th><th></th></tr>
+                            <tr>
+                                <th>Interesse</th>
+                                <th></th>
+                            </tr>
                             </thead>
                             <?php echo $tabellaInteressi; ?>
                         </table>
@@ -194,11 +257,12 @@ try {
         </div>
     </div>
 </div>
-<div class="modal fade iscritti-modal" tabindex="-1" role="dialog" >
+<div class="modal fade iscritti-modal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Iscritti da confermare</h4>
             </div>
             <div class="modal-body">
@@ -206,7 +270,10 @@ try {
                     <div class="col-xs-12">
                         <table class="table table-striped" id="table-soci">
                             <thead>
-                            <tr><th>Iscritto</th><th></th></tr>
+                            <tr>
+                                <th>Iscritto</th>
+                                <th></th>
+                            </tr>
                             </thead>
                             <?php echo $tabellaIscritti; ?>
                         </table>
@@ -219,11 +286,12 @@ try {
         </div>
     </div>
 </div>
-<div class="modal fade iscritti-prova-modal" tabindex="-1" role="dialog" >
+<div class="modal fade iscritti-prova-modal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Gestione Invio Prova</h4>
             </div>
             <div class="modal-body">
@@ -231,11 +299,14 @@ try {
                     <div class="col-xs-12">
                         <div class="page-header">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Iscritti Per Prova</label>
-                                <input type="text" class="form-control" id="iscritto-prova-input" placeholder="Indirizzo Mail">
+                                <label for="iscritto-prova-input">Iscritti Per Prova</label>
+                                <input type="text" class="form-control" id="iscritto-prova-input"
+                                       placeholder="Indirizzo Mail">
                             </div>
                             <div class="form-group">
-                                <button type="button" class="btn btn-block btn-success" id="btn-add-iscritto-prova">Aggiungi Indirizzo Mail</button>
+                                <button type="button" class="btn btn-block btn-success" id="btn-add-iscritto-prova">
+                                    Aggiungi Indirizzo Mail
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -245,7 +316,10 @@ try {
                     <div class="col-xs-12">
                         <table class="table table-striped" id="table-iscritti-prova">
                             <thead>
-                            <tr><th>Indirizzo</th><th></th></tr>
+                            <tr>
+                                <th>Indirizzo</th>
+                                <th></th>
+                            </tr>
                             </thead>
                             <?php echo $tabellaIscrittiProva; ?>
                         </table>
@@ -263,24 +337,30 @@ try {
         <div class="modal-content">
             <div class="modal-body">
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 100%">
                     </div>
                 </div>
                 <h4 class="text-center">Attendere Prego</h4>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
 </div><!-- /.modal -->
 <div class="modal fade error-msg" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body text-center">
                 <h4>Errore</h4>
+
                 <p id="error-msg-text"></p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">Chiudi</button>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
 </div><!-- /.modal -->
