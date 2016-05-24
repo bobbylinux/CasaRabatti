@@ -69,9 +69,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <!--<ul  class="nav navbar-nav navbar-left">
-                <li><a href="<?php echo get_site_url() . '/it/'?>" target="_self">it</a>
+                <li><a href="<?php echo get_site_url() . '/it/' ?>" target="_self">it</a>
                 </li>
-                <li><a href="<?php echo get_site_url() . '/en/'?>" target="_self">en</a>
+                <li><a href="<?php echo get_site_url() . '/en/' ?>" target="_self">en</a>
                 </li>
             </ul>-->
             <ul class="nav navbar-nav navbar-right">
@@ -83,8 +83,16 @@
                         $menuId = str_replace(' ', '-', $menuItem->title);
                         ?>
                         <li>
-                            <a class="page-scroll"
-                               href="#<?php echo strtolower($menuId); ?>"><?php echo $menuItem->title; ?></a>
+                            <?php
+                            if (strtolower($menuId) == "i-locali") {
+                                $href = get_site_url() . "/ambienti";
+                                echo '<a ';
+                            } else {
+                                $href = "#" . strtolower($menuId);
+                                echo '<a class="page-scroll" ';
+                            }
+                            ?>
+                            href="<?php echo $href; ?>"><?php echo $menuItem->title; ?></a>
                         </li>
                         <?php
                     }

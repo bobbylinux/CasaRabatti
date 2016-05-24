@@ -1,7 +1,7 @@
 <?php
 // getting the captcha
 $captcha = "";
-/*if (isset($_POST["captchaResponse"]))
+if (isset($_POST["captchaResponse"]))
     $captcha = $_POST["captchaResponse"];
 
 if (!$captcha) {
@@ -22,7 +22,7 @@ if ($response["success"] == false) {
     $data['errors'] = $errors;
     echo json_encode($data);
     die;
-}*/
+}
 
 require_once('../../../wp-config.php');
 
@@ -116,7 +116,7 @@ if (!empty($errors)) {
 
 
     //sending email
-    /*if ($data['success']) {
+    if ($data['success']) {
         try {
             $to = 'info@casarabatti.it'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
             $email_subject = "Richiesta di iscrizione alla newsletter casarabatti.it:  $nome";
@@ -130,7 +130,7 @@ if (!empty($errors)) {
             $errors['mail'] = $error->getMessage();
             $data['errors'] = $errors;
         }
-    }*/
+    }
 }
 
 // return all our data to an AJAX call

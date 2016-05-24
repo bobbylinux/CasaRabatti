@@ -63,7 +63,7 @@
 $the_post = get_post(11);
 $postId = str_replace(' ', '-', __($the_post->post_title));
 ?>
-    <section class="bg-primary welcome" id="<?php echo strtolower($postId); ?>">
+    <section class="welcome" id="<?php echo strtolower($postId); ?>">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center main-title">
@@ -91,10 +91,10 @@ $postId = str_replace(' ', '-', __($the_post->post_title));
         </div>
     </section>
 <?php
-$the_post = get_post(16);
-$postId = str_replace(' ', '-', __($the_post->post_title));
+//$the_post = get_post(16);
+//$postId = str_replace(' ', '-', __($the_post->post_title));
 ?>
-    <section id="<?php echo strtolower($postId); ?>" class="rooms">
+  <!--  <section id="<?php echo strtolower($postId); ?>" class="rooms">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center main-title">
@@ -151,7 +151,7 @@ $postId = str_replace(' ', '-', __($the_post->post_title));
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
 <?php
 $the_post = get_post(18);
